@@ -19,6 +19,11 @@
  - AOA [Chapter - 3](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/THE%20WALL/AOA_Chapter-3.pdf)
  - AOA [Chapter - 4](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/THE%20WALL/AOA_Chapter-4.pdf)
 
+## Assignments
+- AOA [Assignments](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Assignments/AOA_Assignments.pdf)
+- AOA [Assignment - 2](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Assignments/AOA_Assignment-2.pdf)
+- AOA [Friday | 13-03-2020](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Assignments/AOA_Friday.pdf)
+
 ## Analysis of Algorithm Lab
  - AOAL [Experiments](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/PRACTICAL%20LAB.pdf)
 
