@@ -25,7 +25,7 @@
 - AOA [Friday | 13-03-2020](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Assignments/AOA_Friday.pdf)
 
 ## Analysis of Algorithm Lab
- - AOAL [Experiments](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/PRACTICAL%20LAB.pdf)
+ - AOA Lab [Experiments](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/PRACTICAL%20LAB.pdf)
 
 ## Test
 - [AOA Test](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/AOA_Test_B-50.pdf)
