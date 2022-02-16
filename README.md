@@ -4,7 +4,7 @@
 ---
  
  - [X] **[Syllabus](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/SE-Comps_CBCGS_Syllabus.pdf)**
- - [x] **AOA - [Reference Books](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/tree/main/Reference%20Books)**
+ - [X] **AOA - [Reference Books](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/tree/main/Reference%20Books)**
 
 ---
 
