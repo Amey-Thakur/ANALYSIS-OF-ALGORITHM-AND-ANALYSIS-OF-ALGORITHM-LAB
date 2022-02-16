@@ -15,9 +15,13 @@
 
 ## THE WALL
 >**[MEGA SATISH](https://github.com/msatmod) - AUTHOR**
+ 
  - AOA [Chapter - 1](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/THE%20WALL/AOA_Chapter-1.pdf)
+ 
  - AOA [Chapter - 2](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/THE%20WALL/AOA_Chapter-2.pdf)
+ 
  - AOA [Chapter - 3](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/THE%20WALL/AOA_Chapter-3.pdf)
+ 
  - AOA [Chapter - 4](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/THE%20WALL/AOA_Chapter-4.pdf)
 
 ## Assignments
