@@ -1,5 +1,5 @@
 # ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB
- CSC402: AOA & CSL401: AOA LAB [SEMESTER IV] 
+ 👍🏻 CSC402: AOA & CSL401: AOA LAB [SEMESTER IV] 
  
 ---
  
@@ -59,3 +59,8 @@
  
  - [AOA Test](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/AOA_Test_B-50.pdf)
 
+---
+
+<p align="center"> <b> 👉🏻 Subject as a part of the 4th Semester of Engineering @ University of Mumbai 👈🏻 <b> </p>
+ 
+<p align="center"><a href='https://github.com/Amey-Thakur/ACHIEVEMENTS#engineering', style='color: greenyellow;'> ✌🏻 Back To Engineering ✌🏻</p>
