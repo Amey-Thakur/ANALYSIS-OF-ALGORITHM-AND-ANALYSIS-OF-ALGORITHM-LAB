@@ -45,7 +45,7 @@
  
  >**AOA Lab [Experiments](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/AOA%20Lab/PRACTICAL%20LAB.pdf) - JOURNAL**
  
- - Experiment 1 - [Insertion Sort](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/AOA%20Lab/Experiment-1/insertionsort.c) & [Selection Sort](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/AOA%20Lab/Experiment-1/selectionsort.c)
+ - Experiment 1 - [Insertion Sort](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/AOA%20Lab/Experiment-1/Insertion_Sort.c) & [Selection Sort](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/AOA%20Lab/Experiment-1/Selection_Sort.c)
  
  - Experiment 2 - [Binary Search](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/AOA%20Lab/Experiment-2/Binary_Search.c)
  
