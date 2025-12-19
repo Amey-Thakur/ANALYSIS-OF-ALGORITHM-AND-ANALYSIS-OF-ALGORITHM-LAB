@@ -34,7 +34,7 @@
 
 ## Assignments
  
- - AOA [Assignments](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Assignments/AOA_Assignments.pdf)
+ - AOA [Assignment - 1](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Assignments/AOA_Assignment-1.pdf)
  
  - AOA [Assignment - 2](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Assignments/AOA_Assignment-2.pdf)
  
