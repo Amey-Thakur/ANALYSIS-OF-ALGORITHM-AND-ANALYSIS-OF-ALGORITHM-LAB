@@ -33,7 +33,7 @@ void divide(int arr[], int l, int h) 	//DIVIDE FUNCTION
 	if (l < h) 
 	{ 
 		int m = l+(h-l)/2; 
-		divide(arr, l, m); 		//DIVIDE FUNCITON CALL
+		divide(arr, l, m); 		//DIVIDE FUNCTION CALL
 		divide(arr, m+1, h); 	//DIVIDE FUNCTION CALL
 		merge(arr, l, m, h); 	//MERGE FUNCTION CALL
 	} 

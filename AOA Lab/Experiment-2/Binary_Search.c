@@ -4,6 +4,7 @@
 
 
 #include<stdio.h>
+int binary_search(int a[],int s,int l,int h);
 int main()
 {
     int a[50],no,i,s,low,high,index;
@@ -38,7 +39,7 @@ int binary_search(int a[],int s,int l,int h)		//function for binary search
 	{
 		if(s==a[mid])
 			return mid;
-		else if(s<mid)
+		else if(s<a[mid])
 			return binary_search(a,s,l,mid-1);		//function recursion
 		else
 			return binary_search(a,s,mid+1,h);		//function recursion

@@ -32,7 +32,7 @@ int main()
       num[j+1]=temp;
    }
 
-   printf("\nSORTED LIST USING SELECTION SORT IS: \n");			// loop for printing the sorted list
+   printf("\nSORTED LIST USING INSERTION SORT IS: \n");			// loop for printing the sorted list
    
    for(i=0;i<count;i++)
 	{
