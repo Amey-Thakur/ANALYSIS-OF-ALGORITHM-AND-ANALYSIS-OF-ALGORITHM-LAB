@@ -53,7 +53,7 @@
  
  - Experiment 4 - [Longest Common Subsequence](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/AOA%20Lab/Experiment-4/Longest_Common_Subsequence.c)
  
- - Experiment 5 - [All Pair Shortest Path](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/AOA%20Lab/Experiment-5/allpairshortestpath.c)
+ - Experiment 5 - [All Pair Shortest Path](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/AOA%20Lab/Experiment-5/All_Pair_Shortest_Path.c)
  
 
 ## Test
