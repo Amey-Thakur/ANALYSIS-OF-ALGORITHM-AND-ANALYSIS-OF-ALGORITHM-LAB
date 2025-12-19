@@ -51,7 +51,7 @@
  
  - Experiment 3 - [Merge Sort](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/AOA%20Lab/Experiment-3/Merge_Sort.c)
  
- - Experiment 4 - [Longest Common Subsequence](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/AOA%20Lab/Experiment-4/LCS.c)
+ - Experiment 4 - [Longest Common Subsequence](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/AOA%20Lab/Experiment-4/Longest_Common_Subsequence.c)
  
  - Experiment 5 - [All Pair Shortest Path](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/AOA%20Lab/Experiment-5/allpairshortestpath.c)
  
