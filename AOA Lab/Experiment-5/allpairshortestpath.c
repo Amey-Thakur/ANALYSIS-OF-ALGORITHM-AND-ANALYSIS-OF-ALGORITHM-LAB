@@ -26,7 +26,7 @@ void shortest (int m[20][20], int n)
 			}
 		}
 		
-	for (k=1; k<=n; k++)		//LOOP FOR CALCULATING THE FINAL MATRIXES.
+	for (k=1; k<=n; k++)		//LOOP FOR CALCULATING THE FINAL MATRICES.
 	{
 		for(i = 1; i<=n; i++)
 	{
