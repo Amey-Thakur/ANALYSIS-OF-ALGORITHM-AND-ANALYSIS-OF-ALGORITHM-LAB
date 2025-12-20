@@ -115,7 +115,7 @@ Comprehensive chapter-wise notes curated by Mega Satish, covering all essential 
 | 3 | [AOA Chapter - 3](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/THE%20WALL/AOA_Chapter-3.pdf) | Advanced algorithms and optimization |
 | 4 | [AOA Chapter - 4](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/THE%20WALL/AOA_Chapter-4.pdf) | Graph algorithms and NP-completeness |
 
-> 💝 **Special Thanks**: These meticulously crafted notes by Mega were instrumental in understanding complex algorithmic concepts. Her dedication to creating comprehensive study materials and willingness to share knowledge made a significant difference in our learning journey. Her clear explanations and organized approach to presenting difficult topics helped not just me, but countless students navigate the intricacies of algorithm analysis. Thank you, Mega, for your invaluable contribution to our academic success!
+> 💝 **Special Thanks**: A heartfelt thank you to Mega for her constant support, patience, and clarity throughout this journey. Learning alongside her made a real difference, not only because she explained concepts so clearly, but because she truly cared about understanding them together. Her thoughtful approach to teaching, openness to discussion, and steady encouragement turned challenges into meaningful learning moments. This work reflects the growth that came from learning side by side. Thank you, Mega, for everything you shared and taught along the way.
 
 ---
 
