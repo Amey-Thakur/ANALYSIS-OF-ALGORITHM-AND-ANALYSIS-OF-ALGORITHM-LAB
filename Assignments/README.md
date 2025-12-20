@@ -39,7 +39,7 @@ These assignments comprehensively cover the following topics:
 <!-- FOOTER -->
 <div align="center">
 
-  **[⬆ Back to Top](#assignments)** &nbsp;·&nbsp; **[🏠 Back to Main Repository](../)**
+  **[⬆ Back to Top](#assignments)** &nbsp;·&nbsp; **[🏠 Back to Main Repository](../)** &nbsp;·&nbsp; **[🧪 AOA Lab](../AOA%20Lab/)**
 
 </div>
 
