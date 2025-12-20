@@ -83,11 +83,26 @@ This collection includes **10 comprehensive reference materials** covering all m
 
 <div align="center">
 
-**Collaborative Study Notes by Amey & Mega**
+**Collaborative Study Notes**
 
-<img src="https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/THE%20WALL/Mega_Satish.png?raw=true" alt="Mega Satish" width="150"/>
+<table>
+<tr>
+<td align="center">
+<a href="https://github.com/Amey-Thakur">
+<img src="https://github.com/Amey-Thakur.png" alt="Amey Thakur" width="120"/><br/>
+<b>Amey Thakur</b>
+</a>
+</td>
+<td align="center">
+<a href="https://github.com/msatmod">
+<img src="https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/THE%20WALL/Mega_Satish.png?raw=true" alt="Mega Satish" width="120"/><br/>
+<b>Mega Satish</b>
+</a>
+</td>
+</tr>
+</table>
 
-**[MEGA SATISH](https://github.com/msatmod) - AUTHOR**
+**Notes Authored by [MEGA SATISH](https://github.com/msatmod)**
 
 </div>
 
