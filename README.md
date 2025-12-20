@@ -16,7 +16,7 @@
 
   ---
 
-  [📖 Overview](#overview) &nbsp;·&nbsp; [📂 Contents](#repository-contents) &nbsp;·&nbsp; [📚 Reference Books](#reference-books) &nbsp;·&nbsp; [📝 Assignments](#assignments) &nbsp;·&nbsp; [✏️ Personal Preparation](#personal-preparation) &nbsp;·&nbsp; [🧪 Laboratory](#analysis-of-algorithm-laboratory) &nbsp;·&nbsp; [📋 Syllabus](#syllabus) &nbsp;·&nbsp; [📘 Usage Guidelines](#usage-guidelines) &nbsp;·&nbsp; [📜 License](#license) &nbsp;·&nbsp; [ℹ️ About](#about-this-repository) &nbsp;·&nbsp; [🙏 Acknowledgments](#acknowledgments)
+  [📖 Overview](#overview) &nbsp;·&nbsp; [📂 Contents](#repository-contents) &nbsp;·&nbsp; [📚 Reference Books](#reference-books) &nbsp;·&nbsp; [📝 The Wall](#the-wall) &nbsp;·&nbsp; [✏️ Personal Preparation](#personal-preparation) &nbsp;·&nbsp; [📄 Assignments](#assignments) &nbsp;·&nbsp; [🧪 Laboratory](#analysis-of-algorithm-laboratory) &nbsp;·&nbsp; [📋 Syllabus](#syllabus) &nbsp;·&nbsp; [📘 Usage Guidelines](#usage-guidelines) &nbsp;·&nbsp; [📜 License](#license) &nbsp;·&nbsp; [ℹ️ About](#about-this-repository) &nbsp;·&nbsp; [🙏 Acknowledgments](#acknowledgments)
 
 </div>
 
@@ -79,17 +79,28 @@ This collection includes **10 comprehensive reference materials** covering all m
 
 ---
 
-### Assignments
+### The Wall
 
-Academic assignments for comprehensive learning and practice:
+<div align="center">
 
-| Resource | Description |
-|:---|:---|
-| 📝 [Assignment 1](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Assignments/AOA_Assignment-1.pdf) | First assignment covering fundamental concepts |
-| 📝 [Assignment 2](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Assignments/AOA_Assignment-2.pdf) | Second assignment on advanced topics |
-| 📝 [Friday Assignment](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Assignments/AOA_Friday_March_13_2020.pdf) | Special assignment (March 13, 2020) |
+**Collaborative Study Notes by Amey & Mega**
 
-**[📂 Browse All Assignments](Assignments/)**
+<img src="https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/THE%20WALL/Mega_Satish.png?raw=true" alt="Mega Satish" width="150"/>
+
+**[MEGA SATISH](https://github.com/msatmod) - AUTHOR**
+
+</div>
+
+Comprehensive chapter-wise notes curated by Mega Satish, covering all essential topics:
+
+| Chapter | Resource | Topics Covered |
+|:-:|:---|:---|
+| 1 | [AOA Chapter - 1](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/THE%20WALL/AOA_Chapter-1.pdf) | Introduction to algorithms and complexity analysis |
+| 2 | [AOA Chapter - 2](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/THE%20WALL/AOA_Chapter-2.pdf) | Algorithm design techniques |
+| 3 | [AOA Chapter - 3](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/THE%20WALL/AOA_Chapter-3.pdf) | Advanced algorithms and optimization |
+| 4 | [AOA Chapter - 4](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/THE%20WALL/AOA_Chapter-4.pdf) | Graph algorithms and NP-completeness |
+
+> 💝 **Special Thanks**: These meticulously crafted notes by Mega were instrumental in understanding complex algorithmic concepts. Her dedication to creating comprehensive study materials and willingness to share knowledge made a significant difference in our learning journey. Her clear explanations and organized approach to presenting difficult topics helped not just me, but countless students navigate the intricacies of algorithm analysis. Thank you, Mega, for your invaluable contribution to our academic success!
 
 ---
 
@@ -104,6 +115,20 @@ Study materials and planning resources for effective exam preparation:
 | 🎯 [Examination Blueprint](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Blueprint%20(AOA).png) | Question paper pattern and marking scheme |
 | 📄 [AOA Test](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/AOA_Test_B-50.pdf) | Practice test paper |
 | 🏆 [Achievement Certificate](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Certificate.jpg) | Recognition in algorithmic excellence |
+
+---
+
+### Assignments
+
+Academic assignments for comprehensive learning and practice:
+
+| Resource | Description |
+|:---|:---|
+| 📝 [Assignment 1](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Assignments/AOA_Assignment-1.pdf) | First assignment covering fundamental concepts |
+| 📝 [Assignment 2](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Assignments/AOA_Assignment-2.pdf) | Second assignment on advanced topics |
+| 📝 [Friday Assignment](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Assignments/AOA_Friday_March_13_2020.pdf) | Special assignment (March 13, 2020) |
+
+**[📂 Browse All Assignments](Assignments/)**
 
 ---
 
@@ -239,6 +264,8 @@ This repository represents a comprehensive collection of study materials, refere
 
 Grateful acknowledgment to the faculty members of the Department of Computer Engineering at Terna Engineering College for their guidance and instruction in Analysis of Algorithm. Their clear teaching and continued support helped me develop a strong understanding of algorithmic design and complexity analysis.
 
+**Special Thanks to Mega Satish**: Heartfelt appreciation to [Mega Satish](https://github.com/msatmod) for her exceptional contribution to this repository through "THE WALL" - comprehensive chapter-wise notes that became an invaluable resource for understanding complex algorithmic concepts. Her dedication to creating well-structured study materials and her generosity in sharing knowledge made a profound impact on my learning journey and helped numerous students master algorithm analysis. Her collaborative spirit and commitment to academic excellence exemplify the true essence of knowledge sharing.
+
 Special thanks to the mentors and peers whose encouragement, discussions, and support contributed meaningfully to this learning experience.
 
 ---
@@ -246,7 +273,7 @@ Special thanks to the mentors and peers whose encouragement, discussions, and su
 <!-- FOOTER -->
 <div align="center">
 
-  **[⬆ Back to Top](#analysis-of-algorithm-and-analysis-of-algorithm-lab)** &nbsp;·&nbsp; **[📖 Overview](#overview)** &nbsp;·&nbsp; **[📂 Contents](#repository-contents)** &nbsp;·&nbsp; **[📚 Reference Books](#reference-books)** &nbsp;·&nbsp; **[📝 Assignments](#assignments)** &nbsp;·&nbsp; **[✏️ Personal Preparation](#personal-preparation)** &nbsp;·&nbsp; **[🧪 Laboratory](#analysis-of-algorithm-laboratory)** &nbsp;·&nbsp; **[📋 Syllabus](#syllabus)** &nbsp;·&nbsp; **[📘 Usage Guidelines](#usage-guidelines)** &nbsp;·&nbsp; **[📜 License](#license)** &nbsp;·&nbsp; **[ℹ️ About](#about-this-repository)** &nbsp;·&nbsp; **[🙏 Acknowledgments](#acknowledgments)**
+  **[⬆ Back to Top](#analysis-of-algorithm-and-analysis-of-algorithm-lab)** &nbsp;·&nbsp; **[📖 Overview](#overview)** &nbsp;·&nbsp; **[📂 Contents](#repository-contents)** &nbsp;·&nbsp; **[📚 Reference Books](#reference-books)** &nbsp;·&nbsp; **[📝 The Wall](#the-wall)** &nbsp;·&nbsp; **[✏️ Personal Preparation](#personal-preparation)** &nbsp;·&nbsp; **[📄 Assignments](#assignments)** &nbsp;·&nbsp; **[🧪 Laboratory](#analysis-of-algorithm-laboratory)** &nbsp;·&nbsp; **[📋 Syllabus](#syllabus)** &nbsp;·&nbsp; **[📘 Usage Guidelines](#usage-guidelines)** &nbsp;·&nbsp; **[📜 License](#license)** &nbsp;·&nbsp; **[ℹ️ About](#about-this-repository)** &nbsp;·&nbsp; **[🙏 Acknowledgments](#acknowledgments)**
 
   <br>
 
