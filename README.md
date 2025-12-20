@@ -87,13 +87,13 @@ This collection includes **10 comprehensive reference materials** covering all m
 
 <table>
 <tr>
-<td align="center">
+<td align="center" valign="top" width="150">
 <a href="https://github.com/Amey-Thakur">
 <img src="https://github.com/Amey-Thakur.png" alt="Amey Thakur" width="120"/><br/>
 <b>Amey Thakur</b>
 </a>
 </td>
-<td align="center">
+<td align="center" valign="top" width="150">
 <a href="https://github.com/msatmod">
 <img src="https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/THE%20WALL/Mega_Satish.png?raw=true" alt="Mega Satish" width="120"/><br/>
 <b>Mega Satish</b>
