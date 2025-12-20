@@ -137,13 +137,17 @@ Study materials and planning resources for effective exam preparation:
 
 Academic assignments for comprehensive learning and practice:
 
+<div align="center">
+
+**[📂 Browse All Assignments](Assignments/)**
+
+</div>
+
 | Resource | Description |
 |:---|:---|
 | 📝 [Assignment 1](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Assignments/AOA_Assignment-1.pdf) | First assignment covering fundamental concepts |
 | 📝 [Assignment 2](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Assignments/AOA_Assignment-2.pdf) | Second assignment on advanced topics |
 | 📝 [Friday Assignment](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Assignments/AOA_Friday_March_13_2020.pdf) | Special assignment (March 13, 2020) |
-
-**[📂 Browse All Assignments](Assignments/)**
 
 ---
 
