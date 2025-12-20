@@ -223,7 +223,6 @@ The laboratory component (CSL401) focuses on hands-on implementation of various 
 | `All_Pair_Shortest_Path.c` | Floyd-Warshall | O(n³) | [View](AOA%20Lab/Experiment-5/All_Pair_Shortest_Path.c) |
 
 </details>
-<br>
 
 ### Laboratory Documentation
 
@@ -281,9 +280,9 @@ This repository represents a comprehensive collection of study materials, refere
 
 ### Acknowledgments
 
-Grateful acknowledgment to the faculty members of the Department of Computer Engineering at Terna Engineering College for their guidance and instruction in Analysis of Algorithm. Their clear teaching and continued support helped me develop a strong understanding of algorithmic design and complexity analysis.
+Grateful acknowledgment to [Mega Satish](https://github.com/msatmod) for her exceptional contribution to this repository through "THE WALL" - comprehensive chapter-wise notes that became an invaluable resource for understanding complex algorithmic concepts. Her constant support, patience, and clarity throughout this journey made a real difference. Learning alongside her was transformative, not only because she explained concepts so clearly, but because she truly cared about understanding them together. Her thoughtful approach to teaching, openness to discussion, and steady encouragement turned challenges into meaningful learning moments. This work reflects the growth that came from learning side by side. Thank you, Mega, for everything you shared and taught along the way.
 
-**Special Thanks to Mega Satish**: Heartfelt appreciation to [Mega Satish](https://github.com/msatmod) for her exceptional contribution to this repository through "THE WALL" - comprehensive chapter-wise notes that became an invaluable resource for understanding complex algorithmic concepts. Her dedication to creating well-structured study materials and her generosity in sharing knowledge made a profound impact on my learning journey and helped numerous students master algorithm analysis. Her collaborative spirit and commitment to academic excellence exemplify the true essence of knowledge sharing.
+Special thanks to the faculty members of the Department of Computer Engineering at Terna Engineering College for their guidance and instruction in Analysis of Algorithm. Their clear teaching and continued support helped develop a strong understanding of algorithmic design and complexity analysis.
 
 Special thanks to the mentors and peers whose encouragement, discussions, and support contributed meaningfully to this learning experience.
 
