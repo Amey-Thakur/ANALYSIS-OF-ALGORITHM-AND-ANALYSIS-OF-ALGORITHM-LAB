@@ -295,7 +295,7 @@ Special thanks to the mentors and peers whose encouragement, discussions, and su
 
   <br>
 
-  **[🧪 Analysis of Algorithm Laboratory](AOA%20Lab/)**
+  **[🧪 Analysis of Algorithm Laboratory](AOA%20Lab/)** &nbsp;·&nbsp; **[📄 Assignments](Assignments/)**
 
 </div>
 

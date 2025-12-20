@@ -112,7 +112,7 @@ gcc Insertion_Sort.c -o Insertion_Sort
 
   <br>
 
-  **[🏠 Back to Main Repository](../)**
+  **[🏠 Back to Main Repository](../)** &nbsp;·&nbsp; **[📝 Assignments](../Assignments/)**
 
 </div>
 
