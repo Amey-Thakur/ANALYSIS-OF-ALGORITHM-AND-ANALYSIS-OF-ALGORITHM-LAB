@@ -3,24 +3,9 @@
      ========================================================================================= -->
 <div align="center">
 
-  <img src="https://raw.githubusercontent.com/Amey-Thakur/COMPUTER-ENGINEERING/main/university-of-mumbai-logo.png" alt="University of Mumbai" width="200"/>
-
-  # Analysis of Algorithm Lab
-
-  ### CSL401 · Semester IV · Computer Engineering
-
-  [![Curated by](https://img.shields.io/badge/Curated%20by-Amey%20Thakur-blue.svg)](https://github.com/Amey-Thakur)
-  [![Programs](https://img.shields.io/badge/Programs-5-yellowgreen.svg)](#quick-navigation)
-  [![Language](https://img.shields.io/badge/Language-C-blueviolet.svg)](.)
-  [![Lab Manual](https://img.shields.io/badge/Lab%20Manual-Available-brightgreen.svg)](PRACTICAL%20LAB.pdf)
-
   **A comprehensive collection of 5 experiments covering fundamental algorithm design techniques with detailed comments, proper documentation, and industry-standard coding practices.**
 
-</div>
-
----
-
-<div align="center">
+  ---
 
   **[🔢 Experiment 1](#-experiment-1-sorting-algorithms-2-programs)** &nbsp;·&nbsp; **[🔍 Experiment 2](#-experiment-2-divide-and-conquer---search-1-program)** &nbsp;·&nbsp; **[🔄 Experiment 3](#-experiment-3-divide-and-conquer---sort-1-program)** &nbsp;·&nbsp; **[🧬 Experiment 4](#-experiment-4-dynamic-programming-1-program)** &nbsp;·&nbsp; **[🗺️ Experiment 5](#-experiment-5-graph-algorithms-1-program)** &nbsp;·&nbsp; **[🚀 How to Use](#-how-to-use)** &nbsp;·&nbsp; **[📖 Learning Path](#-learning-path)**
 
@@ -35,7 +20,9 @@
 
 ---
 
-<!-- EXPERIMENT 1 -->
+<!-- =========================================================================================
+                                     EXPERIMENT 1
+     ========================================================================================= -->
 ## 🔢 Experiment 1: Sorting Algorithms (2 Programs)
 
 | # | Program | Algorithm | Time Complexity |
@@ -45,7 +32,9 @@
 
 ---
 
-<!-- EXPERIMENT 2 -->
+<!-- =========================================================================================
+                                     EXPERIMENT 2
+     ========================================================================================= -->
 ## 🔍 Experiment 2: Divide and Conquer - Search (1 Program)
 
 | # | Program | Algorithm | Time Complexity |
@@ -54,7 +43,9 @@
 
 ---
 
-<!-- EXPERIMENT 3 -->
+<!-- =========================================================================================
+                                     EXPERIMENT 3
+     ========================================================================================= -->
 ## 🔄 Experiment 3: Divide and Conquer - Sort (1 Program)
 
 | # | Program | Algorithm | Time Complexity |
@@ -63,7 +54,9 @@
 
 ---
 
-<!-- EXPERIMENT 4 -->
+<!-- =========================================================================================
+                                     EXPERIMENT 4
+     ========================================================================================= -->
 ## 🧬 Experiment 4: Dynamic Programming (1 Program)
 
 | # | Program | Algorithm | Time Complexity |
@@ -72,7 +65,9 @@
 
 ---
 
-<!-- EXPERIMENT 5 -->
+<!-- =========================================================================================
+                                     EXPERIMENT 5
+     ========================================================================================= -->
 ## 🗺️ Experiment 5: Graph Algorithms (1 Program)
 
 | # | Program | Algorithm | Time Complexity |
@@ -81,7 +76,9 @@
 
 ---
 
-<!-- HOW TO USE -->
+<!-- =========================================================================================
+                                     HOW TO USE SECTION
+     ========================================================================================= -->
 ## 🚀 How to Use
 
 1. **Navigate** to the desired experiment folder
@@ -98,7 +95,9 @@ gcc Insertion_Sort.c -o Insertion_Sort
 
 ---
 
-<!-- LEARNING PATH -->
+<!-- =========================================================================================
+                                     LEARNING PATH SECTION
+     ========================================================================================= -->
 ## 📖 Learning Path
 
 **Beginner Level:**
@@ -131,11 +130,7 @@ gcc Insertion_Sort.c -o Insertion_Sort
 
   **[🏠 Back to Main Repository](../)**
 
-</div>
-
----
-
-<div align="center">
+  ---
 
   ### 🧪 [Analysis of Algorithm and Analysis of Algorithm Lab](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB)
 
