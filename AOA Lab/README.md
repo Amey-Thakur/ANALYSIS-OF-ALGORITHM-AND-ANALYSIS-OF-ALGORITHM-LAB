@@ -1,13 +1,18 @@
-<!-- HEADER -->
+<!-- =========================================================================================
+                                     HEADER SECTION
+     ========================================================================================= -->
 <div align="center">
+
+  <img src="https://raw.githubusercontent.com/Amey-Thakur/COMPUTER-ENGINEERING/main/university-of-mumbai-logo.png" alt="University of Mumbai" width="200"/>
 
   # Analysis of Algorithm Lab
 
   ### CSL401 · Semester IV · Computer Engineering
 
   [![Curated by](https://img.shields.io/badge/Curated%20by-Amey%20Thakur-blue.svg)](https://github.com/Amey-Thakur)
-  [![Programs](https://img.shields.io/badge/Programs-5-green.svg)](#quick-navigation)
-  [![Language](https://img.shields.io/badge/Language-C-orange.svg)](.)
+  [![Programs](https://img.shields.io/badge/Programs-5-yellowgreen.svg)](#quick-navigation)
+  [![Language](https://img.shields.io/badge/Language-C-blueviolet.svg)](.)
+  [![Lab Manual](https://img.shields.io/badge/Lab%20Manual-Available-brightgreen.svg)](PRACTICAL%20LAB.pdf)
 
   **A comprehensive collection of 5 experiments covering fundamental algorithm design techniques with detailed comments, proper documentation, and industry-standard coding practices.**
 
@@ -17,9 +22,16 @@
 
 <div align="center">
 
-  [🔢 Experiment 1](#-experiment-1-sorting-algorithms-2-programs) &nbsp;·&nbsp; [🔍 Experiment 2](#-experiment-2-divide-and-conquer---search-1-program) &nbsp;·&nbsp; [🔄 Experiment 3](#-experiment-3-divide-and-conquer---sort-1-program) &nbsp;·&nbsp; [🧬 Experiment 4](#-experiment-4-dynamic-programming-1-program) &nbsp;·&nbsp; [🗺️ Experiment 5](#-experiment-5-graph-algorithms-1-program) &nbsp;·&nbsp; [🚀 How to Use](#-how-to-use) &nbsp;·&nbsp; [📖 Learning Path](#-learning-path)
+  **[🔢 Experiment 1](#-experiment-1-sorting-algorithms-2-programs)** &nbsp;·&nbsp; **[🔍 Experiment 2](#-experiment-2-divide-and-conquer---search-1-program)** &nbsp;·&nbsp; **[🔄 Experiment 3](#-experiment-3-divide-and-conquer---sort-1-program)** &nbsp;·&nbsp; **[🧬 Experiment 4](#-experiment-4-dynamic-programming-1-program)** &nbsp;·&nbsp; **[🗺️ Experiment 5](#-experiment-5-graph-algorithms-1-program)** &nbsp;·&nbsp; **[🚀 How to Use](#-how-to-use)** &nbsp;·&nbsp; **[📖 Learning Path](#-learning-path)**
 
 </div>
+
+> [!TIP]
+> **Algorithm Visualization**: Always trace your algorithm's execution flow on paper before coding. Draw recursion trees for divide-and-conquer approaches, create tables for dynamic programming solutions, and visualize array/pointer states at each step. Dry running with small test cases and manually calculating time/space complexity is the most effective way to master algorithm design paradigms and optimize computational efficiency.
+
+> [!WARNING]
+> **Academic Integrity**: These programs are provided for educational purposes and reference learning. While they serve as a guide for understanding algorithmic implementations, understanding the core logic is more important than copying the code directly.
+
 
 ---
 
@@ -105,14 +117,19 @@ gcc Insertion_Sort.c -o Insertion_Sort
 
 ---
 
-<!-- FOOTER -->
+<!-- =========================================================================================
+                                     FOOTER SECTION
+     ========================================================================================= -->
 <div align="center">
 
-  **[⬆ Back to Top](#analysis-of-algorithm-lab)** &nbsp;·&nbsp; **[🔢 Experiment 1](#-experiment-1-sorting-algorithms-2-programs)** &nbsp;·&nbsp; **[🔍 Experiment 2](#-experiment-2-divide-and-conquer---search-1-program)** &nbsp;·&nbsp; **[🔄 Experiment 3](#-experiment-3-divide-and-conquer---sort-1-program)** &nbsp;·&nbsp; **[🧬 Experiment 4](#-experiment-4-dynamic-programming-1-program)** &nbsp;·&nbsp; **[🗺️ Experiment 5](#-experiment-5-graph-algorithms-1-program)** &nbsp;·&nbsp; **[🚀 How to Use](#-how-to-use)** &nbsp;·&nbsp; **[📖 Learning Path](#-learning-path)**
+  <!-- Footer Navigation -->
+  **[⬆ Back to Top](#analysis-of-algorithm-lab)**
+
+  **[🔢 Experiment 1](#-experiment-1-sorting-algorithms-2-programs)** &nbsp;·&nbsp; **[🔍 Experiment 2](#-experiment-2-divide-and-conquer---search-1-program)** &nbsp;·&nbsp; **[🔄 Experiment 3](#-experiment-3-divide-and-conquer---sort-1-program)** &nbsp;·&nbsp; **[🧬 Experiment 4](#-experiment-4-dynamic-programming-1-program)** &nbsp;·&nbsp; **[🗺️ Experiment 5](#-experiment-5-graph-algorithms-1-program)** &nbsp;·&nbsp; **[🚀 How to Use](#-how-to-use)** &nbsp;·&nbsp; **[📖 Learning Path](#-learning-path)**
 
   <br>
 
-  **[🏠 Back to Main Repository](../)** &nbsp;·&nbsp; **[📝 Assignments](../Assignments/)**
+  **[🏠 Back to Main Repository](../)**
 
 </div>
 
@@ -120,7 +137,7 @@ gcc Insertion_Sort.c -o Insertion_Sort
 
 <div align="center">
 
-  ### [Analysis of Algorithm and Analysis of Algorithm Lab](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB)
+  ### 🧪 [Analysis of Algorithm and Analysis of Algorithm Lab](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB)
 
   **CSC402 & CSL401 · Semester IV · Computer Engineering**
 
