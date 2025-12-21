@@ -25,6 +25,8 @@
 
 </div>
 
+---
+
 > [!TIP]
 > **Algorithm Visualization**: Always trace your algorithm's execution flow on paper before coding. Draw recursion trees for divide-and-conquer approaches, create tables for dynamic programming solutions, and visualize array/pointer states at each step. Dry running with small test cases and manually calculating time/space complexity is the most effective way to master algorithm design paradigms and optimize computational efficiency.
 
