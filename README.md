@@ -142,8 +142,6 @@ Study materials and planning resources for effective exam preparation:
 
 ---
 
----
-
 ### Assignments
 
 Academic assignments for comprehensive learning and practice:
