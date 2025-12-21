@@ -147,7 +147,7 @@ gcc Insertion_Sort.c -o Insertion_Sort
 
   ---
 
-  ### 🧪 [Analysis of Algorithm and Analysis of Algorithm Lab](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB)
+  ### [Analysis of Algorithm and Analysis of Algorithm Lab](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB)
 
   **CSC402 & CSL401 · Semester IV · Computer Engineering**
 
