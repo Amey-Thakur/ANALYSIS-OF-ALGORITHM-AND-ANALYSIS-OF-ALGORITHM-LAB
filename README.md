@@ -180,13 +180,13 @@ The laboratory component (CSL401) focuses on hands-on implementation of various 
 
 ### Laboratory Experiments
 
-| Experiment | Programs | Topics Covered |
-|:---|:-:|:---|
-| **Experiment 1** | 2 | Insertion Sort, Selection Sort |
-| **Experiment 2** | 1 | Binary Search (Divide and Conquer) |
-| **Experiment 3** | 1 | Merge Sort (Divide and Conquer) |
-| **Experiment 4** | 1 | Longest Common Subsequence (Dynamic Programming) |
-| **Experiment 5** | 1 | All Pairs Shortest Path (Floyd-Warshall Algorithm) |
+| Experiment | Programs | Topics Covered | Repository |
+|:---|:-:|:---|:---|
+| **Experiment 1** | 2 | Insertion Sort, Selection Sort | [View Programs](AOA%20Lab/Experiment-1/) |
+| **Experiment 2** | 1 | Binary Search (Divide and Conquer) | [View Programs](AOA%20Lab/Experiment-2/) |
+| **Experiment 3** | 1 | Merge Sort (Divide and Conquer) | [View Programs](AOA%20Lab/Experiment-3/) |
+| **Experiment 4** | 1 | Longest Common Subsequence (Dynamic Programming) | [View Programs](AOA%20Lab/Experiment-4/) |
+| **Experiment 5** | 1 | All Pairs Shortest Path (Floyd-Warshall Algorithm) | [View Programs](AOA%20Lab/Experiment-5/) |
 
 ### Program Details
 
