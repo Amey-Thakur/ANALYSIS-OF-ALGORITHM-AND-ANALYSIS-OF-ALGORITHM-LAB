@@ -108,9 +108,9 @@ This collection includes **10 comprehensive reference materials** covering all m
 </tr>
 </table>
 
-**Notes Authored by [MEGA SATISH](https://github.com/msatmod)**
-
 </div>
+
+### Notes Authored by [MEGA SATISH](https://github.com/msatmod)
 
 Comprehensive chapter-wise notes curated by Mega Satish, covering all essential topics:
 
