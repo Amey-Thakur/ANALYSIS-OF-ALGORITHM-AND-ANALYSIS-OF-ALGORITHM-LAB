@@ -138,8 +138,17 @@ Study materials and planning resources for effective exam preparation:
 | 📝 [Syllabus Breakdown](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/My%20Preparation/Syllabus.png) | Detailed module-wise syllabus notes |
 | 📊 [Module Planning](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/My%20Preparation/Modules.png) | Topic organization and study schedule |
 | 🎯 [Examination Blueprint](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Blueprint%20(AOA).png) | Question paper pattern and marking scheme |
-| 📄 [AOA Test](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/AOA_Test_B-50.pdf) | Practice test paper |
 | 🏆 [Achievement Certificate](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Certificate.jpg) | Recognition in algorithmic excellence |
+
+---
+
+### Practice Test
+
+Mid-semester practice assessment:
+
+| Test | Date | Time | Class | Link |
+|:---|:---:|:---:|:---:|:---:|
+| **Practice Test AOA** | April 5, 2020 | 10:00 AM - 11:00 AM | SE B-50 | [📄 View](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/AOA_Test_B-50.pdf) |
 
 ---
 
