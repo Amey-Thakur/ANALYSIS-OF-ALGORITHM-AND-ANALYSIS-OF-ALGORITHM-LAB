@@ -149,9 +149,9 @@ Academic assignments for comprehensive learning and practice:
 
 | # | Assignment | Description | Date | Link |
 |:-:|:---|:---|:---:|:---:|
-| 1 | **Assignment 1** | Fundamental concepts in algorithm analysis | 23 Jan 2020 | [📄 View](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Assignments/AOA_Assignment-1.pdf) |
-| 2 | **Assignment 2** | Advanced topics in algorithm design | 13 Feb 2020 | [📄 View](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Assignments/AOA_Assignment-2.pdf) |
-| 3 | **Friday Assignment** | Special assignment (March 13, 2020) | 13 March 2020 | [📄 View](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Assignments/AOA_Friday_March_13_2020.pdf) |
+| 1 | **Assignment 1** | Fundamental concepts in algorithm analysis | January 23, 2020 | [📄 View](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Assignments/AOA_Assignment-1.pdf) |
+| 2 | **Assignment 2** | Advanced topics in algorithm design | February 13, 2020 | [📄 View](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Assignments/AOA_Assignment-2.pdf) |
+| 3 | **Friday Assignment** | Special assignment (March 13, 2020) | March 13, 2020 | [📄 View](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Assignments/AOA_Friday_March_13_2020.pdf) |
 
 **Topics Covered**: Algorithm Analysis (time/space complexity) · Design Paradigms (Divide & Conquer, Greedy, Dynamic Programming, Backtracking) · Sorting & Searching · Graph Algorithms · NP-Completeness
 
