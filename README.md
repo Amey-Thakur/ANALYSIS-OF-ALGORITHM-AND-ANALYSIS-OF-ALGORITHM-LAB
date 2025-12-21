@@ -170,9 +170,9 @@ The laboratory component (CSL401) focuses on hands-on implementation of various 
 
 <div align="center">
 
-  [![Total Programs](https://img.shields.io/badge/Total%20Programs-5-brightgreen.svg)](AOA%20Lab/)
-  [![Language](https://img.shields.io/badge/Language-C-blue.svg)](AOA%20Lab/)
-  [![Lab Manual](https://img.shields.io/badge/Lab%20Manual-Available-orange.svg)](AOA%20Lab/PRACTICAL%20LAB.pdf)
+  [![Total Programs](https://img.shields.io/badge/Total%20Programs-5-yellowgreen.svg)](AOA%20Lab/)
+  [![Language](https://img.shields.io/badge/Language-C-blueviolet.svg)](AOA%20Lab/)
+  [![Lab Manual](https://img.shields.io/badge/Lab%20Manual-Available-brightgreen.svg)](AOA%20Lab/PRACTICAL%20LAB.pdf)
 
   **[📂 Browse All Programs](AOA%20Lab/)**
 
