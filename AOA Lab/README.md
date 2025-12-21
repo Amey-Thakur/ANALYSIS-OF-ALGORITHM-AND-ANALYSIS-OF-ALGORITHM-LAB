@@ -31,7 +31,7 @@
 > **Algorithm Visualization**: Always trace your algorithm's execution flow on paper before coding. Draw recursion trees for divide-and-conquer approaches, create tables for dynamic programming solutions, and visualize array/pointer states at each step. Dry running with small test cases and manually calculating time/space complexity is the most effective way to master algorithm design paradigms and optimize computational efficiency.
 
 > [!WARNING]
-> **Academic Integrity**: These programs are provided for educational purposes and reference learning. While they serve as a guide for understanding algorithmic implementations, understanding the core logic is more important than copying the code directly.
+> **Complexity Constraints**: Using a brute-force approach (O(n²)) for large inputs (n > 10⁵) will result in **Time Limit Exceeded (TLE)** errors. Always analyze the constraints before implementation and optimize your logic to use efficient paradigms (Divide & Conquer or Dynamic Programming) where applicable to meet execution limits.
 
 ---
 
