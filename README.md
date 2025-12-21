@@ -147,17 +147,13 @@ Study materials and planning resources for effective exam preparation:
 
 Academic assignments for comprehensive learning and practice:
 
-<div align="center">
+| # | Assignment | Description | Link |
+|:-:|:---|:---|:---:|
+| 1 | **Assignment 1** | Fundamental concepts in algorithm analysis | [📄 View](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Assignments/AOA_Assignment-1.pdf) |
+| 2 | **Assignment 2** | Advanced topics in algorithm design | [� View](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Assignments/AOA_Assignment-2.pdf) |
+| 3 | **Friday Assignment** | Special assignment (March 13, 2020) | [📄 View](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Assignments/AOA_Friday_March_13_2020.pdf) |
 
-**[📂 Browse All Assignments](Assignments/)**
-
-</div>
-
-| Resource | Description |
-|:---|:---|
-| 📝 [Assignment 1](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Assignments/AOA_Assignment-1.pdf) | First assignment covering fundamental concepts |
-| 📝 [Assignment 2](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Assignments/AOA_Assignment-2.pdf) | Second assignment on advanced topics |
-| 📝 [Friday Assignment](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Assignments/AOA_Friday_March_13_2020.pdf) | Special assignment (March 13, 2020) |
+**Topics Covered**: Algorithm Analysis (time/space complexity) · Design Paradigms (Divide & Conquer, Greedy, Dynamic Programming, Backtracking) · Sorting & Searching · Graph Algorithms · NP-Completeness
 
 ---
 
