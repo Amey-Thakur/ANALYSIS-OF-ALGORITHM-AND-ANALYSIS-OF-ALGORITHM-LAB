@@ -142,14 +142,6 @@ Study materials and planning resources for effective exam preparation:
 
 ---
 
-### Practice Test
-
-Mid-semester practice assessment:
-
-| Test | Date | Time | Class | Link |
-|:---|:---:|:---:|:---:|:---:|
-| **Practice Test AOA** | April 5, 2020 | 10:00 AM - 11:00 AM | SE B-50 | [📄 View](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/AOA_Test_B-50.pdf) |
-
 ---
 
 ### Assignments
@@ -163,6 +155,16 @@ Academic assignments for comprehensive learning and practice:
 | 3 | **Friday Assignment** | Special assignment | March 13, 2020 | [📄 View](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Assignments/AOA_Friday_March_13_2020.pdf) |
 
 **Topics Covered**: Algorithm Analysis (time/space complexity) · Design Paradigms (Divide & Conquer, Greedy, Dynamic Programming, Backtracking) · Sorting & Searching · Graph Algorithms · NP-Completeness
+
+---
+
+### Practice Test
+
+Mid-semester practice assessment:
+
+| Test | Date | Time | Class | Link |
+|:---|:---:|:---:|:---:|:---:|
+| **Practice Test AOA** | April 5, 2020 | 10:00 AM - 11:00 AM | SE B-50 | [📄 View](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/AOA_Test_B-50.pdf) |
 
 ---
 
