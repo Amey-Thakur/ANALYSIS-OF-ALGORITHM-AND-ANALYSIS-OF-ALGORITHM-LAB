@@ -72,16 +72,16 @@ This collection includes **10 comprehensive reference materials** covering all m
 
 | # | Resource | Focus Area |
 |:-:|:---|:---|
-| 1 | [AOA Techmax](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Reference%20Books/AOA%20Techmax.pdf) | Complete syllabus coverage |
-| 2 | [Banker's Algorithm](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Reference%20Books/Banker's%20Algorithm.pdf) | Deadlock avoidance algorithm |
-| 3 | [Binary Search](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Reference%20Books/Binary%20Search.pdf) | Divide and conquer search |
-| 4 | [Knapsack Problem](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Reference%20Books/Knapsack%20Problem.pdf) | Dynamic programming optimization |
-| 5 | [Master Theorem](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Reference%20Books/Master%20Theorem.pdf) | Recurrence relation analysis |
-| 6 | [Merge Sort](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Reference%20Books/Merge%20Sort.pdf) | Divide and conquer sorting |
-| 7 | [MIN_MAX Algorithm](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Reference%20Books/MIN_MAX%20Algorithm.pdf) | Game theory and decision trees |
-| 8 | [AOA Question Bank](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Reference%20Books/AOA%20Question%20Bank.png) | Additional practice questions |
-| 9 | [AOA VIVA](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Reference%20Books/AOA%20VIVA.png) | Preparation guide for oral examinations |
-| 10 | [SEM - IV Books List](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Reference%20Books/SEM%20-%20IV%20Books.png) | Curated book list |
+| 1 | [AOA Techmax](Reference%20Books/AOA%20Techmax.pdf) | Complete syllabus coverage |
+| 2 | [Banker's Algorithm](Reference%20Books/Banker's%20Algorithm.pdf) | Deadlock avoidance algorithm |
+| 3 | [Binary Search](Reference%20Books/Binary%20Search.pdf) | Divide and conquer search |
+| 4 | [Knapsack Problem](Reference%20Books/Knapsack%20Problem.pdf) | Dynamic programming optimization |
+| 5 | [Master Theorem](Reference%20Books/Master%20Theorem.pdf) | Recurrence relation analysis |
+| 6 | [Merge Sort](Reference%20Books/Merge%20Sort.pdf) | Divide and conquer sorting |
+| 7 | [MIN_MAX Algorithm](Reference%20Books/MIN_MAX%20Algorithm.pdf) | Game theory and decision trees |
+| 8 | [AOA Question Bank](Reference%20Books/AOA%20Question%20Bank.png) | Additional practice questions |
+| 9 | [AOA VIVA](Reference%20Books/AOA%20VIVA.png) | Preparation guide for oral examinations |
+| 10 | [SEM - IV Books List](Reference%20Books/SEM%20-%20IV%20Books.png) | Curated book list |
 
 ---
 
@@ -101,7 +101,7 @@ This collection includes **10 comprehensive reference materials** covering all m
 </td>
 <td align="center">
 <a href="https://github.com/msatmod">
-<img src="https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/THE%20WALL/Mega_Satish.png?raw=true" alt="Mega Satish" width="150" height="150"/><br/>
+<img src="THE%20WALL/Mega_Satish.png" alt="Mega Satish" width="150" height="150"/><br/>
 <b>Mega Satish</b>
 </a>
 </td>
@@ -119,10 +119,10 @@ Comprehensive chapter-wise notes curated by Mega Satish, covering all essential 
 
 | Chapter | Resource | Topics Covered |
 |:-:|:---|:---|
-| 1 | [AOA Chapter - 1](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/THE%20WALL/AOA_Chapter-1.pdf) | Introduction to algorithms and complexity analysis |
-| 2 | [AOA Chapter - 2](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/THE%20WALL/AOA_Chapter-2.pdf) | Algorithm design techniques |
-| 3 | [AOA Chapter - 3](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/THE%20WALL/AOA_Chapter-3.pdf) | Advanced algorithms and optimization |
-| 4 | [AOA Chapter - 4](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/THE%20WALL/AOA_Chapter-4.pdf) | Graph algorithms and NP-completeness |
+| 1 | [AOA Chapter - 1](THE%20WALL/AOA_Chapter-1.pdf) | Introduction to algorithms and complexity analysis |
+| 2 | [AOA Chapter - 2](THE%20WALL/AOA_Chapter-2.pdf) | Algorithm design techniques |
+| 3 | [AOA Chapter - 3](THE%20WALL/AOA_Chapter-3.pdf) | Advanced algorithms and optimization |
+| 4 | [AOA Chapter - 4](THE%20WALL/AOA_Chapter-4.pdf) | Graph algorithms and NP-completeness |
 
 > [!NOTE]
 > **COVID-19 Impact**: This coursework was completed during the COVID-19 pandemic in 2020. Due to the nationwide lockdown and the sudden transition to online learning, several planned laboratory sessions and collaborative note-taking activities could not be carried out as originally intended. Despite these challenges, efforts were made to adapt and preserve as much work as possible. The limited chapter notes in this section reflect the disruption caused by the pandemic, rather than a lack of effort or commitment.
@@ -135,10 +135,10 @@ Study materials and planning resources for effective exam preparation:
 
 | Resource | Description |
 |:---|:---|
-| 📝 [Syllabus Breakdown](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/My%20Preparation/Syllabus.png) | Detailed module-wise syllabus notes |
-| 📊 [Module Planning](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/My%20Preparation/Modules.png) | Topic organization and study schedule |
-| 🎯 [Examination Blueprint](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Blueprint%20(AOA).png) | Question paper pattern and marking scheme |
-| 🏆 [Achievement Certificate](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Certificate.jpg) | Recognition in algorithmic excellence |
+| 📝 [Syllabus Breakdown](My%20Preparation/Syllabus.png) | Detailed module-wise syllabus notes |
+| 📊 [Module Planning](My%20Preparation/Modules.png) | Topic organization and study schedule |
+| 🎯 [Examination Blueprint](Blueprint%20(AOA).png) | Question paper pattern and marking scheme |
+| 🏆 [Achievement Certificate](Certificate.jpg) | Recognition in algorithmic excellence |
 
 ---
 
@@ -148,9 +148,9 @@ Academic assignments for comprehensive learning and practice:
 
 | # | Assignment | Description | Date | Link |
 |:-:|:---|:---|:---:|:---:|
-| 1 | **Assignment 1** | Fundamental concepts in algorithm analysis | January 23, 2020 | [📄 View](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Assignments/AOA_Assignment-1.pdf) |
-| 2 | **Assignment 2** | Advanced topics in algorithm design | February 13, 2020 | [📄 View](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Assignments/AOA_Assignment-2.pdf) |
-| 3 | **Friday Assignment** | Special assignment | March 13, 2020 | [📄 View](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/Assignments/AOA_Friday_March_13_2020.pdf) |
+| 1 | **Assignment 1** | Fundamental concepts in algorithm analysis | January 23, 2020 | [📄 View](Assignments/AOA_Assignment-1.pdf) |
+| 2 | **Assignment 2** | Advanced topics in algorithm design | February 13, 2020 | [📄 View](Assignments/AOA_Assignment-2.pdf) |
+| 3 | **Friday Assignment** | Special assignment | March 13, 2020 | [📄 View](Assignments/AOA_Friday_March_13_2020.pdf) |
 
 **Topics Covered**: Algorithm Analysis (time/space complexity) · Design Paradigms (Divide & Conquer, Greedy, Dynamic Programming, Backtracking) · Sorting & Searching · Graph Algorithms · NP-Completeness
 
@@ -162,7 +162,7 @@ Mid-semester practice assessment:
 
 | Test | Date | Time | Class | Link |
 |:---|:---:|:---:|:---:|:---:|
-| **Practice Test AOA** | April 5, 2020 | 10:00 AM - 11:00 AM | SE B-50 | [📄 View](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/AOA_Test_B-50.pdf) |
+| **Practice Test AOA** | April 5, 2020 | 10:00 AM - 11:00 AM | SE B-50 | [📄 View](AOA_Test_B-50.pdf) |
 
 ---
 
@@ -258,7 +258,7 @@ The laboratory component (CSL401) focuses on hands-on implementation of various 
      ========================================================================================= -->
 ## Syllabus
 
-> 📋 **[Official CBCGS Syllabus](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/blob/main/SE-Comps_CBCGS_Syllabus.pdf)**  
+> 📋 **[Official CBCGS Syllabus](SE-Comps_CBCGS_Syllabus.pdf)**  
 > Complete Second Year Computer Engineering syllabus document from the University of Mumbai, including detailed course outcomes, assessment criteria, and module specifications for Analysis of Algorithm and Analysis of Algorithm Lab.
 
 > [!IMPORTANT]
