@@ -246,10 +246,10 @@ The laboratory component (CSL401) focuses on hands-on implementation of various 
 
 ### Laboratory Documentation
 
-| Resource | Description |
-|:---|:---|
-| [Laboratory Journal](AOA%20Lab/PRACTICAL%20LAB.pdf) | Complete record of experiments with code, outputs, and analysis |
-| [Lab README](AOA%20Lab/) | Detailed navigation guide with program descriptions |
+| # | Resource | Description |
+|:-:|:---|:---|
+| 1 | [Laboratory Journal](AOA%20Lab/PRACTICAL%20LAB.pdf) | Complete record of experiments with code, outputs, and analysis |
+| 2 | [Lab README](AOA%20Lab/) | Detailed navigation guide with program descriptions |
 
 ---
 
