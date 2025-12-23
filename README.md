@@ -199,7 +199,7 @@ The laboratory component (CSL401) focuses on hands-on implementation of various 
 ### Program Details
 
 <details>
-<summary><strong>🔢 Experiment 1: Sorting Algorithms (2 Programs)</strong></summary>
+<summary><strong>Experiment 1: Sorting Algorithms (2 Programs)</strong></summary>
 
 | Program | Algorithm | Time Complexity | Code |
 |:---|:---|:---|:---|
@@ -209,7 +209,7 @@ The laboratory component (CSL401) focuses on hands-on implementation of various 
 </details>
 
 <details>
-<summary><strong>🔍 Experiment 2: Divide and Conquer - Search (1 Program)</strong></summary>
+<summary><strong>Experiment 2: Divide and Conquer - Search (1 Program)</strong></summary>
 
 | Program | Algorithm | Time Complexity | Code |
 |:---|:---|:---|:---|
@@ -218,7 +218,7 @@ The laboratory component (CSL401) focuses on hands-on implementation of various 
 </details>
 
 <details>
-<summary><strong>🔄 Experiment 3: Divide and Conquer - Sort (1 Program)</strong></summary>
+<summary><strong>Experiment 3: Divide and Conquer - Sort (1 Program)</strong></summary>
 
 | Program | Algorithm | Time Complexity | Code |
 |:---|:---|:---|:---|
@@ -227,7 +227,7 @@ The laboratory component (CSL401) focuses on hands-on implementation of various 
 </details>
 
 <details>
-<summary><strong>🧬 Experiment 4: Dynamic Programming (1 Program)</strong></summary>
+<summary><strong>Experiment 4: Dynamic Programming (1 Program)</strong></summary>
 
 | Program | Algorithm | Time Complexity | Code |
 |:---|:---|:---|:---|
@@ -236,7 +236,7 @@ The laboratory component (CSL401) focuses on hands-on implementation of various 
 </details>
 
 <details>
-<summary><strong>🗺️ Experiment 5: Graph Algorithms (1 Program)</strong></summary>
+<summary><strong>Experiment 5: Graph Algorithms (1 Program)</strong></summary>
 
 | Program | Algorithm | Time Complexity | Code |
 |:---|:---|:---|:---|
@@ -248,8 +248,8 @@ The laboratory component (CSL401) focuses on hands-on implementation of various 
 
 | Resource | Description |
 |:---|:---|
-| 🧪 [Laboratory Journal](AOA%20Lab/PRACTICAL%20LAB.pdf) | Complete record of experiments with code, outputs, and analysis |
-| 📖 [Lab README](AOA%20Lab/) | Detailed navigation guide with program descriptions |
+| [Laboratory Journal](AOA%20Lab/PRACTICAL%20LAB.pdf) | Complete record of experiments with code, outputs, and analysis |
+| [Lab README](AOA%20Lab/) | Detailed navigation guide with program descriptions |
 
 ---
 
@@ -258,7 +258,7 @@ The laboratory component (CSL401) focuses on hands-on implementation of various 
      ========================================================================================= -->
 ## Syllabus
 
-> 📋 **[Official CBCGS Syllabus](SE-Comps_CBCGS_Syllabus.pdf)**  
+> **[Official CBCGS Syllabus](SE-Comps_CBCGS_Syllabus.pdf)**  
 > Complete Second Year Computer Engineering syllabus document from the University of Mumbai, including detailed course outcomes, assessment criteria, and module specifications for Analysis of Algorithm and Analysis of Algorithm Lab.
 
 > [!IMPORTANT]
