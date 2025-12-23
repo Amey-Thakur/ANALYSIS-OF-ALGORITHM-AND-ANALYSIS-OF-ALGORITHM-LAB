@@ -81,7 +81,7 @@ gcc Insertion_Sort.c -o Insertion_Sort
 ## Experiment 1: Sorting Algorithms (2 Programs)
 
 | # | Program | Algorithm | Time Complexity |
-|:---|:---|:---|:---|
+|:---|:---|:---|:-:|
 | 1 | [Insertion_Sort.c](Experiment-1/Insertion_Sort.c) | Insertion Sort | O(n²) |
 | 2 | [Selection_Sort.c](Experiment-1/Selection_Sort.c) | Selection Sort | O(n²) |
 
@@ -93,7 +93,7 @@ gcc Insertion_Sort.c -o Insertion_Sort
 ## Experiment 2: Divide and Conquer - Search (1 Program)
 
 | # | Program | Algorithm | Time Complexity |
-|:---|:---|:---|:---|
+|:---|:---|:---|:-:|
 | 1 | [Binary_Search.c](Experiment-2/Binary_Search.c) | Recursive Binary Search | O(log n) |
 
 ---
@@ -104,7 +104,7 @@ gcc Insertion_Sort.c -o Insertion_Sort
 ## Experiment 3: Divide and Conquer - Sort (1 Program)
 
 | # | Program | Algorithm | Time Complexity |
-|:---|:---|:---|:---|
+|:---|:---|:---|:-:|
 | 1 | [Merge_Sort.c](Experiment-3/Merge_Sort.c) | Merge Sort | O(n log n) |
 
 ---
@@ -115,7 +115,7 @@ gcc Insertion_Sort.c -o Insertion_Sort
 ## Experiment 4: Dynamic Programming (1 Program)
 
 | # | Program | Algorithm | Time Complexity |
-|:---|:---|:---|:---|
+|:---|:---|:---|:-:|
 | 1 | [Longest_Common_Subsequence.c](Experiment-4/Longest_Common_Subsequence.c) | LCS (Dynamic Programming) | O(m×n) |
 
 ---
@@ -126,7 +126,7 @@ gcc Insertion_Sort.c -o Insertion_Sort
 ## Experiment 5: Graph Algorithms (1 Program)
 
 | # | Program | Algorithm | Time Complexity |
-|:---|:---|:---|:---|
+|:---|:---|:---|:-:|
 | 1 | [All_Pair_Shortest_Path.c](Experiment-5/All_Pair_Shortest_Path.c) | Floyd-Warshall | O(n³) |
 
 ---
