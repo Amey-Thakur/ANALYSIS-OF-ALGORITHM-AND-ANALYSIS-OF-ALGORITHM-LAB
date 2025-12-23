@@ -135,10 +135,10 @@ Study materials and planning resources for effective exam preparation:
 
 | Resource | Description |
 |:---|:---|
-| 📝 [Syllabus Breakdown](My%20Preparation/Syllabus.png) | Detailed module-wise syllabus notes |
-| 📊 [Module Planning](My%20Preparation/Modules.png) | Topic organization and study schedule |
-| 🎯 [Examination Blueprint](Blueprint%20(AOA).png) | Question paper pattern and marking scheme |
-| 🏆 [Achievement Certificate](Certificate.jpg) | Recognition in algorithmic excellence |
+| [Syllabus Breakdown](My%20Preparation/Syllabus.png) | Detailed module-wise syllabus notes |
+| [Module Planning](My%20Preparation/Modules.png) | Topic organization and study schedule |
+| [Examination Blueprint](Blueprint%20(AOA).png) | Question paper pattern and marking scheme |
+| [Achievement Certificate](Certificate.jpg) | Recognition in algorithmic excellence |
 
 ---
 
@@ -148,9 +148,9 @@ Academic assignments for comprehensive learning and practice:
 
 | # | Assignment | Description | Date | Link |
 |:-:|:---|:---|:---:|:---:|
-| 1 | **Assignment 1** | Fundamental concepts in algorithm analysis | January 23, 2020 | [📄 View](Assignments/AOA_Assignment-1.pdf) |
-| 2 | **Assignment 2** | Advanced topics in algorithm design | February 13, 2020 | [📄 View](Assignments/AOA_Assignment-2.pdf) |
-| 3 | **Friday Assignment** | Special assignment | March 13, 2020 | [📄 View](Assignments/AOA_Friday_March_13_2020.pdf) |
+| 1 | **Assignment 1** | Fundamental concepts in algorithm analysis | January 23, 2020 | [View](Assignments/AOA_Assignment-1.pdf) |
+| 2 | **Assignment 2** | Advanced topics in algorithm design | February 13, 2020 | [View](Assignments/AOA_Assignment-2.pdf) |
+| 3 | **Friday Assignment** | Special assignment | March 13, 2020 | [View](Assignments/AOA_Friday_March_13_2020.pdf) |
 
 **Topics Covered**: Algorithm Analysis (time/space complexity) · Design Paradigms (Divide & Conquer, Greedy, Dynamic Programming, Backtracking) · Sorting & Searching · Graph Algorithms · NP-Completeness
 
