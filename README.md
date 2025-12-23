@@ -160,9 +160,9 @@ Academic assignments for comprehensive learning and practice:
 
 Practice assessment details:
 
-| # | Test | Date | Time | Class | Link |
-|:-:|:---|:---:|:---:|:---:|:---:|
-| 1 | **Practice Test AOA** | May 6, 2020 | 10:00 AM - 11:00 AM | SE B-50 | [View](AOA_Test_B-50.pdf) |
+| # | Test | Date | Time | Class |
+|:-:|:---|:-:|:-:|:-:|
+| 1 | [**Practice Test AOA**](AOA_Test_B-50.pdf) | May 6, 2020 | 10:00 AM - 11:00 AM | SE B-50 |
 
 ---
 
