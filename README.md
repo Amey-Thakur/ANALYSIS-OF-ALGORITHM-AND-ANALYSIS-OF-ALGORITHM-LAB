@@ -146,11 +146,11 @@ Study materials and planning resources for effective exam preparation:
 
 Academic assignments for comprehensive learning and practice:
 
-| # | Assignment | Description | Date | Link |
-|:-:|:---|:---|:---:|:---:|
-| 1 | **Assignment 1** | Fundamental concepts in algorithm analysis | January 23, 2020 | [View](Assignments/AOA_Assignment-1.pdf) |
-| 2 | **Assignment 2** | Advanced topics in algorithm design | February 13, 2020 | [View](Assignments/AOA_Assignment-2.pdf) |
-| 3 | **Friday Assignment** | Special assignment | March 13, 2020 | [View](Assignments/AOA_Friday_March_13_2020.pdf) |
+| # | Assignment | Description | Date |
+|:-:|:---|:---|:-:|
+| 1 | [**Assignment 1**](Assignments/AOA_Assignment-1.pdf) | Fundamental concepts in algorithm analysis | January 23, 2020 |
+| 2 | [**Assignment 2**](Assignments/AOA_Assignment-2.pdf) | Advanced topics in algorithm design | February 13, 2020 |
+| 3 | [**Friday Assignment**](Assignments/AOA_Friday_March_13_2020.pdf) | Special assignment | March 13, 2020 |
 
 **Topics Covered**: Algorithm Analysis (time/space complexity) · Design Paradigms (Divide & Conquer, Greedy, Dynamic Programming, Backtracking) · Sorting & Searching · Graph Algorithms · NP-Completeness
 
