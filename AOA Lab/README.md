@@ -21,7 +21,7 @@
   ---
 
   <!-- Navigation Links -->
-  **[Experiment 1](#experiment-1-sorting-algorithms-2-programs)** &nbsp;·&nbsp; **[Experiment 2](#experiment-2-divide-and-conquer---search-1-program)** &nbsp;·&nbsp; **[Experiment 3](#experiment-3-divide-and-conquer---sort-1-program)** &nbsp;·&nbsp; **[Experiment 4](#experiment-4-dynamic-programming-1-program)** &nbsp;·&nbsp; **[Experiment 5](#experiment-5-graph-algorithms-1-program)** &nbsp;·&nbsp; **[How to Use](#how-to-use)** &nbsp;·&nbsp; **[Learning Path](#learning-path)**
+  **[How to Use](#how-to-use)** &nbsp;·&nbsp; **[Learning Path](#learning-path)** &nbsp;·&nbsp; **[Experiment 1](#experiment-1-sorting-algorithms-2-programs)** &nbsp;·&nbsp; **[Experiment 2](#experiment-2-divide-and-conquer---search-1-program)** &nbsp;·&nbsp; **[Experiment 3](#experiment-3-divide-and-conquer---sort-1-program)** &nbsp;·&nbsp; **[Experiment 4](#experiment-4-dynamic-programming-1-program)** &nbsp;·&nbsp; **[Experiment 5](#experiment-5-graph-algorithms-1-program)**
 
 </div>
 
@@ -32,6 +32,46 @@
 
 > [!WARNING]
 > **Complexity Constraints**: Using a brute-force approach (O(n²)) for large inputs (n > 10⁵) will result in **Time Limit Exceeded (TLE)** errors. Always analyze the constraints before implementation and optimize your logic to use efficient paradigms (Divide & Conquer or Dynamic Programming) where applicable to meet execution limits.
+
+---
+
+<!-- =========================================================================================
+                                     HOW TO USE SECTION
+     ========================================================================================= -->
+## How to Use
+
+1. **Navigate** to the desired experiment folder
+2. **Open** the `.c` file
+3. **Compile** using: `gcc filename.c -o output`
+4. **Run** using: `./output` (Linux/Mac) or `output.exe` (Windows)
+
+Example:
+```bash
+cd "Experiment-1"
+gcc Insertion_Sort.c -o Insertion_Sort
+./Insertion_Sort
+```
+
+---
+
+<!-- =========================================================================================
+                                     LEARNING PATH SECTION
+     ========================================================================================= -->
+## Learning Path
+
+**Beginner Level:**
+- Start with Experiment 1 (Sorting Algorithms)
+- Understand basic algorithm analysis with insertion and selection sort
+
+**Intermediate Level:**
+- Explore Experiment 2 & 3 (Divide and Conquer)
+- Learn recursive problem-solving with binary search and merge sort
+
+**Advanced Level:**
+- Study Experiment 4 (Dynamic Programming)
+- Understand optimal substructure with LCS
+- Analyze Experiment 5 (Graph Algorithms)
+- Master all-pairs shortest path with Floyd-Warshall
 
 ---
 
@@ -89,47 +129,6 @@
 |:---|:---|:---|:---|
 | 1 | [All_Pair_Shortest_Path.c](Experiment-5/All_Pair_Shortest_Path.c) | Floyd-Warshall | O(n³) |
 
----
-
-<!-- =========================================================================================
-                                     HOW TO USE SECTION
-     ========================================================================================= -->
-## How to Use
-
-1. **Navigate** to the desired experiment folder
-2. **Open** the `.c` file
-3. **Compile** using: `gcc filename.c -o output`
-4. **Run** using: `./output` (Linux/Mac) or `output.exe` (Windows)
-
-Example:
-```bash
-cd "Experiment-1"
-gcc Insertion_Sort.c -o Insertion_Sort
-./Insertion_Sort
-```
-
----
-
-<!-- =========================================================================================
-                                     LEARNING PATH SECTION
-     ========================================================================================= -->
-## Learning Path
-
-**Beginner Level:**
-- Start with Experiment 1 (Sorting Algorithms)
-- Understand basic algorithm analysis with insertion and selection sort
-
-**Intermediate Level:**
-- Explore Experiment 2 & 3 (Divide and Conquer)
-- Learn recursive problem-solving with binary search and merge sort
-
-**Advanced Level:**
-- Study Experiment 4 (Dynamic Programming)
-- Understand optimal substructure with LCS
-- Analyze Experiment 5 (Graph Algorithms)
-- Master all-pairs shortest path with Floyd-Warshall
-
----
 
 <!-- =========================================================================================
                                      FOOTER SECTION
@@ -139,7 +138,7 @@ gcc Insertion_Sort.c -o Insertion_Sort
   <!-- Footer Navigation -->
   **[Back to Top](#analysis-of-algorithm-lab)**
 
-  **[Experiment 1](#experiment-1-sorting-algorithms-2-programs)** &nbsp;·&nbsp; **[Experiment 2](#experiment-2-divide-and-conquer---search-1-program)** &nbsp;·&nbsp; **[Experiment 3](#experiment-3-divide-and-conquer---sort-1-program)** &nbsp;·&nbsp; **[Experiment 4](#experiment-4-dynamic-programming-1-program)** &nbsp;·&nbsp; **[Experiment 5](#experiment-5-graph-algorithms-1-program)** &nbsp;·&nbsp; **[How to Use](#how-to-use)** &nbsp;·&nbsp; **[Learning Path](#learning-path)**
+  **[How to Use](#how-to-use)** &nbsp;·&nbsp; **[Learning Path](#learning-path)** &nbsp;·&nbsp; **[Experiment 1](#experiment-1-sorting-algorithms-2-programs)** &nbsp;·&nbsp; **[Experiment 2](#experiment-2-divide-and-conquer---search-1-program)** &nbsp;·&nbsp; **[Experiment 3](#experiment-3-divide-and-conquer---sort-1-program)** &nbsp;·&nbsp; **[Experiment 4](#experiment-4-dynamic-programming-1-program)** &nbsp;·&nbsp; **[Experiment 5](#experiment-5-graph-algorithms-1-program)**
 
   <br>
 
