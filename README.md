@@ -188,7 +188,7 @@ The laboratory component (CSL401) focuses on hands-on implementation of various 
 
 ### Laboratory Experiments
 
-| Experiment | Source Codes | Topics Covered | Repository |
+| Experiment | Programs | Topics Covered | Repository |
 |:-:|:-:|:---|:---|
 | 1 | 2 | Insertion Sort, Selection Sort | [View Source Code](AOA%20Lab/Experiment-1/) |
 | 2 | 1 | Binary Search (Divide and Conquer) | [View Source Code](AOA%20Lab/Experiment-2/) |
