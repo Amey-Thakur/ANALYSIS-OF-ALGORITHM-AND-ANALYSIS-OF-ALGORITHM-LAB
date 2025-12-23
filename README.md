@@ -89,7 +89,7 @@ This collection includes **10 comprehensive reference materials** covering all m
 
 <div align="center">
 
-**Collaborative Study Notes**
+**Collaborative Study Notes by Amey & Mega**
 
 <table>
 <tr>
