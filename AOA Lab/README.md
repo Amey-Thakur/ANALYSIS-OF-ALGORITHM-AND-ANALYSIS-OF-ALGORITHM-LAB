@@ -21,7 +21,7 @@
   ---
 
   <!-- Navigation Links -->
-  **[🔢 Experiment 1](#-experiment-1-sorting-algorithms-2-programs)** &nbsp;·&nbsp; **[🔍 Experiment 2](#-experiment-2-divide-and-conquer---search-1-program)** &nbsp;·&nbsp; **[🔄 Experiment 3](#-experiment-3-divide-and-conquer---sort-1-program)** &nbsp;·&nbsp; **[🧬 Experiment 4](#-experiment-4-dynamic-programming-1-program)** &nbsp;·&nbsp; **[🗺️ Experiment 5](#-experiment-5-graph-algorithms-1-program)** &nbsp;·&nbsp; **[🚀 How to Use](#-how-to-use)** &nbsp;·&nbsp; **[📖 Learning Path](#-learning-path)**
+  **[Experiment 1](#experiment-1-sorting-algorithms-2-programs)** &nbsp;·&nbsp; **[Experiment 2](#experiment-2-divide-and-conquer---search-1-program)** &nbsp;·&nbsp; **[Experiment 3](#experiment-3-divide-and-conquer---sort-1-program)** &nbsp;·&nbsp; **[Experiment 4](#experiment-4-dynamic-programming-1-program)** &nbsp;·&nbsp; **[Experiment 5](#experiment-5-graph-algorithms-1-program)** &nbsp;·&nbsp; **[How to Use](#how-to-use)** &nbsp;·&nbsp; **[Learning Path](#learning-path)**
 
 </div>
 
@@ -38,7 +38,7 @@
 <!-- =========================================================================================
                                      EXPERIMENT 1
      ========================================================================================= -->
-## 🔢 Experiment 1: Sorting Algorithms (2 Programs)
+## Experiment 1: Sorting Algorithms (2 Programs)
 
 | # | Program | Algorithm | Time Complexity |
 |:---|:---|:---|:---|
@@ -50,7 +50,7 @@
 <!-- =========================================================================================
                                      EXPERIMENT 2
      ========================================================================================= -->
-## 🔍 Experiment 2: Divide and Conquer - Search (1 Program)
+## Experiment 2: Divide and Conquer - Search (1 Program)
 
 | # | Program | Algorithm | Time Complexity |
 |:---|:---|:---|:---|
@@ -61,7 +61,7 @@
 <!-- =========================================================================================
                                      EXPERIMENT 3
      ========================================================================================= -->
-## 🔄 Experiment 3: Divide and Conquer - Sort (1 Program)
+## Experiment 3: Divide and Conquer - Sort (1 Program)
 
 | # | Program | Algorithm | Time Complexity |
 |:---|:---|:---|:---|
@@ -72,7 +72,7 @@
 <!-- =========================================================================================
                                      EXPERIMENT 4
      ========================================================================================= -->
-## 🧬 Experiment 4: Dynamic Programming (1 Program)
+## Experiment 4: Dynamic Programming (1 Program)
 
 | # | Program | Algorithm | Time Complexity |
 |:---|:---|:---|:---|
@@ -83,7 +83,7 @@
 <!-- =========================================================================================
                                      EXPERIMENT 5
      ========================================================================================= -->
-## 🗺️ Experiment 5: Graph Algorithms (1 Program)
+## Experiment 5: Graph Algorithms (1 Program)
 
 | # | Program | Algorithm | Time Complexity |
 |:---|:---|:---|:---|
@@ -94,7 +94,7 @@
 <!-- =========================================================================================
                                      HOW TO USE SECTION
      ========================================================================================= -->
-## 🚀 How to Use
+## How to Use
 
 1. **Navigate** to the desired experiment folder
 2. **Open** the `.c` file
@@ -113,7 +113,7 @@ gcc Insertion_Sort.c -o Insertion_Sort
 <!-- =========================================================================================
                                      LEARNING PATH SECTION
      ========================================================================================= -->
-## 📖 Learning Path
+## Learning Path
 
 **Beginner Level:**
 - Start with Experiment 1 (Sorting Algorithms)
@@ -137,9 +137,9 @@ gcc Insertion_Sort.c -o Insertion_Sort
 <div align="center">
 
   <!-- Footer Navigation -->
-  **[⬆ Back to Top](#analysis-of-algorithm-lab)**
+  **[Back to Top](#analysis-of-algorithm-lab)**
 
-  **[🔢 Experiment 1](#-experiment-1-sorting-algorithms-2-programs)** &nbsp;·&nbsp; **[🔍 Experiment 2](#-experiment-2-divide-and-conquer---search-1-program)** &nbsp;·&nbsp; **[🔄 Experiment 3](#-experiment-3-divide-and-conquer---sort-1-program)** &nbsp;·&nbsp; **[🧬 Experiment 4](#-experiment-4-dynamic-programming-1-program)** &nbsp;·&nbsp; **[🗺️ Experiment 5](#-experiment-5-graph-algorithms-1-program)** &nbsp;·&nbsp; **[🚀 How to Use](#-how-to-use)** &nbsp;·&nbsp; **[📖 Learning Path](#-learning-path)**
+  **[Experiment 1](#experiment-1-sorting-algorithms-2-programs)** &nbsp;·&nbsp; **[Experiment 2](#experiment-2-divide-and-conquer---search-1-program)** &nbsp;·&nbsp; **[Experiment 3](#experiment-3-divide-and-conquer---sort-1-program)** &nbsp;·&nbsp; **[Experiment 4](#experiment-4-dynamic-programming-1-program)** &nbsp;·&nbsp; **[Experiment 5](#experiment-5-graph-algorithms-1-program)** &nbsp;·&nbsp; **[How to Use](#how-to-use)** &nbsp;·&nbsp; **[Learning Path](#learning-path)**
 
   <br>
 
