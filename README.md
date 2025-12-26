@@ -148,9 +148,9 @@ Academic assignments for comprehensive learning and practice:
 
 | # | Assignment | Description | Date |
 |:-:|:---|:---|:-:|
-| 1 | [**Assignment 1**](Assignments/AOA_Assignment-1.pdf) | Fundamental concepts in algorithm analysis | January 23, 2020 |
-| 2 | [**Assignment 2**](Assignments/AOA_Assignment-2.pdf) | Advanced topics in algorithm design | February 13, 2020 |
-| 3 | [**Friday Assignment**](Assignments/AOA_Friday_March_13_2020.pdf) | Special assignment | March 13, 2020 |
+| 1 | [Assignment 1](Assignments/AOA_Assignment-1.pdf) | Fundamental concepts in algorithm analysis | January 23, 2020 |
+| 2 | [Assignment 2](Assignments/AOA_Assignment-2.pdf) | Advanced topics in algorithm design | February 13, 2020 |
+| 3 | [Friday Assignment](Assignments/AOA_Friday_March_13_2020.pdf) | Special assignment | March 13, 2020 |
 
 **Topics Covered**: Algorithm Analysis (time/space complexity) · Design Paradigms (Divide & Conquer, Greedy, Dynamic Programming, Backtracking) · Sorting & Searching · Graph Algorithms · NP-Completeness
 
@@ -162,7 +162,7 @@ Practice assessment details:
 
 | # | Test | Date | Time | Class |
 |:-:|:---|:-:|:-:|:-:|
-| 1 | [**Practice Test AOA**](AOA_Test_B-50.pdf) | May 6, 2020 | 10:00 AM - 11:00 AM | SE B-50 |
+| 1 | [Practice Test AOA](AOA_Test_B-50.pdf) | May 6, 2020 | 10:00 AM - 11:00 AM | SE B-50 |
 
 ---
 
@@ -312,7 +312,7 @@ This repository represents a comprehensive collection of study materials, refere
 
 ### Acknowledgments
 
-Grateful acknowledgment to [Mega Satish](https://github.com/msatmod) for her exceptional contribution to this repository through "THE WALL" - comprehensive chapter-wise notes that became an invaluable resource for understanding complex algorithmic concepts. Her constant support, patience, and clarity throughout this journey made a real difference. Learning alongside her was transformative, not only because she explained concepts so clearly, but because she truly cared about understanding them together. Her thoughtful approach to teaching, openness to discussion, and steady encouragement turned challenges into meaningful learning moments. This work reflects the growth that came from learning side by side. Thank you, Mega, for everything you shared and taught along the way.
+Grateful acknowledgment to **[Mega Satish](https://github.com/msatmod)** for her exceptional contribution to this repository through "THE WALL" - comprehensive chapter-wise notes that became an invaluable resource for understanding complex algorithmic concepts. Her constant support, patience, and clarity throughout this journey made a real difference. Learning alongside her was transformative, not only because she explained concepts so clearly, but because she truly cared about understanding them together. Her thoughtful approach to teaching, openness to discussion, and steady encouragement turned challenges into meaningful learning moments. This work reflects the growth that came from learning side by side. Thank you, Mega, for everything you shared and taught along the way.
 
 Special thanks to the faculty members of the Department of Computer Engineering at Terna Engineering College for their guidance and instruction in Analysis of Algorithm. Their clear teaching and continued support helped develop a strong understanding of algorithmic design and complexity analysis.
 

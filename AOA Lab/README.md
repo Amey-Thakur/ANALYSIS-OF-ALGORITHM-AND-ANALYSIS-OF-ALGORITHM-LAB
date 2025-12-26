@@ -137,9 +137,9 @@ gcc Insertion_Sort.c -o Insertion_Sort
 <div align="center">
 
   <!-- Footer Navigation -->
-  **[↑ Back to Top](#analysis-of-algorithm-lab)**
+  [↑ Back to Top](#analysis-of-algorithm-lab)
 
-  **[How to Use](#how-to-use)** &nbsp;·&nbsp; **[Learning Path](#learning-path)** &nbsp;·&nbsp; **[Experiment 1](#experiment-1-sorting-algorithms-2-programs)** &nbsp;·&nbsp; **[Experiment 2](#experiment-2-divide-and-conquer---search-1-program)** &nbsp;·&nbsp; **[Experiment 3](#experiment-3-divide-and-conquer---sort-1-program)** &nbsp;·&nbsp; **[Experiment 4](#experiment-4-dynamic-programming-1-program)** &nbsp;·&nbsp; **[Experiment 5](#experiment-5-graph-algorithms-1-program)**
+  [How to Use](#how-to-use) &nbsp;·&nbsp; [Learning Path](#learning-path) &nbsp;·&nbsp; [Experiment 1](#experiment-1-sorting-algorithms-2-programs) &nbsp;·&nbsp; [Experiment 2](#experiment-2-divide-and-conquer---search-1-program) &nbsp;·&nbsp; [Experiment 3](#experiment-3-divide-and-conquer---sort-1-program) &nbsp;·&nbsp; [Experiment 4](#experiment-4-dynamic-programming-1-program) &nbsp;·&nbsp; [Experiment 5](#experiment-5-graph-algorithms-1-program)
 
   <br>
 
@@ -147,7 +147,7 @@ gcc Insertion_Sort.c -o Insertion_Sort
 
   ---
 
-  ### [Analysis of Algorithm and Analysis of Algorithm Lab](https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB)
+  ### [Analysis of Algorithm and Analysis of Algorithm Lab](../)
 
   **CSC402 & CSL401 · Semester IV · Computer Engineering**
 
