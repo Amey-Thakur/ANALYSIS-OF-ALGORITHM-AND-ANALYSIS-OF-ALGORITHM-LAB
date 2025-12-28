@@ -1,0 +1,66 @@
+# ALL REPOSITORIES
+# ----------------
+# General
+.DS_Store
+Thumbs.db
+*.swp
+*.log
+*.tmp
+*.bak
+*~
+
+# Windows
+desktop.ini
+$RECYCLE.BIN/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains
+.idea/
+*.iml
+
+# Visual Studio
+*.suo
+*.sln
+*.user
+*.pdb
+*.idb
+*.tlog
+*.vs/
+Debug/
+Release/
+x64/
+x86/
+
+# C/C++ Build Artifacts
+*.exe
+*.dll
+*.so
+*.dylib
+*.o
+*.obj
+*.a
+*.lib
+*.out
+*.app
+bin/
+obj/
+
+# Java Build Artifacts
+*.class
+*.jar
+*.war
+*.ear
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+
+# Git
+*.orig
