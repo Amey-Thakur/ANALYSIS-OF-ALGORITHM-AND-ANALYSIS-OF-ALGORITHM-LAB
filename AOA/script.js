@@ -14,6 +14,31 @@
 // Interactive Algorithm Visualizer Logic (AOA Hero)
 // ================================================================
 
+// Sound Effect Logic
+function playCelebrateSound() {
+    try {
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        if (!AudioContext) return;
+        const audioCtx = new AudioContext();
+
+        function playNote(freq, start, duration) {
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(freq, start);
+            gain.gain.setValueAtTime(0.1, start);
+            gain.gain.exponentialRampToValueAtTime(0.01, start + duration);
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+            osc.start(start);
+            osc.stop(start + duration);
+        }
+
+        playNote(523.25, audioCtx.currentTime, 0.2); // C5
+        playNote(783.99, audioCtx.currentTime + 0.1, 0.4); // G5
+    } catch (e) { console.error('Audio failed', e); }
+}
+
 // Tab Switching Logic
 function switchTab(tabId) {
     // Hide all tabs
@@ -120,6 +145,15 @@ function runNetworkViz() {
         if (step >= steps.length) {
             clearInterval(interval);
             status.innerHTML = `Path Optimized! Cost: 12ms. <span style="color:#16a34a">Server 'End' reached.</span>`;
+            playCelebrateSound();
+            if (typeof confetti === 'function') {
+                confetti({
+                    particleCount: 100,
+                    spread: 70,
+                    origin: { y: 0.6 },
+                    colors: ['#16a34a', '#8b5cf6', '#ffffff']
+                });
+            }
             return;
         }
         drawGraph(steps[step]);
@@ -275,6 +309,7 @@ function runSortRace() {
     // Declare Winner
     setTimeout(() => {
         result.innerHTML = `Winner: <span class="text-info fw-bold">Binary Search</span> (O(log n) is exponentially faster!)`;
+        playCelebrateSound();
         if (typeof confetti === 'function') {
             confetti({
                 particleCount: 150,
