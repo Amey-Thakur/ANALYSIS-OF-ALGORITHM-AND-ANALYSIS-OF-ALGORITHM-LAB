@@ -1358,3 +1358,19 @@ body {
     background: var(--border-color);
     border-radius: 3px;
 }
+
+/* Override for Visualizer Card Background */
+.card-custom.visualizer-bg {
+    background: linear-gradient(-45deg, #ffffff, #f0f4ff, #e0e7ff, #f8fafc);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+.card-custom.visualizer-bg .text-muted {
+    color: var(--text-secondary) !important;
+}
+
+[data-theme="dark"] .card-custom.visualizer-bg {
+    background: linear-gradient(-45deg, #0f172a, #1e293b, #0f172a, #1a237e);
+    background-size: 400% 400%;
+}
