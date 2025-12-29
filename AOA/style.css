@@ -314,8 +314,8 @@ h5 {
 .btn-primary-custom:hover {
     background: var(--accent-hover);
     transform: translateY(-2px);
-    color: #fff;
-    box-shadow: 0 10px 20px -5px rgba(37, 99, 235, 0.4);
+    color: #ffffff !important;
+    box-shadow: 0 10px 20px -5px rgba(22, 163, 74, 0.4);
 }
 
 /* Section Title */
