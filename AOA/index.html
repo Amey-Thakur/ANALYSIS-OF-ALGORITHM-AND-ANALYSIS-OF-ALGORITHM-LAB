@@ -363,13 +363,14 @@
                 <h3 id="interactive-title">Algorithmic Analysis Visualizer</h3>
             </div>
 
-            <div class="card-custom interactive-card mx-auto" style="max-width: 900px; padding: 0; overflow: hidden;">
+            <div class="card-custom interactive-card mx-auto visualizer-bg"
+                style="max-width: 900px; padding: 0; overflow: hidden;">
                 <!-- Custom Tab Navigation -->
                 <div class="algo-tabs d-flex border-bottom">
-                    <button class="algo-tab active" data-tab="network" onclick="switchTab('network')">
+                    <button class="algo-tab" data-tab="network" onclick="switchTab('network')">
                         <i class="fas fa-project-diagram me-2"></i>Network Optimizer
                     </button>
-                    <button class="algo-tab" data-tab="lcs" onclick="switchTab('lcs')">
+                    <button class="algo-tab active" data-tab="lcs" onclick="switchTab('lcs')">
                         <i class="fas fa-dna me-2"></i>String DNA
                     </button>
                     <button class="algo-tab" data-tab="sorting" onclick="switchTab('sorting')">
@@ -381,7 +382,7 @@
                 <div class="algo-content p-4" style="min-height: 400px; background: rgba(0,0,0,0.2);">
 
                     <!-- 1. Network Optimizer (Floyd-Warshall) -->
-                    <div id="tab-network" class="tab-pane active" style="display: block;">
+                    <div id="tab-network" class="tab-pane" style="display: none;">
                         <div class="d-flex justify-content-between align-items-center mb-3">
                             <h5 style="color: var(--accent-color);">Network Topology Analysis (Floyd-Warshall)</h5>
                             <button class="btn btn-sm btn-primary-custom" onclick="runNetworkViz()">
@@ -399,7 +400,7 @@
                     </div>
 
                     <!-- 2. String DNA (LCS) -->
-                    <div id="tab-lcs" class="tab-pane" style="display: none;">
+                    <div id="tab-lcs" class="tab-pane active" style="display: block;">
                         <div class="d-flex justify-content-between align-items-center mb-3">
                             <h5 style="color: var(--accent-color);">Longest Common Subsequence (LCS)</h5>
                             <button class="btn btn-sm btn-primary-custom" onclick="runLCS()">
