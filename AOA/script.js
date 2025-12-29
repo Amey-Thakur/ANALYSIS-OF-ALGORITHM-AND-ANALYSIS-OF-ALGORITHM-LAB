@@ -275,6 +275,14 @@ function runSortRace() {
     // Declare Winner
     setTimeout(() => {
         result.innerHTML = `Winner: <span class="text-info fw-bold">Binary Search</span> (O(log n) is exponentially faster!)`;
+        if (typeof confetti === 'function') {
+            confetti({
+                particleCount: 150,
+                spread: 100,
+                origin: { y: 0.6 },
+                colors: ['#16a34a', '#0ea5e9', '#ffffff']
+            });
+        }
     }, 4100);
 }
 
