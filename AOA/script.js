@@ -209,46 +209,73 @@ function runLCS() {
     }, 300);
 }
 
-// 3. Sorting Race
+// 3. Complexity Race (Grand)
 function runSortRace() {
-    const bar1 = document.getElementById('progress-insertion');
-    const bar2 = document.getElementById('progress-merge');
-    const time1 = document.getElementById('sort-time-1');
-    const time2 = document.getElementById('sort-time-2');
+    const bar1 = document.getElementById('race-bar-1'); // Binary Search
+    const bar2 = document.getElementById('progress-merge'); // Merge Sort
+    const bar3 = document.getElementById('progress-insertion'); // Insertion Sort
+    const bar4 = document.getElementById('race-bar-4'); // Floyd-Warshall
+
+    const time1 = document.getElementById('race-time-1');
+    const time2 = document.getElementById('race-time-2');
+    const time3 = document.getElementById('sort-time-1');
+    const time4 = document.getElementById('race-time-4');
     const result = document.getElementById('race-result');
 
     // Reset State
-    bar1.style.transition = 'none';
-    bar2.style.transition = 'none';
-    bar1.style.width = '0%';
-    bar2.style.width = '0%';
+    [bar1, bar2, bar3, bar4].forEach(b => {
+        if (b) {
+            b.style.transition = 'none';
+            b.style.width = '0%';
+        }
+    });
+
     time1.textContent = '0ms';
     time2.textContent = '0ms';
+    time3.textContent = '0ms';
+    time4.textContent = '0ms';
     result.textContent = 'Racing...';
 
-    // Force Reflow/Repaint to ensure reset happens before animation
+    // Force Reflow
     void bar1.offsetHeight;
     void bar2.offsetHeight;
+    void bar3.offsetHeight;
+    void bar4.offsetHeight;
 
     // Start Race
-    // Insertion Sort (Slow - simulates O(n^2))
+
+    // 1. Binary Search: O(log n) - Lightning Fast (200ms)
     setTimeout(() => {
-        bar1.style.transition = 'width 2s linear';
+        bar1.style.transition = 'width 0.2s cubic-bezier(0,0,0.2,1)';
         bar1.style.width = '100%';
-        setTimeout(() => time1.textContent = '2000ms', 2000);
+        setTimeout(() => time1.textContent = '2ms', 200);
     }, 50);
 
-    // Merge Sort (Fast - simulates O(n log n))
+    // 2. Merge Sort: O(n log n) - Fast (800ms)
     setTimeout(() => {
         bar2.style.transition = 'width 0.8s ease-out';
         bar2.style.width = '100%';
-        setTimeout(() => time2.textContent = '800ms', 800);
+        setTimeout(() => time2.textContent = '45ms', 800);
+    }, 50);
+
+    // 3. Insertion Sort: O(n²) - Slow (2000ms)
+    setTimeout(() => {
+        bar3.style.transition = 'width 2s linear';
+        bar3.style.width = '100%';
+        setTimeout(() => time3.textContent = '850ms', 2000);
+    }, 50);
+
+    // 4. Floyd-Warshall: O(n³) - Very Slow (4000ms)
+    setTimeout(() => {
+        bar4.style.transition = 'width 4s linear';
+        bar4.style.width = '100%';
+        setTimeout(() => time4.textContent = '4000ms', 4000);
     }, 50);
 
     // Declare Winner
     setTimeout(() => {
-        result.innerHTML = `Winner: <span class="text-success fw-bold">Merge Sort</span> (O(n log n) is significantly faster!)`;
-    }, 2100);
+        result.innerHTML = `Winner: <span class="text-info fw-bold">Binary Search</span> (O(log n) is exponentially faster!)`;
+    }, 4100);
 }
 
 // PWA Install Logic
