@@ -1,23 +1,31 @@
 {
-    "name": "AOA Lab Portfolio - Amey Thakur",
-    "short_name": "AOA Lab",
-    "description": "Analysis of Algorithm Lab Portfolio showcasing algorithm implementations in C.",
-    "start_url": ".",
+    "name": "Amey | AOA Lab Portfolio",
+    "short_name": "AOA Portfolio",
+    "description": "Scholarly portfolio for Analysis of Algorithm Laboratory featuring algorithm implementations and complexity analysis by Amey Thakur.",
+    "start_url": "./index.html",
+    "scope": "./",
     "display": "standalone",
+    "orientation": "portrait-primary",
     "background_color": "#0f172a",
     "theme_color": "#16a34a",
+    "categories": [
+        "education",
+        "development"
+    ],
+    "lang": "en",
+    "dir": "ltr",
     "icons": [
         {
             "src": "assets/icon-192.png",
             "sizes": "192x192",
             "type": "image/png",
-            "purpose": "any maskable"
+            "purpose": "maskable any"
         },
         {
             "src": "assets/icon-512.png",
             "sizes": "512x512",
             "type": "image/png",
-            "purpose": "any maskable"
+            "purpose": "maskable any"
         }
     ],
     "screenshots": [
@@ -25,13 +33,18 @@
             "src": "assets/screenshot-wide.png",
             "sizes": "1280x720",
             "type": "image/png",
-            "form_factor": "wide"
+            "form_factor": "wide",
+            "label": "AOA Lab Portfolio - Desktop View"
         },
         {
             "src": "assets/screenshot-narrow.png",
             "sizes": "720x1280",
             "type": "image/png",
-            "form_factor": "narrow"
+            "form_factor": "narrow",
+            "label": "AOA Lab Portfolio - Mobile View"
         }
-    ]
+    ],
+    "shortcuts": [],
+    "related_applications": [],
+    "prefer_related_applications": false
 }
