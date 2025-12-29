@@ -217,26 +217,35 @@ function runSortRace() {
     const time2 = document.getElementById('sort-time-2');
     const result = document.getElementById('race-result');
 
+    // Reset State
+    bar1.style.transition = 'none';
+    bar2.style.transition = 'none';
     bar1.style.width = '0%';
     bar2.style.width = '0%';
     time1.textContent = '0ms';
     time2.textContent = '0ms';
     result.textContent = 'Racing...';
 
+    // Force Reflow/Repaint to ensure reset happens before animation
+    void bar1.offsetHeight;
+    void bar2.offsetHeight;
+
+    // Start Race
     // Insertion Sort (Slow - simulates O(n^2))
     setTimeout(() => {
         bar1.style.transition = 'width 2s linear';
         bar1.style.width = '100%';
         setTimeout(() => time1.textContent = '2000ms', 2000);
-    }, 100);
+    }, 50);
 
     // Merge Sort (Fast - simulates O(n log n))
     setTimeout(() => {
         bar2.style.transition = 'width 0.8s ease-out';
         bar2.style.width = '100%';
         setTimeout(() => time2.textContent = '800ms', 800);
-    }, 100);
+    }, 50);
 
+    // Declare Winner
     setTimeout(() => {
         result.innerHTML = `Winner: <span class="text-success fw-bold">Merge Sort</span> (O(n log n) is significantly faster!)`;
     }, 2100);
