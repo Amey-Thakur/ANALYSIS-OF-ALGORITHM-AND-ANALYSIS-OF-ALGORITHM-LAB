@@ -11,6 +11,237 @@
  * ================================================================
  */
 
+// Interactive Algorithm Visualizer Logic (AOA Hero)
+// ================================================================
+
+// Tab Switching Logic
+function switchTab(tabId) {
+    // Hide all tabs
+    document.querySelectorAll('.tab-pane').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.algo-tab').forEach(el => el.classList.remove('active'));
+
+    // Show selected
+    document.getElementById(`tab-${tabId}`).style.display = 'block';
+    document.querySelector(`.algo-tab[data-tab="${tabId}"]`).classList.add('active');
+
+    // Trigger resize for canvas if needed
+    if (tabId === 'network') initNetworkCanvas();
+}
+
+// 1. Network Optimizer Visualizer
+let networkCtx, networkNodes = [];
+function initNetworkCanvas() {
+    const canvas = document.getElementById('networkCanvas');
+    if (!canvas) return;
+    networkCtx = canvas.getContext('2d');
+
+    // Create Amey-themed graph nodes
+    if (networkNodes.length === 0) {
+        networkNodes = [
+            { id: 'Start', x: 50, y: 150 },
+            { id: 'A', x: 250, y: 50 },
+            { id: 'B', x: 250, y: 250 },
+            { id: 'C', x: 450, y: 50 },
+            { id: 'D', x: 450, y: 250 },
+            { id: 'End', x: 650, y: 150 }
+        ];
+    }
+    drawGraph();
+}
+
+function drawGraph(activePath = []) {
+    if (!networkCtx) return;
+    const ctx = networkCtx;
+    ctx.clearRect(0, 0, 850, 300);
+
+    // Draw edges
+    ctx.strokeStyle = '#334155';
+    ctx.lineWidth = 2;
+    // Hardcoded edges for visual simplicity
+    const edges = [
+        [0, 1], [0, 2], [1, 3], [2, 4], [1, 4], [2, 3], [3, 5], [4, 5]
+    ];
+
+    edges.forEach(([s, e]) => {
+        const start = networkNodes[s];
+        const end = networkNodes[e];
+        ctx.beginPath();
+        ctx.moveTo(start.x, start.y);
+        ctx.lineTo(end.x, end.y);
+        ctx.stroke();
+    });
+
+    // Draw active path if any
+    if (activePath.length > 0) {
+        ctx.shadowColor = '#16a34a';
+        ctx.shadowBlur = 15;
+        ctx.strokeStyle = '#16a34a';
+        ctx.lineWidth = 4;
+        ctx.beginPath();
+        ctx.moveTo(networkNodes[activePath[0]].x, networkNodes[activePath[0]].y);
+        for (let i = 1; i < activePath.length; i++) {
+            ctx.lineTo(networkNodes[activePath[i]].x, networkNodes[activePath[i]].y);
+        }
+        ctx.stroke();
+        ctx.shadowBlur = 0;
+    }
+
+    // Draw nodes
+    networkNodes.forEach(node => {
+        ctx.beginPath();
+        ctx.arc(node.x, node.y, 20, 0, Math.PI * 2);
+        ctx.fillStyle = '#0f172a';
+        ctx.fill();
+        ctx.strokeStyle = '#16a34a';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+
+        ctx.fillStyle = '#e2e8f0';
+        ctx.font = '14px Poppins';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(node.id, node.x, node.y);
+    });
+}
+
+function runNetworkViz() {
+    const status = document.getElementById('network-status');
+    status.innerHTML = `<span style="color:#16a34a">Running Floyd-Warshall Algorithm... O(n³)</span>`;
+
+    // Simulation steps
+    let step = 0;
+    const steps = [
+        [0, 1],
+        [0, 1, 3],
+        [0, 1, 3, 5] // Shortest path
+    ];
+
+    const interval = setInterval(() => {
+        if (step >= steps.length) {
+            clearInterval(interval);
+            status.innerHTML = `Path Optimized! Cost: 12ms. <span style="color:#16a34a">Server 'End' reached.</span>`;
+            return;
+        }
+        drawGraph(steps[step]);
+        step++;
+    }, 800);
+}
+
+// 2. LCS String Matcher
+function runLCS() {
+    const s1 = document.getElementById('lcs-str1').value.toUpperCase();
+    const s2 = document.getElementById('lcs-str2').value.toUpperCase();
+    const grid = document.getElementById('lcs-grid');
+
+    let html = '<div style="display:flex; gap:5px;">';
+
+    // Simple visual simulation of matching
+    // Real logic just for visual effect:
+    let matches = [];
+    let i = 0, j = 0;
+    // Basic finding common chars roughly
+    for (let char of s1) {
+        if (s2.includes(char)) matches.push(char);
+    }
+
+    // Create visual blocks
+    grid.innerHTML = '';
+    const container = document.createElement('div');
+    container.style.textAlign = 'center';
+
+    // String 1 View
+    let row1 = document.createElement('div');
+    row1.className = 'd-flex justify-content-center gap-2 mb-3';
+    s1.split('').forEach((c, idx) => {
+        let span = document.createElement('span');
+        span.textContent = c;
+        span.className = 'badge bg-dark border border-secondary';
+        span.style.width = '30px';
+        span.style.height = '30px';
+        span.style.display = 'flex';
+        span.style.alignItems = 'center';
+        span.style.justifyContent = 'center';
+        span.id = `s1-${idx}`;
+        row1.appendChild(span);
+    });
+
+    // String 2 View
+    let row2 = document.createElement('div');
+    row2.className = 'd-flex justify-content-center gap-2';
+    s2.split('').forEach((c, idx) => {
+        let span = document.createElement('span');
+        span.textContent = c;
+        span.className = 'badge bg-dark border border-secondary';
+        span.style.width = '30px';
+        span.style.height = '30px';
+        span.style.display = 'flex';
+        span.style.alignItems = 'center';
+        span.style.justifyContent = 'center';
+        span.id = `s2-${idx}`;
+        row2.appendChild(span);
+    });
+
+    container.appendChild(row1);
+    container.appendChild(row2);
+    grid.appendChild(container);
+
+    // Animate Matches
+    let k = 0;
+    const interval = setInterval(() => {
+        if (k >= s1.length) {
+            clearInterval(interval);
+            return;
+        }
+
+        // Check if char exists in s2 approx
+        const char = s1[k];
+        const s1Badge = document.getElementById(`s1-${k}`);
+
+        // Find first occurrence in s2 that hasn't been highlighted ? (Simplification)
+        const s2Idx = s2.indexOf(char); // Simple check
+        if (s2Idx !== -1) {
+            s1Badge.classList.replace('bg-dark', 'bg-success');
+            // document.getElementById(`s2-${s2Idx}`).classList.replace('bg-dark', 'bg-success'); // Visual simplification
+        } else {
+            s1Badge.style.opacity = '0.3';
+        }
+        k++;
+    }, 300);
+}
+
+// 3. Sorting Race
+function runSortRace() {
+    const bar1 = document.getElementById('progress-insertion');
+    const bar2 = document.getElementById('progress-merge');
+    const time1 = document.getElementById('sort-time-1');
+    const time2 = document.getElementById('sort-time-2');
+    const result = document.getElementById('race-result');
+
+    bar1.style.width = '0%';
+    bar2.style.width = '0%';
+    time1.textContent = '0ms';
+    time2.textContent = '0ms';
+    result.textContent = 'Racing...';
+
+    // Insertion Sort (Slow - simulates O(n^2))
+    setTimeout(() => {
+        bar1.style.transition = 'width 2s linear';
+        bar1.style.width = '100%';
+        setTimeout(() => time1.textContent = '2000ms', 2000);
+    }, 100);
+
+    // Merge Sort (Fast - simulates O(n log n))
+    setTimeout(() => {
+        bar2.style.transition = 'width 0.8s ease-out';
+        bar2.style.width = '100%';
+        setTimeout(() => time2.textContent = '800ms', 800);
+    }, 100);
+
+    setTimeout(() => {
+        result.innerHTML = `Winner: <span class="text-success fw-bold">Merge Sort</span> (O(n log n) is significantly faster!)`;
+    }, 2100);
+}
+
 // PWA Install Logic
 let deferredPrompt;
 const pwaInstallBtn = document.getElementById('pwa-install-btn');
