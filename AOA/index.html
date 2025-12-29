@@ -425,17 +425,43 @@
                         </div>
                     </div>
 
-                    <!-- 3. Sorting Race -->
+                    <!-- 3. Complexity Race (All Algorithms) -->
                     <div id="tab-sorting" class="tab-pane" style="display: none;">
                         <div class="d-flex justify-content-between align-items-center mb-3">
-                            <h5 style="color: var(--accent-color);">Complexity Race: O(n²) vs O(n log n)</h5>
+                            <h5 style="color: var(--accent-color);">Grand Complexity Race: O(log n) to O(n³)</h5>
                             <button class="btn btn-sm btn-primary-custom" onclick="runSortRace()">
                                 <i class="fas fa-flag-checkered me-2"></i>Start Race
                             </button>
                         </div>
+
+                        <!-- Track 1: O(log n) -->
                         <div class="sort-track mb-3">
                             <div class="d-flex justify-content-between mb-1">
-                                <span class="badge bg-warning text-dark">Insertion Sort</span>
+                                <span class="badge bg-info text-dark">Binary Search O(log n)</span>
+                                <span id="race-time-1" class="text-muted small">0ms</span>
+                            </div>
+                            <div class="progress" style="height: 25px; background: #1e293b;">
+                                <div id="race-bar-1" class="progress-bar bg-info" role="progressbar" style="width: 0%">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Track 2: O(n log n) -->
+                        <div class="sort-track mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span class="badge bg-success">Merge Sort O(n log n)</span>
+                                <span id="race-time-2" class="text-muted small">0ms</span>
+                            </div>
+                            <div class="progress" style="height: 25px; background: #1e293b;">
+                                <div id="progress-merge" class="progress-bar bg-success" role="progressbar"
+                                    style="width: 0%"></div>
+                            </div>
+                        </div>
+
+                        <!-- Track 3: O(n²) -->
+                        <div class="sort-track mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span class="badge bg-warning text-dark">Insertion Sort O(n²)</span>
                                 <span id="sort-time-1" class="text-muted small">0ms</span>
                             </div>
                             <div class="progress" style="height: 25px; background: #1e293b;">
@@ -443,16 +469,19 @@
                                     style="width: 0%"></div>
                             </div>
                         </div>
+
+                        <!-- Track 4: O(n³) -->
                         <div class="sort-track">
                             <div class="d-flex justify-content-between mb-1">
-                                <span class="badge bg-success">Merge Sort</span>
-                                <span id="sort-time-2" class="text-muted small">0ms</span>
+                                <span class="badge bg-danger">Floyd-Warshall O(n³)</span>
+                                <span id="race-time-4" class="text-muted small">0ms</span>
                             </div>
                             <div class="progress" style="height: 25px; background: #1e293b;">
-                                <div id="progress-merge" class="progress-bar bg-success" role="progressbar"
+                                <div id="race-bar-4" class="progress-bar bg-danger" role="progressbar"
                                     style="width: 0%"></div>
                             </div>
                         </div>
+
                         <p class="mt-3 text-center text-muted small" id="race-result">Ready to compare algorithms...</p>
                     </div>
 
