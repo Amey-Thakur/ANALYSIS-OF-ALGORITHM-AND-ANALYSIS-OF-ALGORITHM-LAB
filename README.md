@@ -196,6 +196,14 @@ The laboratory component (CSL401) focuses on hands-on implementation of various 
 | 4 | Longest Common Subsequence (Dynamic Programming) | 1 | [View](AOA%20Lab/Experiment-4/) |
 | 5 | All Pairs Shortest Path (Floyd-Warshall Algorithm) | 1 | [View](AOA%20Lab/Experiment-5/) |
 
+
+### Interactive Algorithm Lab
+
+The portfolio includes a **real-time interactive visualization suite** (`Interactive Algorithm Lab`) featuring:
+1.  **Network Optimizer**: Visualizes the **Floyd-Warshall Algorithm** ($O(n^3)$) on a cyber-themed graph topology.
+2.  **String DNA**: Interactive **Longest Common Subsequence (LCS)** matcher with personalized strings.
+3.  **Complexity Race**: A visual performance comparison between Insertion Sort ($O(n^2)$) and Merge Sort ($O(n \log n)$).
+
 ### Program Details
 
 <details>

@@ -11,7 +11,7 @@
  * ================================================================
  */
 
-const CACHE_NAME = 'aoa-lab-v1';
+const CACHE_NAME = 'aoa-lab-v2';
 const urlsToCache = [
     './',
     './index.html',
