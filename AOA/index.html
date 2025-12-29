@@ -1,0 +1,425 @@
+<!--
+    ================================================================
+    Analysis of Algorithm (AOA) Lab Portfolio
+    ================================================================
+    Author: Amey Thakur
+    GitHub: https://github.com/Amey-Thakur
+    Course: Analysis of Algorithm (AOA) Lab
+    Roll No: 50
+    Batch: B3
+    Repository: https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB
+    Date: January 17, 2020
+    
+    Description: Primary dashboard for the AOA Lab repository. Showcases implementations of
+                 Sorting Algorithms, Divide and Conquer, Dynamic Programming, and Graph Algorithms.
+    License: CC BY 4.0
+    ================================================================
+-->
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMEY | AOA Lab Portfolio</title>
+
+    <!-- PWA Support -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#16a34a">
+    <link rel="apple-touch-icon" href="assets/icon-192.png">
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Amey | AOA Lab Portfolio">
+    <meta name="description"
+        content="Official scholarly portfolio for Analysis of Algorithm Laboratory (CSL401) at University of Mumbai. Features C implementations of Sorting, Searching, Dynamic Programming, and Graph Algorithms by Amey Thakur.">
+    <meta name="keywords"
+        content="Analysis of Algorithm, Algorithms, C Programming, Sorting, Searching, Dynamic Programming, Graph Algorithms, Mumbai University, Computer Engineering, Portfolio, Amey Thakur">
+    <meta name="author" content="Amey Thakur">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <link rel="canonical" href="https://amey-thakur.github.io/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/AOA/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url"
+        content="https://amey-thakur.github.io/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/AOA/">
+    <meta property="og:site_name" content="AOA Lab Portfolio">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="Amey | AOA Lab Portfolio">
+    <meta property="og:description"
+        content="Comprehensive showcase of Algorithm Analysis experiments including Sorting, Dynamic Programming, and Graph Algorithms implemented in C.">
+    <meta property="og:image"
+        content="https://amey-thakur.github.io/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/AOA/assets/og-image.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url"
+        content="https://amey-thakur.github.io/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/AOA/">
+    <meta name="twitter:title" content="Amey | AOA Lab Portfolio">
+    <meta name="twitter:description"
+        content="Explore Algorithm Analysis implementations: Sorting, Searching, Dynamic Programming, and Graph Algorithms.">
+    <meta name="twitter:image"
+        content="https://amey-thakur.github.io/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/AOA/assets/og-image.png">
+    <meta name="twitter:creator" content="@AmeyThakur">
+
+    <!-- Security Meta Tags -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' blob: https://fonts.googleapis.com https://fonts.gstatic.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; img-src 'self' data: blob: https: raw.githubusercontent.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; connect-src 'self' blob:; worker-src 'self' blob:;">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "AOA Lab Portfolio",
+        "url": "https://amey-thakur.github.io/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/AOA/",
+        "description": "Official scholarly portfolio for Analysis of Algorithm Laboratory (CSL401) at University of Mumbai",
+        "author": {
+            "@type": "Person",
+            "name": "Amey Thakur",
+            "url": "https://github.com/Amey-Thakur"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "University of Mumbai",
+            "url": "https://mu.ac.in"
+        },
+        "mainEntity": {
+            "@type": "SoftwareSourceCode",
+            "name": "Algorithm Analysis Programs",
+            "programmingLanguage": "C",
+            "codeRepository": "https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB"
+        },
+        "educationalLevel": "Undergraduate",
+        "teaches": ["Algorithm Analysis", "Time Complexity", "Dynamic Programming", "Graph Algorithms"]
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/icon-192.png">
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js"></script>
+</head>
+
+<body>
+    <!-- Skip to Content Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Loading Screen -->
+    <div id="skeleton-loader"
+        style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #0f172a; z-index: 10000; display: flex; flex-direction: column; align-items: center; justify-content: center; animation: fadeOutLoader 0.5s ease 1s forwards;">
+        <div
+            style="width: 60px; height: 60px; border: 4px solid rgba(22, 163, 74, 0.2); border-top-color: #16a34a; border-radius: 50%; animation: spin 1s linear infinite;">
+        </div>
+        <p style="margin-top: 20px; color: #94a3b8; font-family: 'Poppins', sans-serif; font-size: 0.9rem;">Initializing
+            Algorithm Analysis Portfolio...</p>
+        <style>
+            @keyframes spin {
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+
+            @keyframes fadeOutLoader {
+                to {
+                    opacity: 0;
+                    visibility: hidden;
+                    pointer-events: none;
+                }
+            }
+
+            .skip-link {
+                position: absolute;
+                top: -40px;
+                left: 0;
+                background: var(--accent-color);
+                color: white;
+                padding: 8px 16px;
+                z-index: 10001;
+                transition: top 0.3s;
+                text-decoration: none;
+                border-radius: 0 0 8px 0;
+            }
+
+            .skip-link:focus {
+                top: 0;
+            }
+        </style>
+    </div>
+
+    <main class="main-container" id="main-content">
+
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="top-controls">
+                <button class="control-btn" id="pwa-install-btn" title="Install App" aria-label="Install App"
+                    style="display: none;">
+                    <i class="fas fa-download" aria-hidden="true"></i>
+                </button>
+                <button class="control-btn" id="share-btn" title="Share Portfolio" aria-label="Share Portfolio">
+                    <i class="fas fa-share-nodes" aria-hidden="true"></i>
+                </button>
+                <button class="control-btn" id="theme-toggle" title="Switch Theme" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <h1>Analysis of Algorithm Lab</h1>
+            <p>A curated portfolio of algorithm experiments, demonstrating Sorting, Searching, Dynamic Programming,
+                and Graph Algorithms with complexity analysis.</p>
+
+            <div class="info-badges">
+                <div class="d-flex gap-2 justify-content-center w-100 flex-wrap mb-2 align-items-center">
+                    <a href="https://github.com/Amey-Thakur" class="badge-pill clickable-badge" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fas fa-user-graduate me-2"></i>Amey Thakur
+                    </a>
+                    <span class="badge-pill">Roll No: 50</span>
+                    <span class="badge-pill">Batch: B3</span>
+                </div>
+            </div>
+
+            <div class="hero-buttons">
+                <a href="https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB"
+                    class="btn btn-primary-custom" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github me-2"></i>AOA Repository
+                </a>
+                <a href="https://github.com/Amey-Thakur/COMPUTER-ENGINEERING"
+                    class="btn btn-primary-custom btn-secondary-custom" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-code-branch me-2"></i>Computer Engineering Repo
+                </a>
+            </div>
+
+            <!-- Stats Counter -->
+            <div class="stats-container">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="5">0</span>
+                    <span class="stat-label">Experiments</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="6">0</span>
+                    <span class="stat-label">Programs</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="100" data-suffix="%">0%</span>
+                    <span class="stat-label">Complete</span>
+                </div>
+            </div>
+
+            <!-- Scroll Hint -->
+            <div class="mt-4 text-center" style="animation: fadeInDown 1s ease 0.5s both;">
+                <a href="#experiments"
+                    style="color: var(--text-secondary); text-decoration: none; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 8px; transition: color 0.3s;">
+                    <i class="fas fa-chevron-down" style="animation: bounce 2s infinite;"></i>
+                    Scroll down for Algorithm Implementations
+                    <i class="fas fa-chevron-down" style="animation: bounce 2s infinite;"></i>
+                </a>
+            </div>
+        </header>
+
+        <!-- Section: Experiments -->
+        <section aria-labelledby="experiments-title" id="experiments">
+            <div class="section-title reveal">
+                <h3 id="experiments-title">Laboratory Experiments</h3>
+            </div>
+
+            <div class="row g-4 mb-5 justify-content-center">
+
+                <!-- Experiment 1: Sorting Algorithms -->
+                <div class="col-md-6 reveal-left">
+                    <div class="card-custom">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-sort-amount-down"></i>
+                        </div>
+                        <span class="exp-tag">EXPERIMENT 01</span>
+                        <h5>Sorting Algorithms</h5>
+                        <div class="tech-stack mb-3 d-flex align-items-center flex-wrap gap-2">
+                            <span class="badge-tech">Insertion Sort</span>
+                            <span class="badge-tech">Selection Sort</span>
+                            <span class="badge bg-primary ms-1" style="font-size: 0.7rem;"
+                                data-tooltip="2 programs implementing O(n²) sorting algorithms.">2 Programs</span>
+                        </div>
+                        <p>Implementation of fundamental sorting algorithms with O(n²) time complexity, demonstrating
+                            in-place sorting techniques.</p>
+                        <div class="complexity-badge">
+                            <span class="badge bg-warning text-dark">O(n²)</span>
+                        </div>
+                        <a href="../AOA%20Lab/Experiment-1/" class="btn-view" target="_blank">
+                            <i class="fas fa-code me-2"></i>View Programs
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Experiment 2: Binary Search -->
+                <div class="col-md-6 reveal-right">
+                    <div class="card-custom">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <span class="exp-tag">EXPERIMENT 02</span>
+                        <h5>Binary Search</h5>
+                        <div class="tech-stack mb-3 d-flex align-items-center flex-wrap gap-2">
+                            <span class="badge-tech">Divide & Conquer</span>
+                            <span class="badge-tech">Recursion</span>
+                            <span class="badge bg-primary ms-1" style="font-size: 0.7rem;"
+                                data-tooltip="1 program implementing recursive binary search.">1 Program</span>
+                        </div>
+                        <p>Recursive implementation of binary search using divide and conquer paradigm with O(log n)
+                            time complexity.</p>
+                        <div class="complexity-badge">
+                            <span class="badge bg-success">O(log n)</span>
+                        </div>
+                        <a href="../AOA%20Lab/Experiment-2/" class="btn-view" target="_blank">
+                            <i class="fas fa-code me-2"></i>View Program
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Experiment 3: Merge Sort -->
+                <div class="col-md-6 reveal-left">
+                    <div class="card-custom">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <span class="exp-tag">EXPERIMENT 03</span>
+                        <h5>Merge Sort</h5>
+                        <div class="tech-stack mb-3 d-flex align-items-center flex-wrap gap-2">
+                            <span class="badge-tech">Divide & Conquer</span>
+                            <span class="badge-tech">Stable Sort</span>
+                            <span class="badge bg-primary ms-1" style="font-size: 0.7rem;"
+                                data-tooltip="1 program implementing merge sort algorithm.">1 Program</span>
+                        </div>
+                        <p>Implementation of merge sort using divide and conquer approach, achieving O(n log n) time
+                            complexity with stable sorting.</p>
+                        <div class="complexity-badge">
+                            <span class="badge bg-success">O(n log n)</span>
+                        </div>
+                        <a href="../AOA%20Lab/Experiment-3/" class="btn-view" target="_blank">
+                            <i class="fas fa-code me-2"></i>View Program
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Experiment 4: Longest Common Subsequence -->
+                <div class="col-md-6 reveal-right">
+                    <div class="card-custom">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-align-left"></i>
+                        </div>
+                        <span class="exp-tag">EXPERIMENT 04</span>
+                        <h5>Longest Common Subsequence</h5>
+                        <div class="tech-stack mb-3 d-flex align-items-center flex-wrap gap-2">
+                            <span class="badge-tech">Dynamic Programming</span>
+                            <span class="badge-tech">2D Table</span>
+                            <span class="badge bg-primary ms-1" style="font-size: 0.7rem;"
+                                data-tooltip="1 program implementing LCS using DP.">1 Program</span>
+                        </div>
+                        <p>Dynamic programming solution for finding the longest common subsequence between two strings
+                            with O(m×n) complexity.</p>
+                        <div class="complexity-badge">
+                            <span class="badge bg-info">O(m×n)</span>
+                        </div>
+                        <a href="../AOA%20Lab/Experiment-4/" class="btn-view" target="_blank">
+                            <i class="fas fa-code me-2"></i>View Program
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Experiment 5: Floyd-Warshall -->
+                <div class="col-md-6 reveal-left">
+                    <div class="card-custom">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <span class="exp-tag">EXPERIMENT 05</span>
+                        <h5>All Pairs Shortest Path</h5>
+                        <div class="tech-stack mb-3 d-flex align-items-center flex-wrap gap-2">
+                            <span class="badge-tech">Floyd-Warshall</span>
+                            <span class="badge-tech">Graph Algorithm</span>
+                            <span class="badge bg-primary ms-1" style="font-size: 0.7rem;"
+                                data-tooltip="1 program implementing Floyd-Warshall algorithm.">1 Program</span>
+                        </div>
+                        <p>Implementation of Floyd-Warshall algorithm for finding shortest paths between all pairs of
+                            vertices in a weighted graph.</p>
+                        <div class="complexity-badge">
+                            <span class="badge bg-danger">O(n³)</span>
+                        </div>
+                        <a href="../AOA%20Lab/Experiment-5/" class="btn-view" target="_blank">
+                            <i class="fas fa-code me-2"></i>View Program
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer reveal">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h4>Analysis of Algorithm Lab</h4>
+                    <p>CSC402 & CSL401 · Semester IV · Computer Engineering</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/Amey-Thakur" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/amey-thakur" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <p class="footer-copy">© 2020 Amey Thakur. All Rights Reserved.</p>
+                <p class="footer-institution">
+                    <a href="https://ternaengg.ac.in/" target="_blank" rel="noopener noreferrer">Terna Engineering
+                        College</a> ·
+                    <a href="https://mu.ac.in/" target="_blank" rel="noopener noreferrer">University of Mumbai</a>
+                </p>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Back to Top Button -->
+    <button type="button" class="btn" id="btn-back-to-top" aria-label="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Command Palette Overlay -->
+    <div id="command-palette-overlay" class="cmd-overlay" style="display: none;">
+        <div class="cmd-modal">
+            <div class="cmd-header">
+                <i class="fas fa-terminal"></i>
+                <div style="flex: 1;">
+                    <input type="text" id="cmd-input" placeholder="Type a command or search..." autocomplete="off">
+                </div>
+                <div class="cmd-esc">
+                    <kbd>ESC</kbd>
+                </div>
+            </div>
+            <div class="cmd-body" id="cmd-list">
+                <!-- Results injected here -->
+            </div>
+            <div class="cmd-footer">
+                <div class="cmd-keys">
+                    <span class="k-group"><span class="k-small">↑</span><span class="k-small">↓</span> to
+                        navigate</span>
+                    <span class="k-group"><span class="k-small">↵</span> to select</span>
+                    <span class="k-group"><span class="k-small">T</span> Theme</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
