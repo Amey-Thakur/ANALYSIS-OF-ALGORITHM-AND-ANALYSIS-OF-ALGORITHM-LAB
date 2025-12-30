@@ -34,33 +34,48 @@ html {
     --header-gradient: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
     --badge-bg: #f0fdf4;
     --badge-text: #16a34a;
-    --footer-border: #cbd5e1;
+    --content-glass: rgba(255, 255, 255, 0.4);
 }
 
 [data-theme="dark"] {
-    /* Dark Mode Variables */
     --bg-color: #0f172a;
-    --text-primary: #f8fafc;
-    --text-secondary: #94a3b8;
-    --card-bg: #1e293b;
-    --accent-color: #4ade80;
-    --accent-hover: #86efac;
-    --border-color: #334155;
-    --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
-    --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
-    --header-gradient: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-    --badge-bg: #0f172a;
-    --badge-text: #4ade80;
-    --footer-border: #334155;
+    /* ... existing vars ... */
+    --content-glass: rgba(15, 23, 42, 0.3);
+}
 
-    /* Prism Dark Mode Overrides */
-    --prism-bg: #1e1e1e;
-    --prism-text: #d4d4d4;
-    --prism-comment: #6a9955;
-    --prism-keyword: #569cd6;
-    --prism-string: #ce9178;
-    --prism-number: #b5cea8;
-    --prism-function: #dcdcaa;
+/* ... */
+
+/* Interactive Visualizer Content Area */
+.algo-content {
+    background: var(--content-glass);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 0 0 8px 8px;
+    transition: background 0.3s ease;
+}
+
+--bg-color: #0f172a;
+--text-primary: #f8fafc;
+--text-secondary: #94a3b8;
+--card-bg: #1e293b;
+--accent-color: #4ade80;
+--accent-hover: #86efac;
+--border-color: #334155;
+--shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+--shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+--header-gradient: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+--badge-bg: #0f172a;
+--badge-text: #4ade80;
+--footer-border: #334155;
+
+/* Prism Dark Mode Overrides */
+--prism-bg: #1e1e1e;
+--prism-text: #d4d4d4;
+--prism-comment: #6a9955;
+--prism-keyword: #569cd6;
+--prism-string: #ce9178;
+--prism-number: #b5cea8;
+--prism-function: #dcdcaa;
 }
 
 /* Prism Dark Mode Styles */
@@ -1447,7 +1462,9 @@ body {
 
 /* Interactive Visualizer Content Area */
 .algo-content {
-    background: var(--card-bg);
+    background: var(--content-glass);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-radius: 0 0 8px 8px;
     transition: background 0.3s ease;
 }
