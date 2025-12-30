@@ -503,8 +503,14 @@
                 }
 
                 .algo-tab:hover {
-                    background: rgba(255, 255, 255, 0.05);
+                    background: rgba(255, 255, 255, 0.1);
+                    /* Visible in dark mode */
                     color: var(--text-primary);
+                }
+
+                [data-theme="dark"] .algo-tab:hover {
+                    background: rgba(255, 255, 255, 0.05);
+                    color: #fff;
                 }
 
                 .algo-tab.active {
