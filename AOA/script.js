@@ -2864,8 +2864,14 @@ function initCommandPalette() {
     const overlay = document.getElementById('cmd-overlay');
     const input = document.getElementById('cmd-input');
     const resultsContainer = document.getElementById('cmd-results');
+    const kbdHint = document.getElementById('kbd-hint');
 
     if (!overlay || !input || !resultsContainer) return;
+
+    // Auto-hide keyboard hint after 8 seconds
+    if (kbdHint) {
+        setTimeout(() => kbdHint.classList.add('hidden'), 8000);
+    }
 
     let selectedIndex = 0;
     let results = [];
@@ -2920,6 +2926,8 @@ function initCommandPalette() {
         input.value = '';
         input.focus();
         filterResults('');
+        // Hide keyboard hint permanently
+        if (kbdHint) kbdHint.classList.add('hidden');
     }
 
     function closePalette() {
