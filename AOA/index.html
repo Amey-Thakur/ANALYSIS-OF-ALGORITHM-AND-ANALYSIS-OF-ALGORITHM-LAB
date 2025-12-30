@@ -532,7 +532,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer" role="contentinfo">
+    <footer class="footer mt-auto" role="contentinfo">
         <p>2018 - 2022 &copy; All Rights Reserved | Designed and Developed by <a href="https://github.com/Amey-Thakur"
                 rel="noopener noreferrer">Amey
                 Thakur</a></p>
@@ -540,33 +540,30 @@
 
     <!-- Back to Top Button -->
     <button type="button" class="btn" id="btn-back-to-top" aria-label="Back to Top">
-        <i class="fas fa-arrow-up"></i>
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
     </button>
 
     <!-- Command Palette Overlay -->
-    <div id="command-palette-overlay" class="cmd-overlay" style="display: none;">
+    <div id="cmd-overlay" class="cmd-overlay">
         <div class="cmd-modal">
             <div class="cmd-header">
-                <i class="fas fa-terminal"></i>
-                <div style="flex: 1;">
-                    <input type="text" id="cmd-input" placeholder="Type a command or search..." autocomplete="off">
-                </div>
-                <div class="cmd-esc">
-                    <kbd>ESC</kbd>
-                </div>
             </div>
-            <div class="cmd-body" id="cmd-list">
-                <!-- Results injected here -->
-            </div>
-            <div class="cmd-footer">
-                <div class="cmd-keys">
-                    <span class="k-group"><span class="k-small">↑</span><span class="k-small">↓</span> to
-                        navigate</span>
-                    <span class="k-group"><span class="k-small">↵</span> to select</span>
-                    <span class="k-group"><span class="k-small">T</span> Theme</span>
-                </div>
+            <div class="cmd-esc">
+                <kbd>ESC</kbd>
             </div>
         </div>
+        <div class="cmd-body" id="cmd-list">
+            <!-- Results injected here -->
+        </div>
+        <div class="cmd-footer">
+            <div class="cmd-keys">
+                <span class="k-group"><span class="k-small">↑</span><span class="k-small">↓</span> to
+                    navigate</span>
+                <span class="k-group"><span class="k-small">↵</span> to select</span>
+                <span class="k-group"><span class="k-small">T</span> Theme</span>
+            </div>
+        </div>
+    </div>
     </div>
 
     <script src="script.js"></script>
