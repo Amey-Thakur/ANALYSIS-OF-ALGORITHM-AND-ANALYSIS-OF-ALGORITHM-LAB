@@ -121,56 +121,66 @@ function drawGraph(activePath = []) {
     }
 
     // Draw nodes
-    networkNodes.forEach(node => {
+    networkNodes.forEach((node, idx) => {
         ctx.beginPath();
-        ctx.arc(node.x, node.y, 20, 0, Math.PI * 2);
-        ctx.fillStyle = '#0f172a';
+        ctx.arc(node.x, node.y, 22, 0, Math.PI * 2);
+
+        // Highlight active nodes in the path
+        const isActive = activePath.includes(idx);
+        ctx.fillStyle = isActive ? 'rgba(22, 163, 74, 0.2)' : '#0f172a';
         ctx.fill();
-        ctx.strokeStyle = '#16a34a';
-        ctx.lineWidth = 2;
+
+        ctx.strokeStyle = isActive ? '#16a34a' : '#334155';
+        ctx.lineWidth = isActive ? 3 : 2;
         ctx.stroke();
 
-        ctx.fillStyle = '#e2e8f0';
-        ctx.font = '14px Poppins';
+        ctx.fillStyle = isActive ? '#ffffff' : '#94a3b8';
+        ctx.font = 'bold 13px Poppins';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
         ctx.fillText(node.id, node.x, node.y);
     });
 }
 
-function runNetworkViz() {
+async function runNetworkViz() {
     const status = document.getElementById('network-status');
-    status.innerHTML = `<span style="color:#16a34a">Running Floyd-Warshall Algorithm... O(n³)</span>`;
+    const analyzeBtn = document.querySelector('.btn-analyze');
+    if (analyzeBtn) analyzeBtn.disabled = true;
 
-    // Simulation steps - Showing path relaxation
-    let step = 0;
+    status.innerHTML = `<span style="color:#16a34a">Initializing Floyd-Warshall Analysis...</span>`;
+
     const simulation = [
-        { path: [0, 1, 4, 5], cost: 15, msg: "Initial Path: Start → A → D → End (Cost: 15)" },
-        { path: [0, 2, 4, 5], cost: 14, msg: "Intermediate Check: Start → B → D → End (Cost: 14)" },
-        { path: [0, 1, 3, 5], cost: 9, msg: "Optimal Found: Start → A → C → End (Cost: 9)" }
+        { path: [0, 1, 4, 5], msg: "Evaluating Path A: Start → A → D → End (Cost: 15)" },
+        { path: [0, 2, 4, 5], msg: "Evaluating Path B: Start → B → D → End (Cost: 14)" },
+        { path: [0, 1, 3, 5], msg: "Evaluating Path C: Start → A → C → End (Cost: 9)" }
     ];
 
-    const interval = setInterval(() => {
-        if (step >= simulation.length) {
-            clearInterval(interval);
-            status.innerHTML = `Success! Shortest Path: ${simulation[step - 1].msg.split(': ')[1]}.`;
-            playCelebrateSound();
-            if (typeof confetti === 'function') {
-                confetti({
-                    particleCount: 150,
-                    spread: 80,
-                    origin: { y: 0.6 },
-                    colors: ['#16a34a', '#8b5cf6', '#ffffff']
-                });
-            }
-            return;
+    for (let s = 0; s < simulation.length; s++) {
+        const sim = simulation[s];
+        status.innerHTML = sim.msg;
+
+        // Animate segment by segment
+        for (let i = 1; i <= sim.path.length; i++) {
+            const partialPath = sim.path.slice(0, i);
+            drawGraph(partialPath);
+            await new Promise(r => setTimeout(r, 400)); // Segment traversal delay
         }
 
-        const current = simulation[step];
-        drawGraph(current.path);
-        status.innerHTML = `<span style="color:#16a34a">${current.msg}</span>`;
-        step++;
-    }, 1200);
+        await new Promise(r => setTimeout(r, 600)); // Pause before next path evaluation
+    }
+
+    status.innerHTML = `Success! Shortest Path: Start → A → C → End (Cost: 9).`;
+    playCelebrateSound();
+    if (typeof confetti === 'function') {
+        confetti({
+            particleCount: 150,
+            spread: 80,
+            origin: { y: 0.6 },
+            colors: ['#16a34a', '#8b5cf6', '#ffffff']
+        });
+    }
+
+    if (analyzeBtn) analyzeBtn.disabled = false;
 }
 
 // 2. LCS String Matcher
