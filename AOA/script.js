@@ -82,18 +82,27 @@ function drawGraph(activePath = []) {
     // Draw edges
     ctx.strokeStyle = '#334155';
     ctx.lineWidth = 2;
-    // Hardcoded edges for visual simplicity
     const edges = [
-        [0, 1], [0, 2], [1, 3], [2, 4], [1, 4], [2, 3], [3, 5], [4, 5]
+        { s: 0, e: 1, w: 4 }, { s: 0, e: 2, w: 2 },
+        { s: 1, e: 3, w: 3 }, { s: 2, e: 4, w: 1 },
+        { s: 1, e: 4, w: 5 }, { s: 2, e: 3, w: 8 },
+        { s: 3, e: 5, w: 2 }, { s: 4, e: 5, w: 6 }
     ];
 
-    edges.forEach(([s, e]) => {
-        const start = networkNodes[s];
-        const end = networkNodes[e];
+    edges.forEach(edge => {
+        const start = networkNodes[edge.s];
+        const end = networkNodes[edge.e];
         ctx.beginPath();
         ctx.moveTo(start.x, start.y);
         ctx.lineTo(end.x, end.y);
         ctx.stroke();
+
+        // Draw weights
+        const midX = (start.x + end.x) / 2;
+        const midY = (start.y + end.y) / 2;
+        ctx.fillStyle = '#94a3b8';
+        ctx.font = 'bold 12px monospace';
+        ctx.fillText(edge.w, midX, midY - 5);
     });
 
     // Draw active path if any
@@ -133,32 +142,35 @@ function runNetworkViz() {
     const status = document.getElementById('network-status');
     status.innerHTML = `<span style="color:#16a34a">Running Floyd-Warshall Algorithm... O(n³)</span>`;
 
-    // Simulation steps
+    // Simulation steps - Showing path relaxation
     let step = 0;
-    const steps = [
-        [0, 1],
-        [0, 1, 3],
-        [0, 1, 3, 5] // Shortest path
+    const simulation = [
+        { path: [0, 1, 4, 5], cost: 15, msg: "Initial Path: Start → A → D → End (Cost: 15)" },
+        { path: [0, 2, 4, 5], cost: 14, msg: "Intermediate Check: Start → B → D → End (Cost: 14)" },
+        { path: [0, 1, 3, 5], cost: 9, msg: "Optimal Found: Start → A → C → End (Cost: 9)" }
     ];
 
     const interval = setInterval(() => {
-        if (step >= steps.length) {
+        if (step >= simulation.length) {
             clearInterval(interval);
-            status.innerHTML = `Path Optimized! Cost: 12ms. <span style="color:#16a34a">Server 'End' reached.</span>`;
+            status.innerHTML = `Success! Shortest Path: ${simulation[step - 1].msg.split(': ')[1]}.`;
             playCelebrateSound();
             if (typeof confetti === 'function') {
                 confetti({
-                    particleCount: 100,
-                    spread: 70,
+                    particleCount: 150,
+                    spread: 80,
                     origin: { y: 0.6 },
                     colors: ['#16a34a', '#8b5cf6', '#ffffff']
                 });
             }
             return;
         }
-        drawGraph(steps[step]);
+
+        const current = simulation[step];
+        drawGraph(current.path);
+        status.innerHTML = `<span style="color:#16a34a">${current.msg}</span>`;
         step++;
-    }, 800);
+    }, 1200);
 }
 
 // 2. LCS String Matcher
