@@ -1370,9 +1370,18 @@ body {
     color: var(--text-secondary) !important;
 }
 
-[data-theme="dark"] .card-custom.visualizer-bg {
-    background: linear-gradient(-45deg, #0f172a, #1e293b, #0f172a, #1a237e);
+/* Premium Hero Animation (Both Modes) */
+.card-custom.visualizer-bg {
     background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+[data-theme="dark"] .card-custom.visualizer-bg {
+    background-image: linear-gradient(-45deg, #0f172a, #1e293b, #0f172a, #1a237e);
+}
+
+[data-theme="light"] .card-custom.visualizer-bg {
+    background-image: linear-gradient(-45deg, #e2e8f0, #cbd5e1, #f1f5f9, #cfd8dc);
 }
 
 /* LCS DP Matrix Styles */
