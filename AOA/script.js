@@ -3031,7 +3031,7 @@ function initCommandPalette() {
         { type: 'Command', name: 'Toggle Theme', icon: 'fa-adjust', action: () => document.getElementById('theme-toggle').click() },
         { type: 'Command', name: 'Scroll to Top', icon: 'fa-arrow-up', action: () => window.scrollTo({ top: 0, behavior: 'smooth' }) },
         { type: 'Command', name: 'Go to Experiments', icon: 'fa-flask', action: () => document.getElementById('experiments').scrollIntoView({ behavior: 'smooth' }) },
-        { type: 'Command', name: 'Go to Visualizer', icon: 'fa-code-branch', action: () => document.getElementById('visualizer').scrollIntoView({ behavior: 'smooth' }) },
+        { type: 'Command', name: 'Go to Visualizer', icon: 'fa-code-branch', action: () => document.getElementById('interactive-demo').scrollIntoView({ behavior: 'smooth' }) },
     ];
 
     // Scrape Content for Search Index (Experiments)
@@ -3056,17 +3056,18 @@ function initCommandPalette() {
 
     // Scrape Visualizer Tabs
     const vizTabs = [
-        { type: 'Algorithm', name: 'Network Optimizer (Floyd-Warshall)', icon: 'fa-project-diagram', id: 'tab-network', btn: 'button[onclick="showTab(\'network\')"]' },
-        { type: 'Algorithm', name: 'Match DNA (LCS)', icon: 'fa-dna', id: 'tab-lcs', btn: 'button[onclick="showTab(\'lcs\')"]' },
-        { type: 'Algorithm', name: 'Complexity Race', icon: 'fa-flag-checkered', id: 'tab-sorting', btn: 'button[onclick="showTab(\'sorting\')"]' }
+        { type: 'Algorithm', name: 'Network Optimizer (Floyd-Warshall)', icon: 'fa-project-diagram', id: 'tab-network', actionVar: 'network' },
+        { type: 'Algorithm', name: 'Match DNA (LCS)', icon: 'fa-dna', id: 'tab-lcs', actionVar: 'lcs' },
+        { type: 'Algorithm', name: 'Complexity Race', icon: 'fa-flag-checkered', id: 'tab-sorting', actionVar: 'sorting' }
     ].map(tab => ({
         type: tab.type,
         name: tab.name,
         icon: tab.icon,
         action: () => {
-            const btn = document.querySelector(tab.btn);
-            if (btn) btn.click();
-            document.getElementById('visualizer').scrollIntoView({ behavior: 'smooth' });
+            if (typeof switchTab === 'function') {
+                switchTab(tab.actionVar);
+            }
+            document.getElementById('interactive-demo').scrollIntoView({ behavior: 'smooth' });
         }
     }));
 
