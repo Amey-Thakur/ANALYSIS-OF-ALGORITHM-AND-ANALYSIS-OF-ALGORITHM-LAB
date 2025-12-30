@@ -8,6 +8,8 @@
  *   Roll No: 50
  *   Batch: B3
  *   Date: January 17, 2020
+ *   Repository: https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB
+ *   License: CC BY 4.0
  * ================================================================
  */
 
@@ -3088,8 +3090,6 @@ async function shareResult(type) {
             targetEl = document.getElementById('lcs-grid');
         } else if (type === 'sorting') {
             targetEl = document.getElementById('sorting-shareable');
-        } else if (type === 'knapsack') {
-            targetEl = document.getElementById('knapsack-grid');
         }
 
         if (!targetEl) throw new Error("Visualize element not found");
@@ -3187,120 +3187,3 @@ document.addEventListener('click', (e) => {
         closeShareModal();
     }
 });
-
-/* =========================================
-   KNAPSACK VISUALIZER
-   ========================================= */
-async function runKnapsack() {
-    const capacityInput = document.getElementById('kp-capacity').value;
-    const weightsInput = document.getElementById('kp-weights').value;
-    const valuesInput = document.getElementById('kp-values').value;
-    const gridContainer = document.getElementById('knapsack-grid');
-
-    const W = parseInt(capacityInput);
-    const weights = weightsInput.trim().split(/\s+/).map(Number);
-    const values = valuesInput.trim().split(/\s+/).map(Number);
-    const n = weights.length;
-
-    if (weights.length !== values.length) {
-        alert("Number of weights and values must match!");
-        return;
-    }
-    if (isNaN(W) || W <= 0 || W > 20) {
-        alert("Please enter a valid capacity (1-20 for best visualization).");
-        return;
-    }
-
-    gridContainer.innerHTML = '';
-
-    // Setup Grid CSS
-    gridContainer.style.display = 'grid';
-    gridContainer.style.gridTemplateColumns = `auto repeat(${W + 1}, 1fr)`;
-    gridContainer.style.gap = '2px';
-    gridContainer.style.justifyContent = 'center';
-    gridContainer.style.alignContent = 'start';
-    gridContainer.className = 'kp-table shareable-content';
-
-    // Header Row
-    // Top-left corner
-    const corner = document.createElement('div');
-    corner.className = 'kp-cell kp-header';
-    corner.innerText = 'Item \\ W';
-    gridContainer.appendChild(corner);
-
-    // Capacity Headers
-    for (let w = 0; w <= W; w++) {
-        const cell = document.createElement('div');
-        cell.className = 'kp-cell kp-header';
-        cell.innerText = w;
-        gridContainer.appendChild(cell);
-    }
-
-    // DP Table Initialization
-    const K = Array(n + 1).fill().map(() => Array(W + 1).fill(0));
-
-    // Render Rows & Animate Calculation
-    for (let i = 0; i <= n; i++) {
-        // Row Header (Item info)
-        const rowHeader = document.createElement('div');
-        rowHeader.className = 'kp-cell kp-header';
-        rowHeader.style.justifyContent = 'flex-start';
-        rowHeader.style.paddingLeft = '8px';
-        if (i === 0) rowHeader.innerText = '0 (Base)';
-        else rowHeader.innerHTML = `Item ${i}<br><span style="font-size:0.7em; font-weight:normal;">w:${weights[i - 1]}, v:${values[i - 1]}</span>`;
-        gridContainer.appendChild(rowHeader);
-
-        for (let w = 0; w <= W; w++) {
-            const cell = document.createElement('div');
-            cell.className = 'kp-cell';
-            cell.id = `kp-cell-${i}-${w}`;
-            gridContainer.appendChild(cell);
-
-            // Logic
-            if (i === 0 || w === 0) {
-                K[i][w] = 0;
-            } else if (weights[i - 1] <= w) {
-                const valInclude = values[i - 1] + K[i - 1][w - weights[i - 1]];
-                const valExclude = K[i - 1][w];
-                K[i][w] = Math.max(valInclude, valExclude);
-            } else {
-                K[i][w] = K[i - 1][w];
-            }
-
-            // Animate filling with delay
-            setTimeout(() => {
-                const el = document.getElementById(`kp-cell-${i}-${w}`);
-                if (el) {
-                    el.innerText = K[i][w];
-                    el.classList.add('animating');
-                }
-            }, (i * (W + 1) + w) * 30); // 30ms delay per cell
-        }
-    }
-
-    // Backtracking for solution path
-    const delay = ((n + 1) * (W + 1) * 30) + 500;
-    setTimeout(() => {
-        let i = n, w = W;
-        while (i > 0 && w > 0) {
-            const cell = document.getElementById(`kp-cell-${i}-${w}`);
-
-            // Highlight current cell being checked
-            if (cell) cell.classList.add('selected');
-
-            if (K[i][w] === K[i - 1][w]) {
-                i--; // Item not included
-            } else {
-                // Item included
-                w -= weights[i - 1]; // Reduce capacity by weight of item (i-1 in 0-indexed arrays)
-                i--;
-
-                // Highlight the cell we came from (optional, or just path)
-            }
-        }
-        // Highlight base case
-        const final = document.getElementById(`kp-cell-${i}-${w}`);
-        if (final) final.classList.add('selected');
-
-    }, delay);
-}
