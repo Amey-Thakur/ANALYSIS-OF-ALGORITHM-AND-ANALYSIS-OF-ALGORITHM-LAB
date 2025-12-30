@@ -1994,3 +1994,15 @@ body {
         width: 100%;
     }
 }
+
+/* Restore Center Alignment for Mobile Controls (Match OOPM) */
+@media (max-width: 480px) {
+    .top-controls {
+        position: relative;
+        top: 0;
+        right: 0;
+        justify-content: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
