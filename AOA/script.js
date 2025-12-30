@@ -2982,3 +2982,228 @@ function initCommandPalette() {
         if (e.target === overlay) closePalette();
     });
 }
+// 5. Low-Level Security Measures (Standardized)
+// Disable Right Click
+document.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+});
+
+// Disable Dragging images
+document.addEventListener('dragstart', (e) => {
+    e.preventDefault();
+});
+
+// Disable DevTools Shortcuts
+document.addEventListener('keydown', (e) => {
+    if (
+        e.key === 'F12' ||
+        (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C')) ||
+        (e.ctrlKey && e.key === 'u')
+    ) {
+        e.preventDefault();
+    }
+});
+
+// Disable Selection specifically for older browsers through JS
+document.addEventListener('selectstart', (e) => {
+    if (e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
+        e.preventDefault();
+    }
+});
+
+// =========================================
+//   COMMAND PALETTE LOGIC
+// =========================================
+document.addEventListener('DOMContentLoaded', () => {
+    initCommandPalette();
+});
+
+function initCommandPalette() {
+    const overlay = document.getElementById('cmd-overlay');
+    const input = document.getElementById('cmd-input');
+    const resultsContainer = document.getElementById('cmd-results');
+
+    if (!overlay || !input || !resultsContainer) return;
+
+    let selectedIndex = 0;
+    let results = [];
+    const commands = [
+        { type: 'Command', name: 'Toggle Theme', icon: 'fa-adjust', action: () => document.getElementById('theme-toggle').click() },
+        { type: 'Command', name: 'Scroll to Top', icon: 'fa-arrow-up', action: () => window.scrollTo({ top: 0, behavior: 'smooth' }) },
+        { type: 'Command', name: 'Go to Experiments', icon: 'fa-flask', action: () => document.getElementById('experiments').scrollIntoView({ behavior: 'smooth' }) },
+        { type: 'Command', name: 'Go to Visualizer', icon: 'fa-code-branch', action: () => document.getElementById('visualizer').scrollIntoView({ behavior: 'smooth' }) },
+    ];
+
+    // Scrape Content for Search Index (Experiments)
+    const experiments = Array.from(document.querySelectorAll('.card-custom h5')).map(h5 => ({
+        type: 'Experiment',
+        name: h5.textContent.trim(),
+        icon: 'fa-flask',
+        action: () => {
+            h5.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            const card = h5.closest('.card-custom');
+            if (card) {
+                card.style.transition = 'all 0.3s ease';
+                card.style.transform = 'scale(1.05)';
+                card.style.boxShadow = '0 0 0 4px var(--accent-color)';
+                setTimeout(() => {
+                    card.style.transform = 'scale(1)';
+                    card.style.boxShadow = 'none';
+                }, 1500);
+            }
+        }
+    }));
+
+    // Scrape Visualizer Tabs
+    const vizTabs = [
+        { type: 'Algorithm', name: 'Network Optimizer (Floyd-Warshall)', icon: 'fa-project-diagram', id: 'tab-network', btn: 'button[onclick="showTab(\'network\')"]' },
+        { type: 'Algorithm', name: 'Match DNA (LCS)', icon: 'fa-dna', id: 'tab-lcs', btn: 'button[onclick="showTab(\'lcs\')"]' },
+        { type: 'Algorithm', name: 'Complexity Race', icon: 'fa-flag-checkered', id: 'tab-sorting', btn: 'button[onclick="showTab(\'sorting\')"]' }
+    ].map(tab => ({
+        type: tab.type,
+        name: tab.name,
+        icon: tab.icon,
+        action: () => {
+            const btn = document.querySelector(tab.btn);
+            if (btn) btn.click();
+            document.getElementById('visualizer').scrollIntoView({ behavior: 'smooth' });
+        }
+    }));
+
+    const searchIndex = [...commands, ...vizTabs, ...experiments];
+
+    // Open/Close Logic
+    function openPalette() {
+        overlay.classList.add('active');
+        input.value = '';
+        input.focus();
+        filterResults('');
+    }
+
+    function closePalette() {
+        overlay.classList.remove('active');
+    }
+
+    // Filter Logic
+    function filterResults(query) {
+        const q = query.toLowerCase();
+        results = searchIndex.filter(item =>
+            item.name.toLowerCase().includes(q)
+        ).slice(0, 10); // Limit to 10 results
+
+        // Always show commands if query is empty
+        if (q === '') {
+            results = commands;
+        }
+
+        renderResults();
+    }
+
+    // Render Logic
+    function renderResults() {
+        resultsContainer.innerHTML = '';
+        if (results.length === 0) {
+            resultsContainer.innerHTML = '<div class="text-center p-3 text-secondary">No matching commands or algorithms found.</div>';
+            return;
+        }
+
+        results.forEach((item, index) => {
+            const div = document.createElement('div');
+            div.className = `cmd-item ${index === selectedIndex ? 'selected' : ''}`;
+            div.innerHTML = `
+                <div class="d-flex align-items-center">
+                    <div class="cmd-item-icon"><i class="fas ${item.icon}"></i></div>
+                    <span class="cmd-item-text">${item.name}</span>
+                </div>
+                <span class="cmd-item-type">${item.type}</span>
+            `;
+            div.addEventListener('click', () => {
+                item.action();
+                closePalette();
+            });
+            div.addEventListener('mouseenter', () => {
+                selectedIndex = index;
+                renderResults(); // Re-render to update selection style
+            });
+            resultsContainer.appendChild(div);
+        });
+
+        // Ensure selected item is in view
+        const selectedEl = resultsContainer.children[selectedIndex];
+        if (selectedEl) {
+            selectedEl.scrollIntoView({ block: 'nearest' });
+        }
+    }
+
+    // Single, unified keydown handler
+    document.addEventListener('keydown', (e) => {
+        // --- CTRL+K: Toggle Command Palette ---
+        if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+            e.preventDefault();
+            e.stopPropagation();
+            if (overlay.classList.contains('active')) closePalette();
+            else openPalette();
+            return; // CRITICAL: Exit here to prevent global shortcuts from firing
+        }
+
+        // --- Palette-Specific Navigation (only when visible) ---
+        if (overlay.classList.contains('active')) {
+            if (e.key === 'Escape') {
+                e.preventDefault();
+                closePalette();
+                return;
+            }
+            if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                selectedIndex = (selectedIndex + 1) % results.length;
+                renderResults();
+                return;
+            }
+            if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                selectedIndex = (selectedIndex - 1 + results.length) % results.length;
+                renderResults();
+                return;
+            }
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                if (results[selectedIndex]) {
+                    results[selectedIndex].action();
+                    closePalette();
+                }
+                return;
+            }
+            // Allow typing in the input
+            return; // Don't process global shortcuts while palette is open
+        }
+
+        // --- Global Shortcuts (only when palette is CLOSED and no modifier keys) ---
+        // Skip if any modifier key is pressed (to avoid Ctrl+T conflicts)
+        if (e.ctrlKey || e.metaKey || e.altKey) {
+            return;
+        }
+
+        // Skip if typing in an input field
+        const activeTag = document.activeElement ? document.activeElement.tagName : '';
+        if (activeTag === 'INPUT' || activeTag === 'TEXTAREA') {
+            return;
+        }
+
+        // T = Toggle Theme
+        if (e.key.toLowerCase() === 't') {
+            e.preventDefault();
+            const toggle = document.getElementById('theme-toggle');
+            if (toggle) toggle.click();
+            return;
+        }
+    });
+
+    input.addEventListener('input', (e) => {
+        selectedIndex = 0;
+        filterResults(e.target.value);
+    });
+
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) closePalette();
+    });
+}
