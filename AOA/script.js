@@ -144,8 +144,12 @@ function drawGraph(activePath = []) {
 
 async function runNetworkViz() {
     const status = document.getElementById('network-status');
-    const analyzeBtn = document.querySelector('.btn-analyze');
-    if (analyzeBtn) analyzeBtn.disabled = true;
+    const analyzeBtn = document.querySelector('button[onclick="runNetworkViz()"]');
+
+    if (analyzeBtn) {
+        analyzeBtn.innerHTML = '<i class="fas fa-cog fa-spin me-2"></i>Optimizing...';
+        analyzeBtn.disabled = true;
+    }
 
     status.innerHTML = `<span style="color:#16a34a">Initializing Floyd-Warshall Analysis...</span>`;
 
@@ -180,7 +184,10 @@ async function runNetworkViz() {
         });
     }
 
-    if (analyzeBtn) analyzeBtn.disabled = false;
+    if (analyzeBtn) {
+        analyzeBtn.innerHTML = '<i class="fas fa-play me-2"></i>Analyze Path';
+        analyzeBtn.disabled = false;
+    }
 }
 
 // 2. Aesthetic DNA Sequence Alignment Mapper
@@ -192,7 +199,10 @@ async function runLCS() {
     const startBtn = document.querySelector('button[onclick="runLCS()"]');
 
     if (!s1 || !s2) return;
-    if (startBtn) startBtn.disabled = true;
+    if (startBtn) {
+        startBtn.innerHTML = '<i class="fas fa-dna fa-spin me-2"></i>Matching...';
+        startBtn.disabled = true;
+    }
 
     // Compact biological layout
     grid.innerHTML = `
@@ -315,7 +325,10 @@ async function runLCS() {
     if (typeof confetti === 'function') {
         confetti({ particleCount: 150, spread: 80, origin: { y: 0.8 }, colors: ['#16a34a', '#8b5cf6'] });
     }
-    if (startBtn) startBtn.disabled = false;
+    if (startBtn) {
+        startBtn.innerHTML = '<i class="fas fa-play me-2"></i>Match DNA';
+        startBtn.disabled = false;
+    }
 }
 
 // 3. Complexity Race (Grand)
@@ -330,6 +343,12 @@ function runSortRace() {
     const time3 = document.getElementById('sort-time-1');
     const time4 = document.getElementById('race-time-4');
     const result = document.getElementById('race-result');
+    const raceBtn = document.querySelector('button[onclick="runSortRace()"]');
+
+    if (raceBtn) {
+        raceBtn.innerHTML = '<i class="fas fa-flag-checkered fa-shake me-2"></i>Racing...';
+        raceBtn.disabled = true;
+    }
 
     // Reset State
     [bar1, bar2, bar3, bar4].forEach(b => {
@@ -392,6 +411,11 @@ function runSortRace() {
                 origin: { y: 0.6 },
                 colors: ['#16a34a', '#0ea5e9', '#ffffff']
             });
+        }
+
+        if (raceBtn) {
+            raceBtn.innerHTML = '<i class="fas fa-flag-checkered me-2"></i>Start Race';
+            raceBtn.disabled = false;
         }
     }, 4100);
 }
