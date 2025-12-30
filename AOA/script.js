@@ -11,6 +11,26 @@
  * ================================================================
  */
 
+// =========================================
+//   CONSOLE EASTER EGG 🥚
+// =========================================
+console.log(
+    "%c🧬 AOA Lab Portfolio",
+    "font-size: 28px; font-weight: bold; color: #16a34a; text-shadow: 2px 2px 0 #0f172a;"
+);
+console.log(
+    "%c👋 Hey developer! Curious about the code?",
+    "font-size: 14px; color: #64748b;"
+);
+console.log(
+    "%c🔗 https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB",
+    "font-size: 12px; color: #2563eb;"
+);
+console.log(
+    "%c⚠️ This portfolio is protected. Please respect the author's work!",
+    "font-size: 12px; color: #f59e0b; font-weight: bold;"
+);
+
 // Interactive Algorithm Visualizer Logic (AOA Hero)
 // ================================================================
 
