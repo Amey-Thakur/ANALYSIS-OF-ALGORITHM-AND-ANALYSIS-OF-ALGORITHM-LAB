@@ -2888,7 +2888,7 @@ function initCommandPalette() {
         action: () => {
             const btn = document.querySelector(tab.btn);
             if (btn) btn.click();
-            document.getElementById('visualizer').scrollIntoView({ behavior: 'smooth' });
+            document.getElementById('interactive-demo').scrollIntoView({ behavior: 'smooth' });
         }
     }));
 
