@@ -16,6 +16,10 @@
  *   THEME & BASE VARIABLES
  * =========================================
  */
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     /* Light Mode Variables */
     --bg-color: #f4f6f9;
