@@ -183,86 +183,139 @@ async function runNetworkViz() {
     if (analyzeBtn) analyzeBtn.disabled = false;
 }
 
-// 2. LCS String Matcher
-function runLCS() {
+// 2. Aesthetic DNA Sequence Alignment Mapper
+// 2. Aesthetic DNA Sequence Alignment Mapper
+async function runLCS() {
     const s1 = document.getElementById('lcs-str1').value.toUpperCase();
     const s2 = document.getElementById('lcs-str2').value.toUpperCase();
     const grid = document.getElementById('lcs-grid');
+    const startBtn = document.querySelector('button[onclick="runLCS()"]');
 
-    let html = '<div style="display:flex; gap:5px;">';
+    if (!s1 || !s2) return;
+    if (startBtn) startBtn.disabled = true;
 
-    // Simple visual simulation of matching
-    // Real logic just for visual effect:
-    let matches = [];
-    let i = 0, j = 0;
-    // Basic finding common chars roughly
-    for (let char of s1) {
-        if (s2.includes(char)) matches.push(char);
+    // Compact biological layout
+    grid.innerHTML = `
+        <div class="dna-mapper" style="padding: 10px 0; gap: 45px;">
+            <div id="seq1-row" class="dna-seq-row" style="gap: 4px;"></div>
+            <div id="seq2-row" class="dna-seq-row" style="gap: 4px;"></div>
+            <svg id="dna-svg" class="dna-arc-svg"></svg>
+            <div id="lcs-discovery" class="text-accent mt-2 fw-bold" style="font-size: 0.85rem; letter-spacing: 0.5px;">Initializing Alignment...</div>
+        </div>
+    `;
+
+    const seq1Row = document.getElementById('seq1-row');
+    const seq2Row = document.getElementById('seq2-row');
+    const svg = document.getElementById('dna-svg');
+    const status = document.getElementById('lcs-discovery');
+
+    // Adaptive Sizing Logic (Zero-Scroll)
+    const containerWidth = grid.clientWidth || 800;
+    const maxLen = Math.max(s1.length, s2.length);
+    const gap = 6; // px
+    const padding = 40; // px
+
+    // Calculate optimal square size
+    let nodeSize = Math.floor((containerWidth - padding - (maxLen * gap)) / maxLen);
+
+    // Clamp size seamlessly (Min: 20px [Mobile], Max: 50px [Big Screens/Short Words])
+    nodeSize = Math.max(20, Math.min(nodeSize, 50));
+
+    // Proportional Font Size
+    const fontSize = Math.max(10, Math.floor(nodeSize * 0.45));
+
+    const renderNodes = (str, row, prefix) => {
+        str.split('').forEach((c, idx) => {
+            const node = document.createElement('div');
+            node.className = 'dna-node';
+            node.id = `${prefix}-${idx}`;
+            node.textContent = c;
+
+            // Dynamic Styles
+            node.style.width = `${nodeSize}px`;
+            node.style.height = `${nodeSize}px`;
+            node.style.fontSize = `${fontSize}px`;
+
+            row.appendChild(node);
+        });
+    };
+
+    renderNodes(s1, seq1Row, 'seq1');
+    renderNodes(s2, seq2Row, 'seq2');
+
+    // Update container gap to match calculation
+    seq1Row.style.gap = `${gap}px`;
+    seq2Row.style.gap = `${gap}px`;
+
+    // LCS DP Logic
+    const m = s1.length, n = s2.length;
+    const dp = Array.from({ length: m + 1 }, () => Array(n + 1).fill(0));
+    for (let i = 1; i <= m; i++) {
+        for (let j = 1; j <= n; j++) {
+            if (s1[i - 1] === s2[j - 1]) dp[i][j] = dp[i - 1][j - 1] + 1;
+            else dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
+        }
     }
 
-    // Create visual blocks
-    grid.innerHTML = '';
-    const container = document.createElement('div');
-    container.style.textAlign = 'center';
+    // Backtrack LCS
+    let currI = m, currJ = n;
+    const matches = [];
+    while (currI > 0 && currJ > 0) {
+        if (s1[currI - 1] === s2[currJ - 1]) {
+            matches.unshift({ i: currI - 1, j: currJ - 1, char: s1[currI - 1] });
+            currI--; currJ--;
+        } else if (dp[currI - 1][currJ] > dp[currI][currJ - 1]) currI--;
+        else currJ--;
+    }
 
-    // String 1 View
-    let row1 = document.createElement('div');
-    row1.className = 'd-flex justify-content-center gap-2 mb-3';
-    s1.split('').forEach((c, idx) => {
-        let span = document.createElement('span');
-        span.textContent = c;
-        span.className = 'badge bg-dark border border-secondary';
-        span.style.width = '30px';
-        span.style.height = '30px';
-        span.style.display = 'flex';
-        span.style.alignItems = 'center';
-        span.style.justifyContent = 'center';
-        span.id = `s1-${idx}`;
-        row1.appendChild(span);
-    });
+    // Animate Matching with Scanning Effect
+    status.textContent = "Scanning Sequence Order...";
+    let currentLCS = "";
 
-    // String 2 View
-    let row2 = document.createElement('div');
-    row2.className = 'd-flex justify-content-center gap-2';
-    s2.split('').forEach((c, idx) => {
-        let span = document.createElement('span');
-        span.textContent = c;
-        span.className = 'badge bg-dark border border-secondary';
-        span.style.width = '30px';
-        span.style.height = '30px';
-        span.style.display = 'flex';
-        span.style.alignItems = 'center';
-        span.style.justifyContent = 'center';
-        span.id = `s2-${idx}`;
-        row2.appendChild(span);
-    });
+    // To make it look like a scan, we iterate through the matches and show the "jump"
+    for (const match of matches) {
+        // Subtle scan effect on nodes
+        const n1 = document.getElementById(`seq1-${match.i}`);
+        const n2 = document.getElementById(`seq2-${match.j}`);
 
-    container.appendChild(row1);
-    container.appendChild(row2);
-    grid.appendChild(container);
+        n1.classList.add('scanning');
+        n2.classList.add('scanning');
+        await new Promise(r => setTimeout(r, 400));
 
-    // Animate Matches
-    let k = 0;
-    const interval = setInterval(() => {
-        if (k >= s1.length) {
-            clearInterval(interval);
-            return;
-        }
+        n1.classList.remove('scanning');
+        n2.classList.remove('scanning');
+        n1.classList.add('active-match');
+        n2.classList.add('active-match');
 
-        // Check if char exists in s2 approx
-        const char = s1[k];
-        const s1Badge = document.getElementById(`s1-${k}`);
+        const r1 = n1.getBoundingClientRect();
+        const r2 = n2.getBoundingClientRect();
+        const cR = svg.getBoundingClientRect();
 
-        // Find first occurrence in s2 that hasn't been highlighted ? (Simplification)
-        const s2Idx = s2.indexOf(char); // Simple check
-        if (s2Idx !== -1) {
-            s1Badge.classList.replace('bg-dark', 'bg-success');
-            // document.getElementById(`s2-${s2Idx}`).classList.replace('bg-dark', 'bg-success'); // Visual simplification
-        } else {
-            s1Badge.style.opacity = '0.3';
-        }
-        k++;
-    }, 300);
+        const x1 = r1.left + r1.width / 2 - cR.left;
+        const y1 = r1.top + r1.height / 2 - cR.top;
+        const x2 = r2.left + r2.width / 2 - cR.left;
+        const y2 = r2.top + r2.height / 2 - cR.top;
+
+        const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        const cpY = y1 + (y2 - y1) / 2;
+        path.setAttribute("d", `M ${x1} ${y1} Q ${(x1 + x2) / 2} ${cpY} ${x2} ${y2}`);
+        path.setAttribute("class", "dna-arc-path");
+        path.setAttribute("stroke-width", "1.5");
+        svg.appendChild(path);
+
+        requestAnimationFrame(() => path.style.strokeDashoffset = "0");
+
+        currentLCS += match.char;
+        status.innerHTML = `LCS Discovery: <span class="text-success">${currentLCS}</span>`;
+        await new Promise(r => setTimeout(r, 200));
+    }
+
+    status.innerHTML = `Aligned: <span class="bg-success text-white px-2 py-0.5 rounded">${currentLCS}</span> (Length: ${matches.length})`;
+    playCelebrateSound();
+    if (typeof confetti === 'function') {
+        confetti({ particleCount: 150, spread: 80, origin: { y: 0.8 }, colors: ['#16a34a', '#8b5cf6'] });
+    }
+    if (startBtn) startBtn.disabled = false;
 }
 
 // 3. Complexity Race (Grand)
