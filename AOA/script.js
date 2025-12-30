@@ -138,44 +138,39 @@ function drawGraph(activePath = []) {
     });
 }
 
-const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
-
-async function runNetworkViz() {
+function runNetworkViz() {
     const status = document.getElementById('network-status');
-    if (!status) return;
     status.innerHTML = `<span style="color:#16a34a">Running Floyd-Warshall Algorithm... O(n³)</span>`;
 
     // Simulation steps - Showing path relaxation
+    let step = 0;
     const simulation = [
-        { path: [0, 1, 4, 5], msg: "Analyzing Route A... Cost: 15" },
-        { path: [0, 2, 4, 5], msg: "Relaxing via Route B... Cost: 14" },
-        { path: [0, 1, 3, 5], msg: "Optimal Route Found! Cost: 9" }
+        { path: [0, 1, 4, 5], cost: 15, msg: "Initial Path: Start → A → D → End (Cost: 15)" },
+        { path: [0, 2, 4, 5], cost: 14, msg: "Intermediate Check: Start → B → D → End (Cost: 14)" },
+        { path: [0, 1, 3, 5], cost: 9, msg: "Optimal Found: Start → A → C → End (Cost: 9)" }
     ];
 
-    for (let i = 0; i < simulation.length; i++) {
-        const step = simulation[i];
-        status.innerHTML = `<span style="color:#16a34a">${step.msg}</span>`;
-
-        // Sequential Segment Drawing (The "Lighting Up" effect)
-        for (let j = 2; j <= step.path.length; j++) {
-            drawGraph(step.path.slice(0, j));
-            await sleep(400); // Wait for segment to light up
+    const interval = setInterval(() => {
+        if (step >= simulation.length) {
+            clearInterval(interval);
+            status.innerHTML = `Success! Shortest Path: ${simulation[step - 1].msg.split(': ')[1]}.`;
+            playCelebrateSound();
+            if (typeof confetti === 'function') {
+                confetti({
+                    particleCount: 150,
+                    spread: 80,
+                    origin: { y: 0.6 },
+                    colors: ['#16a34a', '#8b5cf6', '#ffffff']
+                });
+            }
+            return;
         }
 
-        await sleep(800); // Pause on completed path before switching
-    }
-
-    // Success State
-    status.innerHTML = `Success! Shortest Path: Start → A → C → End (Cost: 9)`;
-    playCelebrateSound();
-    if (typeof confetti === 'function') {
-        confetti({
-            particleCount: 150,
-            spread: 80,
-            origin: { y: 0.6 },
-            colors: ['#16a34a', '#8b5cf6', '#ffffff']
-        });
-    }
+        const current = simulation[step];
+        drawGraph(current.path);
+        status.innerHTML = `<span style="color:#16a34a">${current.msg}</span>`;
+        step++;
+    }, 1200);
 }
 
 // 2. LCS String Matcher
