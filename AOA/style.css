@@ -1445,6 +1445,13 @@ body {
     background: rgba(0, 0, 0, 0.05);
 }
 
+/* Interactive Visualizer Content Area */
+.algo-content {
+    background: var(--card-bg);
+    border-radius: 0 0 8px 8px;
+    transition: background 0.3s ease;
+}
+
 /* DNA Sequence Mapper (Compact) */
 .dna-mapper {
     display: flex;
