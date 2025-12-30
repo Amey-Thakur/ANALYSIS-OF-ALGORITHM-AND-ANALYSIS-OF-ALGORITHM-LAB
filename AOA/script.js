@@ -3058,3 +3058,130 @@ function initCommandPalette() {
         if (e.target === overlay) closePalette();
     });
 }
+// =========================================
+//   SHARE RESULTS FUNCTIONALITY
+// =========================================
+let currentShareImageBlob = null;
+
+async function shareResult(type) {
+    const modal = document.getElementById('share-modal');
+    const previewContainer = document.getElementById('share-preview');
+    const overlay = document.querySelector('.share-modal-overlay');
+
+    if (!modal || !previewContainer) return;
+
+    // Reset previous content
+    previewContainer.innerHTML = '<div class="text-center p-5"><i class="fas fa-spinner fa-spin fa-2x text-accent"></i><p class="mt-3 text-secondary">Generating preview...</p></div>';
+
+    // Show Modal
+    overlay.classList.add('active');
+
+    // Determine target element to capture
+    let targetEl = null;
+    let clone = null;
+
+    try {
+        if (type === 'network') {
+            targetEl = document.getElementById('network-canvas-container');
+        } else if (type === 'lcs') {
+            // For LCS, we need to capture the grid area specially
+            targetEl = document.getElementById('lcs-grid');
+        } else if (type === 'sorting') {
+            targetEl = document.getElementById('sorting-shareable');
+        }
+
+        if (!targetEl) throw new Error("Visualize element not found");
+
+        // Use html2canvas to capture the element
+        const canvas = await html2canvas(targetEl, {
+            backgroundColor: getComputedStyle(document.body).getPropertyValue('--card-bg').trim(),
+            scale: 2, // High resolution
+            logging: false,
+            useCORS: true
+        });
+
+        // Display in preview
+        previewContainer.innerHTML = '';
+        const img = document.createElement('img');
+        img.src = canvas.toDataURL('image/png');
+        img.style.maxWidth = '100%';
+        img.style.borderRadius = '8px';
+        previewContainer.appendChild(img);
+
+        // Store blob for sharing/downloading
+        canvas.toBlob(blob => {
+            currentShareImageBlob = blob;
+        });
+
+    } catch (err) {
+        console.error("Capture failed:", err);
+        previewContainer.innerHTML = '<div class="text-center p-4 text-danger"><i class="fas fa-exclamation-circle me-2"></i>Failed to generate preview.</div>';
+    }
+}
+
+function closeShareModal() {
+    const overlay = document.querySelector('.share-modal-overlay');
+    if (overlay) overlay.classList.remove('active');
+}
+
+function downloadShareImage() {
+    if (!currentShareImageBlob) return;
+
+    const url = URL.createObjectURL(currentShareImageBlob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `AOA_Lab_Result_Amey_Thakur_${Date.now()}.png`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+}
+
+function copyShareLink() {
+    const url = window.location.href;
+    navigator.clipboard.writeText(url).then(() => {
+        const btn = document.querySelector('button[onclick="copyShareLink()"]');
+        const originalContent = btn.innerHTML;
+        btn.innerHTML = '<i class="fas fa-check me-2"></i>Copied!';
+        btn.classList.add('btn-success');
+
+        setTimeout(() => {
+            btn.innerHTML = originalContent;
+            btn.classList.remove('btn-success');
+        }, 2000);
+    });
+}
+
+async function shareNative() {
+    if (navigator.share && currentShareImageBlob) {
+        try {
+            const file = new File([currentShareImageBlob], 'result.png', { type: 'image/png' });
+            await navigator.share({
+                title: 'AOA Lab Result - Amey Thakur',
+                text: 'Check out this algorithm visualization from my AOA Lab Portfolio!',
+                url: window.location.href,
+                files: [file]
+            });
+        } catch (err) {
+            console.log('Error sharing:', err);
+            // Fallback for browsers that support share but not files
+            try {
+                await navigator.share({
+                    title: 'AOA Lab Result - Amey Thakur',
+                    text: 'Check out this algorithm visualization from my AOA Lab Portfolio!',
+                    url: window.location.href
+                });
+            } catch (e) { console.log('Share failed', e); }
+        }
+    } else {
+        alert("Web Share API not supported on this device/browser.");
+    }
+}
+
+// Close modal on outside click
+document.addEventListener('click', (e) => {
+    const overlay = document.querySelector('.share-modal-overlay');
+    if (e.target === overlay) {
+        closeShareModal();
+    }
+});
