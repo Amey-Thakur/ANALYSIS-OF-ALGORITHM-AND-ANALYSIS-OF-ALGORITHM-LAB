@@ -747,6 +747,12 @@ h5 {
     border: 1px solid var(--border-color) !important;
 }
 
+.btn-secondary-custom:hover {
+    background: var(--accent-color) !important;
+    color: #ffffff !important;
+    border-color: var(--accent-color) !important;
+}
+
 .clickable-badge {
     text-decoration: none;
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
