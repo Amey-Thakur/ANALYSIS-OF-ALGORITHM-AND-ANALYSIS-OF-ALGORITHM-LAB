@@ -1479,6 +1479,24 @@ body {
     -webkit-backdrop-filter: blur(12px);
     border-radius: 0 0 8px 8px;
     transition: background 0.3s ease;
+    /* Ensure content doesn't overflow horizontally on mobile */
+    max-width: 100vw;
+    box-sizing: border-box;
+}
+
+#network-canvas-container {
+    width: 100%;
+    overflow-x: hidden;
+    /* Hide overflow, we will scale canvas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#networkCanvas {
+    max-width: 100%;
+    height: auto;
+    /* Use object-fit or similar if needed, but scaling via width is safer */
 }
 
 /* DNA Sequence Mapper (Compact) */

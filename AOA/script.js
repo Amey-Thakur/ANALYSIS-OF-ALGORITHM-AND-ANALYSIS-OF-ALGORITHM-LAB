@@ -55,29 +55,56 @@ function switchTab(tabId) {
 
 // 1. Network Optimizer Visualizer
 let networkCtx, networkNodes = [];
+let currentCanvasWidth = 850;
+let currentCanvasHeight = 300;
+
 function initNetworkCanvas() {
     const canvas = document.getElementById('networkCanvas');
-    if (!canvas) return;
+    const container = document.getElementById('network-canvas-container');
+    if (!canvas || !container) return;
+
+    // Responsive Resize
+    // We want the canvas to fill the container, or fallback to default
+    const rect = container.getBoundingClientRect();
+    const newWidth = rect.width ? rect.width : 850;
+
+    // Update Canvas Dimensions
+    // We keep the internal resolution high (e.g. 850 default) or match display
+    // matching display prevents blurriness.
+    canvas.width = newWidth;
+    canvas.height = Math.min(300, newWidth * 0.6); // Aspect ratio logic
+
+    currentCanvasWidth = canvas.width;
+    currentCanvasHeight = canvas.height;
+
     networkCtx = canvas.getContext('2d');
 
-    // Create Amey-themed graph nodes
-    if (networkNodes.length === 0) {
-        networkNodes = [
-            { id: 'Start', x: 50, y: 150 },
-            { id: 'A', x: 250, y: 50 },
-            { id: 'B', x: 250, y: 250 },
-            { id: 'C', x: 450, y: 50 },
-            { id: 'D', x: 450, y: 250 },
-            { id: 'End', x: 650, y: 150 }
-        ];
-    }
+    // Calculate dynamic scaling factors
+    // Base design was approx 700px wide area.
+    const w = currentCanvasWidth;
+    const h = currentCanvasHeight;
+
+    // Create Amey-themed graph nodes (Responsive Positions)
+    // defined as percentages of width/height
+    networkNodes = [
+        { id: 'Start', x: w * 0.1, y: h * 0.5 },
+        { id: 'A', x: w * 0.35, y: h * 0.2 },
+        { id: 'B', x: w * 0.35, y: h * 0.8 },
+        { id: 'C', x: w * 0.65, y: h * 0.2 },
+        { id: 'D', x: w * 0.65, y: h * 0.8 },
+        { id: 'End', x: w * 0.9, y: h * 0.5 }
+    ];
+
     drawGraph();
 }
 
 function drawGraph(activePath = []) {
     if (!networkCtx) return;
     const ctx = networkCtx;
-    ctx.clearRect(0, 0, 850, 300);
+    const w = currentCanvasWidth;
+    const h = currentCanvasHeight;
+
+    ctx.clearRect(0, 0, w, h);
 
     // Draw edges
     ctx.strokeStyle = '#334155';
@@ -123,7 +150,9 @@ function drawGraph(activePath = []) {
     // Draw nodes
     networkNodes.forEach((node, idx) => {
         ctx.beginPath();
-        ctx.arc(node.x, node.y, 22, 0, Math.PI * 2);
+        // Scale node radius slightly for mobile
+        const radius = Math.max(15, Math.min(22, w * 0.03));
+        ctx.arc(node.x, node.y, radius, 0, Math.PI * 2);
 
         // Highlight active nodes in the path
         const isActive = activePath.includes(idx);
@@ -3031,7 +3060,7 @@ function initCommandPalette() {
         { type: 'Command', name: 'Toggle Theme', icon: 'fa-adjust', action: () => document.getElementById('theme-toggle').click() },
         { type: 'Command', name: 'Scroll to Top', icon: 'fa-arrow-up', action: () => window.scrollTo({ top: 0, behavior: 'smooth' }) },
         { type: 'Command', name: 'Go to Experiments', icon: 'fa-flask', action: () => document.getElementById('experiments').scrollIntoView({ behavior: 'smooth' }) },
-        { type: 'Command', name: 'Go to Visualizer', icon: 'fa-code-branch', action: () => document.getElementById('interactive-demo').scrollIntoView({ behavior: 'smooth' }) },
+        { type: 'Command', name: 'Go to Visualizer', icon: 'fa-code-branch', action: () => document.getElementById('visualizer').scrollIntoView({ behavior: 'smooth' }) },
     ];
 
     // Scrape Content for Search Index (Experiments)
@@ -3056,18 +3085,17 @@ function initCommandPalette() {
 
     // Scrape Visualizer Tabs
     const vizTabs = [
-        { type: 'Algorithm', name: 'Network Optimizer (Floyd-Warshall)', icon: 'fa-project-diagram', id: 'tab-network', actionVar: 'network' },
-        { type: 'Algorithm', name: 'Match DNA (LCS)', icon: 'fa-dna', id: 'tab-lcs', actionVar: 'lcs' },
-        { type: 'Algorithm', name: 'Complexity Race', icon: 'fa-flag-checkered', id: 'tab-sorting', actionVar: 'sorting' }
+        { type: 'Algorithm', name: 'Network Optimizer (Floyd-Warshall)', icon: 'fa-project-diagram', id: 'tab-network', btn: 'button[onclick="showTab(\'network\')"]' },
+        { type: 'Algorithm', name: 'Match DNA (LCS)', icon: 'fa-dna', id: 'tab-lcs', btn: 'button[onclick="showTab(\'lcs\')"]' },
+        { type: 'Algorithm', name: 'Complexity Race', icon: 'fa-flag-checkered', id: 'tab-sorting', btn: 'button[onclick="showTab(\'sorting\')"]' }
     ].map(tab => ({
         type: tab.type,
         name: tab.name,
         icon: tab.icon,
         action: () => {
-            if (typeof switchTab === 'function') {
-                switchTab(tab.actionVar);
-            }
-            document.getElementById('interactive-demo').scrollIntoView({ behavior: 'smooth' });
+            const btn = document.querySelector(tab.btn);
+            if (btn) btn.click();
+            document.getElementById('visualizer').scrollIntoView({ behavior: 'smooth' });
         }
     }));
 
