@@ -549,23 +549,24 @@
     <div id="cmd-overlay" class="cmd-overlay">
         <div class="cmd-modal">
             <div class="cmd-header">
+                <i class="fas fa-search"></i>
+                <input type="text" id="cmd-input" placeholder="Search algorithms, experiments, or commands..."
+                    autocomplete="off">
+                <span class="cmd-esc"><kbd>ESC</kbd></span>
             </div>
-            <div class="cmd-esc">
-                <kbd>ESC</kbd>
+            <div class="cmd-body">
+                <div id="cmd-results" class="cmd-results">
+                    <!-- Results injected here -->
+                </div>
+            </div>
+            <div class="cmd-footer">
+                <div class="cmd-keys">
+                    <span><kbd class="k-small">↑</kbd> <kbd class="k-small">↓</kbd> to navigate</span>
+                    <span><kbd class="k-small">↵</kbd> to select</span>
+                    <span><kbd class="k-small">T</kbd> to toggle theme</span>
+                </div>
             </div>
         </div>
-        <div class="cmd-body" id="cmd-list">
-            <!-- Results injected here -->
-        </div>
-        <div class="cmd-footer">
-            <div class="cmd-keys">
-                <span class="k-group"><span class="k-small">↑</span><span class="k-small">↓</span> to
-                    navigate</span>
-                <span class="k-group"><span class="k-small">↵</span> to select</span>
-                <span class="k-group"><span class="k-small">T</span> Theme</span>
-            </div>
-        </div>
-    </div>
     </div>
 
     <script src="script.js"></script>
