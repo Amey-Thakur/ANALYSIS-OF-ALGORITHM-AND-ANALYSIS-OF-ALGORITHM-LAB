@@ -2858,6 +2858,12 @@ document.addEventListener('selectstart', (e) => {
 // =========================================
 document.addEventListener('DOMContentLoaded', () => {
     initCommandPalette();
+
+    // Auto-hide keyboard hint after 8 seconds
+    const kbdHint = document.getElementById('kbd-hint');
+    if (kbdHint) {
+        setTimeout(() => kbdHint.classList.add('hidden'), 8000);
+    }
 });
 
 function initCommandPalette() {
@@ -2867,11 +2873,6 @@ function initCommandPalette() {
     const kbdHint = document.getElementById('kbd-hint');
 
     if (!overlay || !input || !resultsContainer) return;
-
-    // Auto-hide keyboard hint after 8 seconds
-    if (kbdHint) {
-        setTimeout(() => kbdHint.classList.add('hidden'), 8000);
-    }
 
     let selectedIndex = 0;
     let results = [];
