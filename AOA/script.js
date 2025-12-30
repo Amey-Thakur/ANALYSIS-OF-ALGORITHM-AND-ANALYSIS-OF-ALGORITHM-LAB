@@ -2853,7 +2853,7 @@ function initCommandPalette() {
         { type: 'Command', name: 'Toggle Theme', icon: 'fa-adjust', action: () => document.getElementById('theme-toggle').click() },
         { type: 'Command', name: 'Scroll to Top', icon: 'fa-arrow-up', action: () => window.scrollTo({ top: 0, behavior: 'smooth' }) },
         { type: 'Command', name: 'Go to Experiments', icon: 'fa-flask', action: () => document.getElementById('experiments').scrollIntoView({ behavior: 'smooth' }) },
-        { type: 'Command', name: 'Go to Visualizer', icon: 'fa-code-branch', action: () => document.getElementById('visualizer').scrollIntoView({ behavior: 'smooth' }) },
+        { type: 'Command', name: 'Go to Visualizer', icon: 'fa-code-branch', action: () => document.getElementById('interactive-demo').scrollIntoView({ behavior: 'smooth' }) },
     ];
 
     // Scrape Content for Search Index (Experiments)
