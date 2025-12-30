@@ -8,6 +8,8 @@
  *   Roll No: 50
  *   Batch: B3
  *   Date: January 17, 2020
+ *   Repository: https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB
+ *   License: CC BY 4.0
  * ================================================================
  */
 
@@ -1997,67 +1999,5 @@ body {
 
     .share-modal-footer .btn {
         width: 100%;
-    }
-}
-
-/* =========================================
-   KNAPSACK VISUALIZER STYLES
-   ========================================= */
-.kp-table {
-    display: grid;
-    gap: 1px;
-    background: var(--border-color);
-    border: 1px solid var(--border-color);
-    margin: 10px;
-    border-radius: 4px;
-    overflow: auto;
-}
-
-.kp-cell {
-    min-width: 40px;
-    height: 40px;
-    background: var(--bg-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.85rem;
-    color: var(--text-primary);
-    transition: all 0.3s ease;
-}
-
-.kp-header {
-    background: var(--card-bg);
-    font-weight: 700;
-    color: var(--accent-color);
-    font-size: 0.75rem;
-}
-
-.kp-cell.selected {
-    background: var(--accent-color);
-    color: #fff;
-    transform: scale(1.1);
-    z-index: 2;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    font-weight: bold;
-}
-
-.kp-cell.animating {
-    animation: kpPop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-@keyframes kpPop {
-    0% {
-        transform: scale(0.8);
-        opacity: 0.5;
-    }
-
-    50% {
-        transform: scale(1.2);
-    }
-
-    100% {
-        transform: scale(1);
-        opacity: 1;
     }
 }
