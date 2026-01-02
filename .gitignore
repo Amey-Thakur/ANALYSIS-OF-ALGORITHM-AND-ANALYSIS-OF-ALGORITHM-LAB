@@ -1,38 +1,22 @@
-# ALL REPOSITORIES
-# ----------------
-# General
+# Analysis of Algorithms - Academic Repository
+# Specialized .gitignore for multi-language and scholarly archiving
+
+# OS-generated files
+[Tt]humbs.db
+[Dd]esktop.ini
 .DS_Store
-Thumbs.db
-*.swp
-*.log
-*.tmp
-*.bak
-*~
+.AppleDouble
+.LSOverride
 
-# Windows
-desktop.ini
-$RECYCLE.BIN/
-
-# VS Code
+# Editor and IDE configuration
 .vscode/
-*.code-workspace
-
-# JetBrains
 .idea/
+*.swp
+*.swo
+*~
 *.iml
-
-# Visual Studio
-*.suo
-*.sln
-*.user
-*.pdb
-*.idb
-*.tlog
-*.vs/
-Debug/
-Release/
-x64/
-x86/
+*.code-workspace
+.vs/
 
 # C/C++ Build Artifacts
 *.exe
@@ -44,9 +28,10 @@ x86/
 *.a
 *.lib
 *.out
-*.app
 bin/
 obj/
+Debug/
+Release/
 
 # Java Build Artifacts
 *.class
@@ -54,7 +39,7 @@ obj/
 *.war
 *.ear
 
-# Python
+# Python Build Artifacts
 __pycache__/
 *.py[cod]
 *$py.class
@@ -62,5 +47,8 @@ venv/
 env/
 .env
 
-# Git
+# Academic build/output artifacts
+*.bak
+*.sav
+*.old
 *.orig
