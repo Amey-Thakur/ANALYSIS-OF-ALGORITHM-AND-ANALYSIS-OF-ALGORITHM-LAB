@@ -91,22 +91,8 @@ This collection includes **comprehensive reference materials** covering all majo
 
 **Collaborative Study Notes by Amey & Mega**
 
-<table>
-<tr>
-<td align="center">
-<a href="https://github.com/Amey-Thakur">
-<img src="https://github.com/Amey-Thakur.png" alt="Amey Thakur" width="150" height="150"/><br/>
-<b>Amey Thakur</b>
-</a>
-</td>
-<td align="center">
-<a href="https://github.com/msatmod">
-<img src="THE%20WALL/Mega_Satish.png" alt="Mega Satish" width="150" height="150"/><br/>
-<b>Mega Satish</b>
-</a>
-</td>
-</tr>
-</table>
+| <img src="https://github.com/Amey-Thakur.png" width="150" alt="Amey Thakur"><br>[**Amey Thakur**](https://github.com/Amey-Thakur)<br><br>[![ORCID](https://img.shields.io/badge/ORCID-0000--0001--5644--1575-A6CE39.svg)](https://orcid.org/0000-0001-5644-1575) | <img src="THE%20WALL/Mega_Satish.png" width="150" alt="Mega Satish"><br>[**Mega Satish**](https://github.com/msatmod)<br><br>[![ORCID](https://img.shields.io/badge/ORCID-0000--0002--1844--9557-A6CE39.svg)](https://orcid.org/0000-0002-1844-9557) |
+| :---: | :---: |
 
 </div>
 
@@ -178,8 +164,6 @@ The laboratory component (CSL401) focuses on hands-on implementation of various 
   [![Total Programs](https://img.shields.io/badge/Total%20Programs-5-yellowgreen.svg)](AOA%20Lab/)
   [![Language](https://img.shields.io/badge/Language-C-blueviolet.svg)](AOA%20Lab/)
   [![Lab Manual](https://img.shields.io/badge/Lab%20Manual-Available-brightgreen.svg)](AOA%20Lab/PRACTICAL%20LAB.pdf)
-
-
 
 </div>
 
@@ -314,15 +298,15 @@ This repository and all linked academic content are made available under the **C
 **Institution**: [Terna Engineering College](https://ternaengg.ac.in/), Navi Mumbai  
 **University**: [University of Mumbai](https://mu.ac.in/)
 
-This repository represents a comprehensive collection of study materials, reference books, assignments, and personal preparation notes curated during my academic journey. All content has been carefully organized and documented to serve as a valuable resource for students pursuing Analysis of Algorithm & Analysis of Algorithm Lab.
+This repository represents a comprehensive collection of study materials, reference books, assignments, and personal preparation notes curated during my academic journey. All content has been carefully organized and documented to serve as a valuable resource for students pursuing Analysis of Algorithm and Analysis of Algorithm Lab.
 
-**Connect**: [GitHub](https://github.com/Amey-Thakur) · [LinkedIn](https://www.linkedin.com/in/amey-thakur)
+**Connect**: [GitHub](https://github.com/Amey-Thakur) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/amey-thakur) &nbsp;·&nbsp; [ORCID](https://orcid.org/0000-0001-5644-1575)
 
 ### Acknowledgments
 
-Grateful acknowledgment to **[Mega Satish](https://github.com/msatmod)** for her exceptional contribution to this repository through "THE WALL" - comprehensive chapter-wise notes that became an invaluable resource for understanding complex algorithmic concepts. Her constant support, patience, and clarity throughout this journey made a real difference. Learning alongside her was transformative, not only because she explained concepts so clearly, but because she truly cared about understanding them together. Her thoughtful approach to teaching, openness to discussion, and steady encouragement turned challenges into meaningful learning moments. This work reflects the growth that came from learning side by side. Thank you, Mega, for everything you shared and taught along the way.
+Grateful acknowledgment to **[Mega Satish](https://github.com/msatmod)** for her exceptional contribution to this repository through "THE WALL" - comprehensive chapter-wise notes that became an invaluable resource for understanding complex algorithmic concepts. Her constant support, patience, and clarity throughout this journey made a real difference.
 
-Special thanks to the faculty members of the Department of Computer Engineering at Terna Engineering College for their guidance and instruction in Analysis of Algorithm. Their clear teaching and continued support helped develop a strong understanding of algorithmic design and complexity analysis.
+Grateful acknowledgment to the faculty members of the Department of Computer Engineering at Terna Engineering College for their guidance and instruction in Analysis of Algorithm. Their clear teaching and continued support helped develop a strong understanding of algorithmic design and complexity analysis.
 
 Special thanks to the mentors and peers whose encouragement, discussions, and support contributed meaningfully to this learning experience.
 
