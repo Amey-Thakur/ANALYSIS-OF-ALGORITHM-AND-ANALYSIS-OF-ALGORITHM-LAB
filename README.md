@@ -96,9 +96,6 @@ This collection includes **comprehensive reference materials** covering all majo
 
 </div>
 
-> [!IMPORTANT]
-> 💝 **Special Thanks**: A heartfelt thank you to Mega for her constant support, patience, and clarity throughout this journey. Learning alongside her made a real difference, not only because she explained concepts so clearly, but because she truly cared about understanding them together. Her thoughtful approach to teaching, openness to discussion, and steady encouragement turned challenges into meaningful learning moments. This work reflects the growth that came from learning side by side. Thank you, Mega, for everything you shared and taught along the way.
-
 ### The Wall - Notes Authored by [MEGA SATISH](https://github.com/msatmod)
 
 Comprehensive chapter-wise notes curated by Mega Satish, covering all essential topics:
@@ -110,7 +107,7 @@ Comprehensive chapter-wise notes curated by Mega Satish, covering all essential 
 | 3 | [AOA Chapter - 3](THE%20WALL/AOA_Chapter-3.pdf) | Advanced algorithms and optimization |
 | 4 | [AOA Chapter - 4](THE%20WALL/AOA_Chapter-4.pdf) | Graph algorithms and NP-completeness |
 
-> [!NOTE]
+> [!IMPORTANT]
 > **COVID-19 Impact**: This coursework was completed during the COVID-19 pandemic in 2020. Due to the nationwide lockdown and the sudden transition to online learning, several planned laboratory sessions and collaborative note-taking activities could not be carried out as originally intended. Despite these challenges, efforts were made to adapt and preserve as much work as possible. The limited chapter notes in this section reflect the disruption caused by the pandemic, rather than a lack of effort or commitment.
 
 ---
@@ -165,10 +162,14 @@ The laboratory component (CSL401) focuses on hands-on implementation of various 
   [![Language](https://img.shields.io/badge/Language-C-blueviolet.svg)](AOA%20Lab/)
   [![Lab Manual](https://img.shields.io/badge/Lab%20Manual-Available-brightgreen.svg)](AOA%20Lab/PRACTICAL%20LAB.pdf)
 
+  [![Live Demo](https://img.shields.io/badge/Live%20Demo-AOA%20Lab%20Portfolio-007bff?style=flat&logo=github)](https://amey-thakur.github.io/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/AOA/)
+
 </div>
 
 > [!TIP]
-> **Algorithm Visualization**: Always trace your algorithm's execution flow on paper before coding. Draw recursion trees for divide-and-conquer approaches, create tables for dynamic programming solutions, and visualize array/pointer states at each step. Dry running with small test cases and manually calculating time/space complexity is the most effective way to master algorithm design paradigms and optimize computational efficiency.
+> **Live Implementation**: For a comprehensive visual showcase, visit the [AOA Lab Portfolio Dashboard](https://amey-thakur.github.io/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/AOA/). For the complete source code and detailed documentation, visit the [AOA Lab](AOA%20Lab/) directory. Visualization is key. Always trace your algorithm's execution flow on paper before coding. Create recursion trees and tables for dynamic programming to optimize computational efficiency.
+
+
 
 ### Laboratory Experiments
 
@@ -240,8 +241,9 @@ The portfolio includes a **real-time interactive visualization suite** (`Algorit
 
 | # | Resource | Description |
 |:-:|:---|:---|
-| 1 | [Laboratory Journal](AOA%20Lab/PRACTICAL%20LAB.pdf) | Complete record of experiments with code, outputs, and analysis |
-| 2 | [Lab README](AOA%20Lab/) | Detailed navigation guide with program descriptions |
+| 1 | [Interactive Lab Portfolio](https://amey-thakur.github.io/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/AOA/) | Interactive dashboard with source code descriptions and visualizations |
+| 2 | [Laboratory Journal](AOA%20Lab/PRACTICAL%20LAB.pdf) | Complete record of experiments with code, outputs, and analysis |
+| 3 | [Lab README](AOA%20Lab/) | Detailed navigation guide with program descriptions |
 
 ---
 
@@ -304,7 +306,7 @@ This repository represents a comprehensive collection of study materials, refere
 
 ### Acknowledgments
 
-Grateful acknowledgment to **[Mega Satish](https://github.com/msatmod)** for her exceptional contribution to this repository through "THE WALL" - comprehensive chapter-wise notes that became an invaluable resource for understanding complex algorithmic concepts. Her constant support, patience, and clarity throughout this journey made a real difference.
+Grateful acknowledgment to **[Mega Satish](https://github.com/msatmod)** for her exceptional contribution to this repository through "THE WALL" - comprehensive chapter-wise notes that became an invaluable resource for understanding complex algorithmic concepts. Her constant support, patience, and clarity throughout this journey made a real difference, not only because she explained concepts so clearly, but because she truly cared about understanding them together. Her thoughtful approach to teaching, openness to discussion, and steady encouragement turned challenges into meaningful learning moments. This work reflects the growth that came from learning side by side. Thank you, Mega, for everything you shared and taught along the way.
 
 Grateful acknowledgment to the faculty members of the Department of Computer Engineering at Terna Engineering College for their guidance and instruction in Analysis of Algorithm. Their clear teaching and continued support helped develop a strong understanding of algorithmic design and complexity analysis.
 
