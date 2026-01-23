@@ -162,12 +162,12 @@ The laboratory component (CSL401) focuses on hands-on implementation of various 
   [![Language](https://img.shields.io/badge/Language-C-blueviolet.svg)](AOA%20Lab/)
   [![Lab Manual](https://img.shields.io/badge/Lab%20Manual-Available-brightgreen.svg)](AOA%20Lab/PRACTICAL%20LAB.pdf)
 
-  [![Live Demo](https://img.shields.io/badge/Live%20Demo-AOA%20Lab%20Portfolio-007bff?style=flat&logo=github)](https://amey-thakur.github.io/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/AOA/)
+  [![Live Demo](https://img.shields.io/badge/Live%20Demo-AOA%20Lab%20Portfolio-007bff?style=flat&logo=github)](https://amey-thakur.github.io/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/)
 
 </div>
 
 > [!TIP]
-> **Live Implementation**: For a comprehensive visual showcase, visit the [AOA Lab Portfolio Dashboard](https://amey-thakur.github.io/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/AOA/). For the complete source code and detailed documentation, visit the [AOA Lab](AOA%20Lab/) directory. Visualization is key. Always trace your algorithm's execution flow on paper before coding. Create recursion trees and tables for dynamic programming to optimize computational efficiency.
+> **Live Implementation**: For a comprehensive visual showcase, visit the [AOA Lab Portfolio Dashboard](https://amey-thakur.github.io/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/). For the complete source code and detailed documentation, visit the [AOA Lab](AOA%20Lab/) directory. Visualization is key. Always trace your algorithm's execution flow on paper before coding. Create recursion trees and tables for dynamic programming to optimize computational efficiency.
 
 
 
@@ -241,7 +241,7 @@ The portfolio includes a **real-time interactive visualization suite** (`Algorit
 
 | # | Resource | Description |
 |:-:|:---|:---|
-| 1 | [Interactive Lab Portfolio](https://amey-thakur.github.io/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/AOA/) | Interactive dashboard with source code descriptions and visualizations |
+| 1 | [Interactive Lab Portfolio](https://amey-thakur.github.io/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/) | Interactive dashboard with source code descriptions and visualizations |
 | 2 | [Laboratory Journal](AOA%20Lab/PRACTICAL%20LAB.pdf) | Complete record of experiments with code, outputs, and analysis |
 | 3 | [Lab README](AOA%20Lab/) | Detailed navigation guide with program descriptions |
 
@@ -326,7 +326,7 @@ Special thanks to the mentors and peers whose encouragement, discussions, and su
 
   <br>
 
-  🔬 **[Analysis of Algorithm Laboratory](AOA%20Lab/)**
+  🔬 **[Analysis of Algorithm Laboratory](https://amey-thakur.github.io/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/)**
 
 </div>
 
