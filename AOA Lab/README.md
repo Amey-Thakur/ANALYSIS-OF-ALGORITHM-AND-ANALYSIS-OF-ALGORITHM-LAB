@@ -29,12 +29,12 @@
 
 <div align="center">
 
-  [![Live Demo](https://img.shields.io/badge/Live%20Demo-AOA%20Lab%20Portfolio-007bff?style=flat&logo=github)](https://amey-thakur.github.io/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/AOA/)
+  [![Live Demo](https://img.shields.io/badge/Live%20Demo-AOA%20Lab%20Portfolio-007bff?style=flat&logo=github)](https://amey-thakur.github.io/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/)
 
 </div>
 
 > [!TIP]
-> **Live Implementation**: For a comprehensive visual showcase, visit the [AOA Lab Portfolio Dashboard](https://amey-thakur.github.io/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/AOA/). For the complete source code and detailed documentation, visit the [AOA Lab](../AOA%20Lab/) directory. Visualization is key. Always trace your algorithm's execution flow on paper before coding. Create recursion trees and tables for dynamic programming to optimize computational efficiency.
+> **Live Implementation**: For a comprehensive visual showcase, visit the [AOA Lab Portfolio Dashboard](https://amey-thakur.github.io/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/). For the complete source code and detailed documentation, visit the [AOA Lab](../AOA%20Lab/) directory. Visualization is key. Always trace your algorithm's execution flow on paper before coding. Create recursion trees and tables for dynamic programming to optimize computational efficiency.
 
 > [!WARNING]
 > **Complexity Constraints**: Using a brute-force approach (O(n²)) for large inputs (n > 10⁵) will result in **Time Limit Exceeded (TLE)** errors. Always analyze the constraints before implementation and optimize your logic to use efficient paradigms (Divide & Conquer or Dynamic Programming) where applicable to meet execution limits.
