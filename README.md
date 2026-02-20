@@ -35,14 +35,14 @@ Analysis of Algorithm (CSC402) and Analysis of Algorithm Lab (CSL401) are core s
 
 The curriculum encompasses several key domains in algorithm theory and application:
 
-- **Algorithm Design Techniques**: Divide and Conquer, Greedy Method, Dynamic Programming, and Backtracking
-- **Algorithm Analysis**: Time complexity, space complexity, and asymptotic notation (Big-O, Omega, Theta)
-- **Sorting Algorithms**: Insertion Sort, Selection Sort, Merge Sort, Quick Sort, and Heap Sort
-- **Searching Algorithms**: Binary Search, Linear Search, and advanced search techniques
-- **Graph Algorithms**: Breadth-First Search (BFS), Depth-First Search (DFS), and shortest path algorithms
-- **String Matching**: Pattern matching algorithms and string processing
-- **NP-Completeness**: Complexity classes (P, NP, NP-Complete, NP-Hard) and reduction techniques
-- **Advanced Topics**: Floyd-Warshall, Longest Common Subsequence (LCS), and optimization problems
+- **Algorithm Design Techniques**: Divide and Conquer, Greedy Method, Dynamic Programming, and Backtracking.
+- **Algorithm Analysis**: Time complexity, space complexity, and asymptotic notation (Big-O, Omega, Theta).
+- **Sorting Algorithms**: Insertion Sort, Selection Sort, Merge Sort, Quick Sort, and Heap Sort.
+- **Searching Algorithms**: Binary Search, Linear Search, and advanced search techniques.
+- **Graph Algorithms**: Breadth-First Search (BFS), Depth-First Search (DFS), and shortest path algorithms.
+- **String Matching**: Pattern matching algorithms and string processing.
+- **NP-Completeness**: Complexity classes (P, NP, NP-Complete, NP-Hard) and reduction techniques.
+- **Advanced Topics**: Floyd-Warshall, Longest Common Subsequence (LCS), and optimization problems.
 
 ### Repository Purpose
 
