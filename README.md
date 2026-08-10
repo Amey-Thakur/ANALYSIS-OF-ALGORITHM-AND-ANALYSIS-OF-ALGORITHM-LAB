@@ -9,7 +9,7 @@
 
   ### CSC402 & CSL401 · Semester IV · Computer Engineering
 
-  [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-6E7681.svg)](LICENSE)
+  [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
   [![University](https://img.shields.io/badge/University-Mumbai-A6192E.svg)](https://mu.ac.in/)
   [![Institution](https://img.shields.io/badge/Institution-Terna%20Engineering%20College-E8710A.svg)](https://ternaengg.ac.in/)
   [![Curated by](https://img.shields.io/badge/Curated%20by-Amey%20Thakur-0969DA.svg)](https://github.com/Amey-Thakur)
@@ -159,8 +159,8 @@ The laboratory component (CSL401) focuses on hands-on implementation of various 
 
 <div align="center">
 
-  [![Total Programs](https://img.shields.io/badge/Total%20Programs-5-795548.svg)](AOA%20Lab/)
-  [![Language](https://img.shields.io/badge/Language-C-8250DF.svg)](AOA%20Lab/)
+  [![Total Programs](https://img.shields.io/badge/Total%20Programs-5-3949AB.svg)](AOA%20Lab/)
+  [![Language](https://img.shields.io/badge/Language-C-A8B9CC.svg)](AOA%20Lab/)
   [![Lab Manual](https://img.shields.io/badge/Lab%20Manual-Available-39FF14.svg)](AOA%20Lab/PRACTICAL%20LAB.pdf)
 
   [![Live Demo](https://img.shields.io/badge/Live%20Demo-AOA%20Lab%20Portfolio-00B8D9?style=flat&logo=github)](https://amey-thakur.github.io/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/)
