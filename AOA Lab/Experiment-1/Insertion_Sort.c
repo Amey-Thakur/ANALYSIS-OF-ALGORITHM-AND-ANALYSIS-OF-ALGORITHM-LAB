@@ -46,11 +46,12 @@ void printArray(int arr[], int n) {
 int main() {
     int n, i;
     int arr[100];
+    char buf[32];
 
     printf("\t--- INSERTION SORT ---\t\n");
 
     printf("\nEnter the number of elements: ");
-    if (scanf("%d", &n) != 1) {
+    if (fgets(buf, sizeof(buf), stdin) == NULL || sscanf(buf, "%d", &n) != 1) {
         printf("Invalid input.\n");
         return 1;
     }
@@ -62,7 +63,10 @@ int main() {
 
     printf("Enter %d elements:\n", n);
     for (i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
+        if (fgets(buf, sizeof(buf), stdin) == NULL || sscanf(buf, "%d", &arr[i]) != 1) {
+            printf("Invalid input.\n");
+            return 1;
+        }
     }
 
     printf("\nOriginal list: ");
