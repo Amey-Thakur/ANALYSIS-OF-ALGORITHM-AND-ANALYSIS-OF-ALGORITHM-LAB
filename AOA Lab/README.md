@@ -11,9 +11,9 @@
 
   <!-- Badges -->
   [![Curated by](https://img.shields.io/badge/Curated%20by-Amey%20Thakur-0969DA.svg)](https://github.com/Amey-Thakur)
-  [![Programs](https://img.shields.io/badge/Programs-5-827717.svg)](#quick-navigation)
+  [![Programs](https://img.shields.io/badge/Programs-5-795548.svg)](#quick-navigation)
   [![Language](https://img.shields.io/badge/Language-C-8250DF.svg)](.)
-  [![Lab Manual](https://img.shields.io/badge/Lab%20Manual-Available-5D4037.svg)](PRACTICAL%20LAB.pdf)
+  [![Lab Manual](https://img.shields.io/badge/Lab%20Manual-Available-39FF14.svg)](PRACTICAL%20LAB.pdf)
 
   <!-- Short Description -->
   **A comprehensive collection of 5 experiments covering fundamental algorithm design techniques with detailed comments, proper documentation, and industry-standard coding practices.**
