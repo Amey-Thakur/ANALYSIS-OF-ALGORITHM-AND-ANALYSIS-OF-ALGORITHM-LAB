@@ -1,0 +1,42 @@
+# Analysis of Algorithm and Analysis of Algorithm Lab
+
+> CSC402: Analysis of Algorithms [AOA] & CSL401: Analysis of Algorithms Lab
+> [AOA Lab] | SE Semester IV | Computer Engineering
+
+Author: Amey Thakur, ORCID 0000-0001-5644-1575
+Co-author: Mega Satish, ORCID 0000-0002-1844-9557
+Institution: Terna Engineering College, University of Mumbai
+Programme: B.E. Computer Engineering, Second Year, Semester IV
+Course codes: CSC402, CSL401
+Licence: CC BY 4.0, attribution required
+Repository created: 7 February 2022
+Work dated: 12 August 2020
+
+## What is in this repository
+
+- AOA, 12 files
+- AOA Lab, 8 files
+- Assignments, 3 files
+- My Preparation, 2 files
+- Reference Books, 10 files
+- THE WALL, 5 files
+- AOA_Test_B-50.pdf
+- Blueprint (AOA).png
+- Certificate.jpg
+- SE-Comps_CBCGS_Syllabus.pdf
+
+## Subject terms
+
+algorithm-analysis, algorithm-design, algorithm-design-and-analysis,
+algorithms, analysis-of-algorithms, aoa-lab, computer-engineering,
+computer-science, data-structures, data-structures-and-algorithms,
+divide-and-conquer, engineering, reference-books, textbooks,
+university-of-mumbai
+
+## Where this sits
+
+- This repository: https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB
+- Degree index, every subject and project: https://github.com/Amey-Thakur/COMPUTER-ENGINEERING
+- Project page: https://amey-thakur.github.io/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/
+- Author: https://github.com/Amey-Thakur
+- Research notes and reflections: https://amey-thakur.github.io/

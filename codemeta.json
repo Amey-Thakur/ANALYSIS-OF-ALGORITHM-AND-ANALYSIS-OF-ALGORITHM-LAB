@@ -1,0 +1,77 @@
+{
+    "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "@type": "SoftwareSourceCode",
+    "additionalType": "https://schema.org/LearningResource",
+    "name": "ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB",
+    "description": "CSC402: Analysis of Algorithms [AOA] & CSL401: Analysis of Algorithms Lab [AOA Lab] | SE Semester IV | Computer Engineering",
+    "identifier": "ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB",
+    "license": "https://spdx.org/licenses/CC-BY-4.0.html",
+    "author": [
+        {
+            "@type": "Person",
+            "givenName": "Amey",
+            "familyName": "Thakur",
+            "id": "https://orcid.org/0000-0001-5644-1575",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "Terna Engineering College"
+            }
+        },
+        {
+            "@type": "Person",
+            "givenName": "Mega",
+            "familyName": "Satish",
+            "id": "https://orcid.org/0000-0002-1844-9557",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "Terna Engineering College"
+            }
+        }
+    ],
+    "dateCreated": "2022-02-07",
+    "dateReleased": "2020-08-12",
+    "codeRepository": "https://github.com/Amey-Thakur/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB",
+    "isPartOf": "https://github.com/Amey-Thakur/COMPUTER-ENGINEERING",
+    "developmentStatus": "complete",
+    "applicationCategory": "Academic Course Archive",
+    "educationalLevel": "Undergraduate, Second Year, Semester IV",
+    "keywords": [
+        "Algorithm Analysis",
+        "Algorithm Design",
+        "Algorithm Design And Analysis",
+        "Algorithms",
+        "Analysis Of Algorithms",
+        "Aoa Lab",
+        "Computer Engineering",
+        "Computer Science",
+        "Data Structures",
+        "Data Structures And Algorithms",
+        "Divide And Conquer",
+        "Engineering",
+        "Reference Books",
+        "Textbooks",
+        "University Of Mumbai",
+        "CSC402",
+        "CSL401",
+        "AOA",
+        "AOA Lab",
+        "University of Mumbai",
+        "Mumbai University",
+        "Terna Engineering College",
+        "Navi Mumbai",
+        "India",
+        "B.E. Computer Engineering",
+        "SE Semester IV",
+        "Semester IV",
+        "Assignments",
+        "Study Notes",
+        "Amey Thakur",
+        "amey",
+        "ameythakur",
+        "amey-thakur",
+        "ameyarc",
+        "Mega Satish",
+        "megasatish"
+    ],
+    "url": "https://amey-thakur.github.io/ANALYSIS-OF-ALGORITHM-AND-ANALYSIS-OF-ALGORITHM-LAB/"
+}
